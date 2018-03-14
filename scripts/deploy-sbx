@@ -1,0 +1,14 @@
+#!/bin/bash
+
+startDir=$pwd
+
+fish -c ". ~/.config/fish/config.fish" && \
+cd ~/Projects/corpus-christi-frontend && \
+git fetch origin && \
+git checkout -f origin/develop && \
+NODE_ENV=production yarn && \
+pm2 delete production && \
+fish -c "env CC_PORT=8080 CC_CONTENT_SOURCE=production pm2 start yarn --name production -- start" && \
+pm2 delete staging && \
+fish -c "env CC_PORT=8081 CC_CONTENT_SOURCE=staging pm2 start yarn --name staging -- start" && \
+cd $startDir

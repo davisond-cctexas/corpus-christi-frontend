@@ -1,0 +1,77 @@
+doctype html
+html.no-js(lang='en')
+  head
+    - var meta = {}
+    - meta.title = 'Article'
+    include ../partials/head.pug
+
+  body
+    include ../partials/gtm-no-script.pug
+    include ../partials/skip-to-main.pug
+    include ../partials/global-nav.pug
+    include ../partials/hero.pug
+
+    .container#main-content
+      .row
+        .col-md-7
+          .raised-block
+            .header.full-width.breadcrumbs
+              ul.raised-nav
+                li
+                  a(href='') Home
+                li
+                  a(href='') News
+                li
+                  a(href='') Article Title
+              h2 Article Title
+              hr.yellow
+            .body
+              h3 Article Subtitle
+              .row
+                .col-md-4.col-md-offset-8
+                  p.text-right 4/23/16 | Eric Irish
+              img.img-responsive(src='http://placehold.it/800x600', alt='lorem')
+              p
+              |  Fanny pack farm-to-table distillery cray forage humblebrag, +1 beard pug chicharrones. Venmo polaroid knausgaard, YOLO pinterest jean shorts wolf four dollar toast fingerstache ugh gochujang. Hoodie irony venmo, chicharrones biodiesel tacos vegan listicle typewriter. Asymmetrical truffaut etsy occupy organic pinterest, keffiyeh neutra chartreuse cred salvia raw denim shoreditch. Kogi kombucha umami, cliche neutra chambray roof party whatever iPhone. Hashtag jean shorts whatever cliche everyday carry echo park. Wayfarers VHS crucifix bicycle rights, 3 wolf moon neutra thundercats iPhone irony heirloom you probably haven't heard of them brunch keytar scenester truffaut.<br><br>Vinyl food truck 90's dreamcatcher. Echo park pug chia polaroid, skateboard actually gastropub poutine irony kitsch pop-up pinterest kombucha. Cliche lumbersexual post-ironic, craft beer kitsch banjo retro. Beard iPhone godard biodiesel helvetica. Shabby chic forage irony, PBR&amp;B polaroid selfies 3 wolf moon sustainable lo-fi blog. Venmo hella plaid, cronut blue bottle letterpress normcore ramps. You probably haven't heard of them occupy banjo, dreamcatcher selvage wayfarers neutra hashtag small batch stumptown tote bag kitsch iPhone.<br><br>Church-key meditation narwhal, tacos ennui put a bird on it ethical bespoke biodiesel heirloom taxidermy 8-bit pork belly gentrify. Ramps pour-over chillwave direct trade jean shorts. Kale chips tacos yr, man braid photo booth raw denim food truck wolf. Irony helvetica try-hard butcher, flannel marfa listicle biodiesel keffiyeh truffaut meh sartorial art party brunch. Truffaut marfa intelligentsia, next level neutra mixtape salvia pug four dollar toast art party. Plaid four loko organic, ennui fingerstache ramps messenger bag. Fanny pack biodiesel paleo, hella aesthetic blog lomo irony selvage 3 wolf moon pitchfork plaid.<br><br>Schlitz celiac umami, chartreuse viral twee hella gluten-free mustache chicharrones irony mixtape pinterest. Next level kickstarter viral master cleanse, PBR&amp;B aesthetic schlitz. Farm-to-table man braid vinyl, authentic pinterest blog banjo umami fap thundercats iPhone shoreditch portland. Put a bird on it farm-to-table chia, squid kogi aesthetic meh mustache pinterest. Small batch 90's tattooed fingerstache ugh sartorial gentrify. Authentic skateboard williamsburg lomo, hella kitsch salvia brooklyn four loko actually. Next level artisan viral, jean shorts kogi health goth before they sold out sriracha portland blog.
+              .row
+                .col-md-12.tags
+                  h4 Tags
+                  hr.yellow
+                  p
+                    a.btn.tag Tag 1
+                    a.btn.tag Tag 2
+                    a.btn.tag Tag 3
+                    a.btn.tag Tag 4
+                    a.btn.tag Tag 5
+                    a.btn.tag Tag 6
+                  p.text-center
+                    a « Prev
+                    | |
+                    a Next »
+
+        .col-md-5#sidebar
+          .row
+            .col-xs-12
+              .colored-block.sand
+                .header-bar
+                  h2 Related Articles
+                .body
+                  ul
+                    li
+                      a(href='') Texas Commission on Environmental Quality (TECQ) »
+                    li
+                      a(href='') Solid Waste Association of North America (swana) »
+                    li
+                      a(href='') Environmental Defense Fund (edf) »
+                    li
+                      a(href='') American Plastics Council »
+                    li
+                      a(href='') Texas General Land Office (tglo) »
+                    li
+                      a(href='') Glass Packaging Institute »
+                    li
+                      a(href='') Steel Recycling Institute »
+                    li
+                      a(href='') Recycler World Association Directory »
+
+    include ../partials/footer.pug

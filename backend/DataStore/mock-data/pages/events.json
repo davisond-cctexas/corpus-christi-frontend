@@ -1,0 +1,24 @@
+{
+  "title": "Events"
+, "calendar": {
+    "subheader": "Events Calendar"
+  }
+, "filter": {
+    "header": "Filter Events By:"
+  , "noFilter": "All"
+  , "department": {
+      "header": "Department"
+    }
+  , "eventType": {
+      "header": "Event Type"
+    }
+  , "date": {
+      "header": "Date Range"
+    , "range": "to"
+    }
+  }
+, "listings": {
+    "header": "Events"
+  , "noData": "No events found."
+  }
+}

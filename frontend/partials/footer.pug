@@ -1,0 +1,83 @@
+hr.is-vishidden
+
+section#footer
+  .container
+    .footer-social
+      .row
+        .footer-contact
+          .col-xs-12.col-md-4.col-lg-3.col-lg-offset-1
+            .row
+              .col-xs-2
+                span.icon-contact
+              .col-xs-10
+                h2 Contact
+                p Access services and report problems. Call Center
+                  |  Representatives can assist you Monday through Friday from
+                  |  7 a.m. to 7 p.m.
+                p(itemprop='telephone')
+                  a(href='tel:361-826-2489') (361) 826-2489
+        .footer-email
+          .col-xs-12.col-md-4.col-lg-3.col-lg-offset-1
+            .row
+              .col-xs-2
+                span.icon-subscribe-icon
+              .col-xs-10
+                h2 Subscribe
+                p If you would like to receive the latest information from the
+                  |  City of Corpus Christi, subscribe to receive emails on our
+                  |  newsroom site.
+                p
+                  a.btn.outline.light.arrow(
+                    href='http://news.cctexas.com/alerts'
+                  ) Subscribe
+        - var socialLinks = globalElements.sections.social_links
+        .footer-connect
+          .col-xs-12.col-md-4.col-lg-3.col-lg-offset-1
+            .row
+              .col-xs-2
+                span.icon-connect-icon
+              .col-xs-10
+                h2 Connect
+                if socialLinks
+                  ul.social-list
+                    each href, social in socialLinks
+                      if href !== null
+                        li
+                          - var network = social.charAt(0).toUpperCase() + social.slice(1);
+                          - var ariaLabel = `Corpus Christi's ${network}`;
+                          a(
+                            href=href
+                          , target='_blank'
+                          , aria-label=ariaLabel
+                          )
+                            i(class=`icon-${social}`)
+                            span.is-vishidden=network
+
+  .footer-links
+    h2.is-vishidden Additional Resources
+    - var footer = globalElements.menus.footer
+    if footer.length > 0
+      .container-fluid
+        .row
+          each footerMenu in footer
+            .col-sm-3.col-lg-2.col-lg-offset-1
+              ul
+                each link in footerMenu
+                  li
+                    a.cta(href=link.url)=link.title
+
+          a.return-to-top(href='#hero-nav', tabindex='0')
+            | Return to Top
+            span.icon-circle-arrow-icon
+
+  if globalElements.sections.footer_notice
+    .footer-legal
+      .container
+        .row
+          .col-xs-10.col-xs-offset-1.col-lg-8.col-lg-offset-2
+            div!=globalElements.sections.footer_notice.value
+
+// BrowseAloud Scripts
+script(type='text/javascript').
+  var _baTheme=0, _baMode="Start BrowseAloud", _baHiddenMode = false, _baUseCookies=true, _baHideOnLoad = false;
+script(type='text/javascript', src='//www.browsealoud.com/plus/scripts/ba.js')

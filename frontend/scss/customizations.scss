@@ -1,0 +1,77 @@
+//------------------------------------
+//  Corpus Colors
+//------------------------------------
+
+$white: #fff;
+$blue: #253271;
+$dark-background: #212c66;
+$dark-blue: #192146;
+$darker-blue: darken($dark-blue, 10%);
+$light-blue: #62adec;
+$lighter-light-blue: #aed8f9;
+$yellow: #f7b202;
+$lighter-yellow: lighten($yellow, 10%);
+$darker-yellow: darken($yellow, 10%);
+$darker-white: darken($white, 10%);
+$red: #eb332d;
+$darker-red: darken($red, 10%);
+$otherblue: #a4d2f8;
+$lighter-otherblue: lighten($otherblue, 10%);
+$tan: #f8f6f3;
+$sand: #f3efec;
+$brand-primary: $dark-blue;
+
+$body-bg: #ddd;
+
+
+//------------------------------------
+//  Sizes
+//------------------------------------
+$container-large-desktop: 1280px;
+$screen-lg: 1280px;
+
+
+//------------------------------------
+//  Gutters & Padding
+//------------------------------------
+$global-padding: 16px;
+$grid-gutter-width: 0;
+
+//------------------------------------
+//  Fonts
+//------------------------------------
+
+$font-family-sans-serif: 'Proxima Nova', sans-serif;
+$font-family-serif: 'Adelle', serif;
+$font-size-base: 16px;
+$font-family-base: $font-family-sans-serif;
+
+$text-color: $dark-blue;
+
+//------------------------------------
+//  Forms
+//------------------------------------
+
+$input-bg: $sand;
+$input-color: $dark-blue;
+$input-border: none;
+$input-border-radius: 0;
+
+//------------------------------------
+//  Navbar
+//------------------------------------
+
+$navbar-default-link-active-bg: none;
+$navbar-default-link-hover-bg: none;
+
+$nav-link-hover-bg:  none;
+
+$navbar-collapse-max-height: 480px;
+
+$navbar-margin-bottom: 0;
+
+//------------------------------------
+//  Links
+//------------------------------------
+$link-color: $dark-blue;
+$link-hover-decoration: underline;

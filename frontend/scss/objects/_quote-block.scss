@@ -1,0 +1,56 @@
+.quote-block {
+  color: $dark-blue;
+  font-family: 'adelle';
+  font-size: 14px;
+  letter-spacing: 0.01em;
+  line-height: 22px;
+  padding: 2em 0;
+  text-align: center;
+
+  img {
+    height: 15em;
+  }
+
+  .quote {
+    font-style: italic;
+  }
+
+  .author {
+    color: $light-blue;
+    font-size: 14px;
+    padding-top: 20px;
+  }
+
+  &.blue {
+    background-color: $lighter-light-blue;
+
+    .quote {
+      color: $dark-blue;
+    }
+
+    .author {
+      color: $blue;
+    }
+  }
+
+  &.dark-blue {
+    background-color: $dark-blue;
+    background-image: none;
+
+    .quote {
+      color: $white;
+    }
+
+    .author {
+      color: $white;
+    }
+  }
+
+  &.no-image {
+    padding-top: 9em;
+
+    @include breakpoint(xs) {
+      padding-top: 2em;
+    }
+  }
+}

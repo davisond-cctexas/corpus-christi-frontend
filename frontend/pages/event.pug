@@ -1,0 +1,46 @@
+doctype html
+html.no-js(lang='en')
+  head
+    - var meta = event.meta
+    - meta.title = (meta.title) ? meta.title : event.title
+    include ../partials/head.pug
+
+  body#event
+    include ../partials/gtm-no-script.pug
+    include ../partials/skip-to-main.pug
+    include ../partials/global-nav.pug
+    include ../partials/hero.pug
+
+    .container#main-content
+      .row
+        .col-md-7
+          .raised-block
+            .header.full-width.breadcrumbs
+              h2.is-vishidden Breadcrumbs
+              ul.raised-nav
+                li
+                  a(href='/') Home
+                li
+                  a(href='/events') Events
+                li
+                  a(href='#')=event.title
+              h1.page-title=event.title
+            .body
+              - var location = event.location ? ` | ${event.location}` : ''
+              .event-details=`${event.time} | ${event.date} ${location}`
+              p!=event.description
+              if event.tags.length > 0
+                .row
+                  .col-md-12.tags
+                    h2.yellow-bar Tags
+                    ul
+                      each tag in event.tags
+                        li
+                          a.btn.tag=tag
+
+        - var sidebar = event.sidebar
+        if sidebar
+          .col-md-5
+            include ../partials/blocks/content-block.pug
+
+    include ../partials/footer.pug

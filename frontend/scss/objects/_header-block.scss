@@ -1,0 +1,94 @@
+$padding-xs: 20px;
+$padding-md: 30px;
+
+.header-block {
+  background-color: $sand;
+  height: 100%;
+
+  &.yellow {
+    background-color: lighten($yellow, 10%);
+  }
+
+  &.blue {
+    background-color: $light-blue;
+  }
+
+  &.white {
+    background-color: $white;
+  }
+
+  .header-bar,
+  .block-content {
+    padding: $padding-xs;
+
+    @include breakpoint(md lg xl) {
+      padding: $padding-md;
+    }
+  }
+
+  .header-bar {
+    display: table;
+    height: 80px;
+    width: 100%;
+
+    h2,
+    h3 {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1.2;
+      margin-top: 0;
+      padding-top: 0;
+      text-transform: uppercase;
+    }
+
+    a,
+    p {
+      font-size: 14px;
+      margin: 0;
+    }
+
+    .header-bar-content {
+      display: table-cell;
+      vertical-align: middle;
+      width: 100%;
+    }
+  }
+
+  .block-content {
+    padding-top: 0;
+
+    label,
+    .label {
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+
+      &::after {
+        content: ':';
+      }
+    }
+
+    .col-md-4 {
+      padding-bottom: 30px;
+
+      &:last-of-type {
+        padding-bottom: 0;
+      }
+    }
+
+    @include breakpoint(md lg xl) {
+      .col-md-4 {
+        padding-bottom: 0;
+        padding-right: 30px;
+      }
+    }
+
+    li {
+      margin-bottom: 10px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

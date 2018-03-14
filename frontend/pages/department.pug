@@ -1,0 +1,126 @@
+doctype html
+html.no-js(lang='en')
+  head
+    - var meta = department.meta
+    - meta.title = (meta.title) ? meta.title : department.title
+    include ../partials/head.pug
+
+  body#department
+    include ../partials/gtm-no-script.pug
+    include ../partials/skip-to-main.pug
+    include ../partials/global-nav.pug
+    - var heroImage = department.heroImage
+    include ../partials/hero.pug
+    .container#main-content
+      .row.raised-block-row
+        - var featuredLink = department.featuredLink
+        - var hasFeaturedLink = featuredLink && featuredLink.headline && featuredLink.uri && featuredLink.title
+        .raised-block(
+          data-mh='group'
+        , class=hasFeaturedLink ? 'col-md-7' : 'col-md-9'
+        )
+          .header.breadcrumbs
+            h2.is-vishidden Breadcrumbs
+            ul.raised-nav
+              li
+                a(href='/') Home
+              li
+                a(href='/departments') Departments
+              li
+                a(href='#')=department.title
+            h1.page-title=department.title
+          .body
+            p!=department.description
+        if hasFeaturedLink
+          .col-xs-12.col-md-5
+            .link-block.dark(data-mh='group')
+              .cell
+                h2.featured-link-title=featuredLink.headline
+                if featuredLink.subhead
+                  p.featured-link-subhead=featuredLink.subhead
+                p
+                  a.btn.arrow(href=featuredLink.uri)=featuredLink.title
+      .row
+        .col-md-5(data-mh='group')
+          .row
+            - var sidebar = department.sidebars[0]
+            if sidebar
+              .col-xs-12
+                include ../partials/blocks/content-block.pug
+
+            - var sidebar = department.sidebars[1]
+            if sidebar
+              .col-xs-12
+                include ../partials/blocks/link-block.pug
+
+        .col-md-7(data-mh='group')
+          include ../partials/reference-block.pug
+
+      - var secondaryLink = department.secondaryLink
+      - var hasSecondaryLink = secondaryLink && secondaryLink.headline && secondaryLink.uri && secondaryLink.title
+      if hasSecondaryLink
+        .row
+          .col-xs-12.large-headline
+            .headline
+              h2(
+                class=secondaryLink.subhead ? 'has-subhead' : ''
+              )=secondaryLink.headline
+              if secondaryLink.subhead
+                p=secondaryLink.subhead
+              p
+                a.btn.arrow(href=secondaryLink.uri)=secondaryLink.title
+
+      - var flexContentArea = department.flexContentArea
+      if flexContentArea && flexContentArea.length > 0
+        .row
+          .col-xs-12.flex-content-area
+            include ../partials/flex-content-area.pug
+
+      - var socialLinks = department.socialLinks
+      - var hasSocialLinks = Object.keys(socialLinks).length > 0
+      if hasSocialLinks
+        .row
+          - var hasTweet = Boolean(department.latestTweet)
+          .department-social-media(
+            data-mh='group'
+          , class=hasTweet ? 'col-md-7' : 'col-md-12'
+          )
+            include ../partials/department-social-media.pug
+          if hasTweet
+            .col-md-5.tweet-block.icon-twitter(data-mh='group')
+              - var tweet = department.latestTweet
+                include ../partials/tweet-block.pug
+
+      - var video = department.video
+      - var quote = department.quote
+      - var hasQuote = quote && quote.body && quote.author
+      if video || hasQuote
+        .row
+        if video
+          .video-player(
+            data-mh='group'
+          , class=hasQuote ? 'col-md-7' : 'col-md-12'
+          )
+            iframe(
+              width='100%'
+            , height='432'
+            , src=video
+            , frameborder='0'
+            , allowfullscreen
+            )
+        if hasQuote
+          .quote-block.blue(
+            data-mh='group'
+          , class=video ? 'col-md-5 no-image' : 'col-md-12'
+          )
+            .row
+              .col-xs-10.col-xs-offset-1
+                p.quote!=quote.body
+                p.author!=`&mdash;${quote.author}`
+
+      - var photoContentArea = department.photoContentArea
+      - var hasPhotoContentArea = photoContentArea && photoContentArea.imageUrl && photoContentArea.body
+      if hasPhotoContentArea
+        include ../partials/photo-content-area.pug
+
+    include ../partials/footer.pug

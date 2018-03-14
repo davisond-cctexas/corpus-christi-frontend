@@ -1,0 +1,14 @@
+#!/bin/bash
+
+printf "Watching with webpack and nodemon:\n\n"
+
+trap 'printf "\n\nKilling webpack and nodemon.\n"; kill $(jobs- p); wait $WEBPACK_PID; wait $NODEMON_PID' 2 9
+
+webpack --progress --colors --watch &
+WEBPACK_PID=$!
+
+nodemon --watch backend backend/server.js &
+NODEMON_PID=$!
+
+wait $WEBPACK_PID
+wait $NODEMON_PID

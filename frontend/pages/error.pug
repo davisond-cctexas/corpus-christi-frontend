@@ -1,0 +1,37 @@
+doctype html
+html.no-js(lang='en')
+  head
+    - var meta = {}
+    - meta.title = (meta.title) ? meta.title : strings.title
+    include ../partials/head.pug
+
+  body
+    include ../partials/gtm-no-script.pug
+    include ../partials/skip-to-main.pug
+    include ../partials/global-nav.pug
+    include ../partials/hero.pug
+
+    .container#main-content
+      .row
+        .col-md-7
+          - var error = strings.error
+          .raised-block
+            .header
+              h1.page-title=error.title
+            .body
+              p=error.text
+              p
+                a.btn(href=error.actionButton.url)=error.actionButton.text
+      .row.sitemap
+        if (globalElements.menus.main.length > 0)
+          each navItem in globalElements.menus.main
+            .col-md-3
+              a(href=)
+                h2.blue-bar=navItem.title
+                ul
+                  if (navItem.children.length > 0)
+                    each subCategory in navItem.children
+                      li
+                        a(href=subCategory.url)=subCategory.title
+
+    include ../partials/footer.pug

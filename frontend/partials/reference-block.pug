@@ -1,0 +1,15 @@
+.reference-block.header-block
+  .header-bar
+    .header-bar-content
+      h2=`${department.title} Services`
+  .references.block-content
+    if (collections.serviceListings.length > 0)
+      each service in collections.serviceListings
+        .reference
+          h3
+            a.cta(href=service.href)!=service.title
+          p!=service.text
+    else
+      p We're sorry, this department doesn't have any services linked to it
+        |  right now. We recommend that you contact this department if you have
+        |  questions about their services.

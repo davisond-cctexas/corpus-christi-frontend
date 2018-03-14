@@ -1,0 +1,21 @@
+.row
+  -var index = 0;
+  each area in flexContentArea
+    if(index % 3 === 0 && index !== 0)
+      .clearfix.visible-md-block.visible-lg-block
+    if(index % 2 === 0 && index !== 0)
+      .clearfix.visible-sm-block
+    .col-sm-6.col-md-4.picture-link
+      .img-area(data-mh='image-area')
+        if area.url && area.alt
+          img.img-responsive(src=area.url, alt=area.alt)
+      if area.headline
+        h2=area.headline
+      if area.value
+        .picture-body!=area.value
+      if area.links
+        ul.links
+          each link in area.links
+            li
+              a.cta(href=link.uri)=link.title
+    -index++

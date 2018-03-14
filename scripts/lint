@@ -1,0 +1,34 @@
+#!/bin/bash
+
+REPORTS_PATH="${CIRCLE_TEST_REPORTS:-./reports}/junit"
+
+printf "Running ESLint:\n\n"
+eslint \
+  --format junit \
+  --output-file $REPORTS_PATH/eslint.xml \
+  ./frontend/javascript
+eslint \
+  --format stylish \
+  ./frontend/javascript
+eslintResult=$?
+
+printf "Running SASS linter:\n\n"
+sass-lint \
+  --config .sass-lint.yml \
+  --format junit \
+  --verbose \
+  --output $REPORTS_PATH/sass-lint.xml
+sass-lint \
+  --config .sass-lint.yml \
+  --format stylish \
+  --verbose
+sassLintResult=$?
+
+#Disabling broken pug tests
+#printf "Running pug linter:\n\n"
+#pug-lint ./frontend/**/*.pug
+#pugLintResult=$?
+
+echo "Finished linting."
+
+! (( $eslintResult | $sassLintResult | $pugLintResult ))

@@ -1,0 +1,80 @@
+doctype html
+html.no-js(lang='en')
+  head
+    - var meta = {}
+    - meta.title = strings.title
+    include ../partials/head.pug
+
+  body.search#services
+    - var params = queryParams ? `&${queryParams}` : ''
+    include ../partials/gtm-no-script.pug
+    include ../partials/skip-to-main.pug
+    include ../partials/global-nav.pug
+    include ../partials/hero.pug
+
+    .container#main-content
+      .row
+        .col-md-7
+          - var listings = strings.listings
+          .raised-block
+            .header.full-width
+              h2.is-vishidden Breadcrumbs
+              ul.raised-nav
+                li
+                  a(href='/') Home
+                li
+                  a(href='/departments') Departments
+              h1.page-title=listings.header
+              if queryParams.length > 0
+                p.selected-filters
+                  a.clear-filters(href='/departments') Clear Filters
+                    span.circle-x-icon
+            .body
+              if (collections.departmentListings.length > 0)
+                each department in collections.departmentListings
+                  .listing
+                    h2
+                      a.cta(href=department.path)=department.title
+                    .row
+                      .col-md-6
+                        if department.links.length > 0
+                          h3.is-vishidden Department Resources
+                          ul
+                            each link in department.links
+                              li
+                                a.cta(href=link.uri)!=link.title
+                      if department.contact
+                        .col-md-6.callout.sand
+                          h3.is-vishidden Contact Information
+                          p!=department.contact
+              else
+                p=listings.noData
+
+              -var urlSlug = '/departments'
+              include ../partials/pagination.pug
+
+        .col-md-5
+          .row
+            .col-xs-12
+              .header-block
+                .header-bar
+                  .header-bar-content
+                    - var filter = strings.filter
+                    h2=filter.header
+                .body.block-content
+                  form#filter(method='get', action='/departments')
+                    fieldset.form-group
+                      label(for='serviceCategory')=filter.categories.header
+                      .dropdown-container
+                        select#serviceCategory(name='serviceCategory')
+                          option(value=-1)=filter.noFilter
+                          each category in collections.serviceCategories
+                            - var id = category.id
+                            if (query && id === query.serviceCategory)
+                              option(value=id, selected)=category.name
+                            else
+                              option(value=id)=category.name
+                    fieldset.form-group
+                      input.btn.dark(type='submit', value='Submit')
+
+    include ../partials/footer.pug

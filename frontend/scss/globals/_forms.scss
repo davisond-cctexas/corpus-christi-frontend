@@ -1,0 +1,105 @@
+$red: #f00;
+$light-red: #fff0f0;
+
+.form-group {
+  margin-bottom: 20px;
+
+  @include breakpoint(md lg xl) {
+    margin-bottom: 30px;
+  }
+}
+
+form {
+  .message-notice {
+    background: $white;
+    color: $red;
+    font-weight: bold;
+    margin: 0 0 20px;
+    padding: 5px;
+
+    p {
+      line-height: 1;
+      margin: 0 !important;
+    }
+
+    &.positive {
+      color: $dark-background;
+    }
+  }
+
+  .required-field-note {
+    font-size: 14px;
+  }
+
+  input {
+    &:not(.btn),
+    select,
+    textarea {
+      border-color: $dark-blue;
+      border-style: solid;
+      border-width: 0 0 2px !important;
+      padding: 5px 12px;
+      width: 100%;
+
+      &:focus {
+        border-color: $light-blue;
+        box-shadow: none;
+      }
+    }
+  }
+
+  // Filter Dropdow
+  .dropdown-container {
+    position: relative;
+
+    &::after {
+      @include add-icon($right-caret);
+      position: absolute;
+      right: 7px;
+      top: 8px;
+      transform: rotate(90deg);
+    }
+
+    select {
+      -moz-appearance: none;
+      -ms-appearance: none;
+      -webkit-appearance: none;
+      appearance: none;
+      border-radius: 0;
+      padding: 5px 27px 5px 5px;
+      width: 100%;
+    }
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  label {
+    font-weight: normal;
+  }
+
+  .has-error {
+    input,
+    select,
+    textarea {
+      background-color: $light-red;
+      border-color: $red;
+      margin: 0;
+    }
+
+    .error {
+      background: $white;
+      color: $red;
+      font-weight: bold;
+      margin-top: 5px;
+      padding: 5px;
+
+      p {
+        font-size: 12px;
+        line-height: 1;
+        margin: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+doctype html
+html.no-js(lang='en')
+  head
+    - var meta = serviceCategory.meta
+    - meta.title = (meta.title) ? meta.title : serviceCategory.name
+    include ../partials/head.pug
+
+  body#service-category
+    // Start of Pattern
+    include ../partials/gtm-no-script.pug
+    include ../partials/skip-to-main.pug
+    include ../partials/global-nav.pug
+    include ../partials/hero.pug
+
+    .container#main-content
+      .row
+        .col-md-7.raised-block(data-mh='group')
+          .header.breadcrumbs
+            h2.is-vishidden Breadcrumbs
+            ul.raised-nav
+              li
+                a(href='/') Home
+              li
+                a(href='/services') Services
+              li
+                a(href='#')=serviceCategory.name
+            h1.page-title=serviceCategory.name
+
+          .body
+            if (collections.serviceListings.length > 0)
+              each service in collections.serviceListings
+                .listing
+                  h2
+                    a.cta(href=service.href)!=service.title
+                  p!=service.text
+            else
+              p We're sorry, this service category doesn't have any services linked to it right now.
+
+        - var sidebar = serviceCategory.sidebar
+        .col-md-5
+          .row
+            .col-xs-12
+              include ../partials/blocks/link-block.pug
+
+    include ../partials/footer.pug

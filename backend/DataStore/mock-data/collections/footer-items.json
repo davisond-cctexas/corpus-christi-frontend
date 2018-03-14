@@ -1,0 +1,85 @@
+{
+  "col1": [
+    {
+      "title": "Services"
+    , "url": "/services"
+    }
+  , {
+      "title": "Government"
+    , "url": ""
+    }
+  , {
+      "title": "Business"
+    , "url": ""
+    }
+  , {
+      "title": "Explore"
+    , "url": ""
+    }
+  , {
+      "title": "News"
+    , "url": ""
+    }
+  ]
+, "col2": [
+    {
+      "title": "Pay"
+    , "url": ""
+    }
+  , {
+      "title": "Request"
+    , "url": ""
+    }
+  , {
+      "title": "Report"
+    , "url": ""
+    }
+  , {
+      "title": "Info"
+    , "url": ""
+    }
+  ]
+, "col3": [
+    {
+      "title": "Accessibility"
+    , "url": ""
+    }
+  , {
+      "title": "Privacy Policy"
+    , "url": ""
+    }
+  , {
+      "title": "Public Notices"
+    , "url": ""
+    }
+  , {
+      "title": "Sitemap"
+    , "url": ""
+    }
+  , {
+      "title": "Careers"
+    , "url": ""
+    }
+  ]
+, "col4": [
+    {
+      "title": "Contact"
+    , "url": ""
+    }
+  , {
+      "title": "Departments"
+    , "url": ""
+    }
+  ]
+, "connect": {
+    "title": "Connect"
+  , "twitterUrl": "https://twitter.com/cityofcc"
+  , "pinterestUrl": "https://www.pinterest.com/visitcctexas/"
+  , "facebookUrl": "https://www.facebook.com/citygov"
+  , "instagramUrl": "https://www.instagram.com/visitcctexas/"
+  , "youtubeUrl": "https://www.youtube.com/user/CCTVCorpusChristi"
+  }
+, "legal": {
+    "note": "The city of Corpus Christi adopted a tax rate that will raise more taxes for maintenance and operations than last year’s tax rate. The tax rate will effectively be raised by 7.88 percent and will raise taxes for maintenance and operations on a $100,000 home by approximately $27.53."
+  }
+}

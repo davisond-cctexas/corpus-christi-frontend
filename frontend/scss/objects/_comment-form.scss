@@ -1,0 +1,22 @@
+.comment-form {
+  .body {
+    padding: 40px;
+  }
+
+  textarea,
+  select {
+    width: 100%;
+  }
+
+  textarea {
+    height: 200px;
+  }
+
+  button {
+    margin-top: 1.5em;
+  }
+
+  .g-recaptcha {
+    margin-top: 20px;
+  }
+}

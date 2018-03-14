@@ -1,0 +1,15 @@
+.tweet-block {
+  background-color: $light-blue;
+  padding: 28px 5.333%;
+
+  &::before {
+    bottom: 35px;
+    font-size: 36px;
+    position: absolute;
+    right: 35px;
+  }
+
+  .more-from {
+    margin-top: 40px;
+  }
+}

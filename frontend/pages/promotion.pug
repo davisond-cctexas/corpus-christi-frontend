@@ -1,0 +1,103 @@
+doctype html
+html.no-js(lang='en')
+  head
+    - var meta = promo.meta
+    - meta.title = (meta.title) ? meta.title : promo.title
+    include ../partials/head.pug
+
+  body#promotion
+    include ../partials/gtm-no-script.pug
+    include ../partials/skip-to-main.pug
+    include ../partials/global-nav.pug
+    - var heroImage = promo.heroImage
+    include ../partials/hero.pug
+
+    .container#main-content
+      .row.raised-block-row
+        - var featuredLink = promo.featuredLink
+        - var hasFeaturedLink = featuredLink && featuredLink.headline && featuredLink.uri && featuredLink.title
+        - var description = promo.description
+        .raised-block(
+          data-mh='group'
+        , class=hasFeaturedLink ? 'col-md-7' : 'col-md-9'
+        )
+          .header.breadcrumbs
+            h2.is-vishidden Breadcrumbs
+            ul.raised-nav
+              li
+                a(href='/') Home
+              li
+                a(href='#')=promo.title
+            h1.page-title(
+              class=!description ? 'no-bar' : ''
+            )=promo.title
+          if description
+            .body
+              p!=promo.description
+
+        if hasFeaturedLink
+          .col-xs-12.col-md-5
+            .link-block.dark(data-mh='group')
+              .cell
+                h2=featuredLink.headline
+                if featuredLink.subhead
+                  p=featuredLink.subhead
+                p
+                  a.btn.arrow(href=featuredLink.uri)=featuredLink.title
+
+        - var secondaryLink = promo.secondaryLink
+        - var hasSecondaryLink = secondaryLink && secondaryLink.headline && secondaryLink.uri && secondaryLink.title
+        if hasSecondaryLink
+          .row
+            .col-xs-12.large-headline
+              .headline
+                h2(
+                  class=secondaryLink.subhead ? 'has-subhead' : ''
+                )=secondaryLink.headline
+                if secondaryLink.subhead
+                  p=secondaryLink.subhead
+                p
+                  a.btn.arrow(href=secondaryLink.uri)=secondaryLink.title
+
+        - var flexContentArea = promo.flexContentArea
+        if flexContentArea && flexContentArea.length > 0
+          .row
+            .col-xs-12.flex-content-area
+              include ../partials/flex-content-area.pug
+
+        - var socialLinks = promo.socialLinks
+        - var hasSocialLinks = Object.keys(promo.socialLinks).length > 0
+        if hasSocialLinks
+          .row
+            - var hasTweet = Boolean(promo.latestTweet)
+            .department-social-media(
+              data-mh='group'
+            , class=hasTweet ? 'col-md-7' : 'col-md-12'
+            )
+              include ../partials/department-social-media.pug
+            if hasTweet
+              .col-md-5.tweet-block.icon-twitter(data-mh='group')
+                - var tweet = promo.latestTweet
+                include ../partials/tweet-block.pug
+
+        -var videos = promo.videoLinks
+        -var links = videos.links
+        -var defaultVideo = promo.video
+        -var hasVideos = videos && videos.links.length
+        include ../partials/blocks/video-block.pug
+
+        - var secondaryBody = promo.secondaryBody
+        - var additionalWysiwyg = promo.additionalWysiwyg
+        if secondaryBody
+          .row.secondary-row
+            if additionalWysiwyg.headline
+              .col-md-7.basic-block(data-mh='group')
+                .col-xs-10.col-xs-offset-1!=secondaryBody
+            else
+              .col-xs-10.col-xs-offset-1.col-md-8.col-md-offset-2.no-details!=secondaryBody
+            if additionalWysiwyg.headline && additionalWysiwyg.description
+              .col-xs-12.col-md-5.header-block(data-mh='group')
+                -var sidebar = additionalWysiwyg
+                include ../partials/blocks/content-block.pug
+
+      include ../partials/footer.pug

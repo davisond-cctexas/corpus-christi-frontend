@@ -1,0 +1,134 @@
+.calendar-events {
+  .calendar-event {
+    margin-bottom: 30px;
+    min-height: 80px;
+    position: relative;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    .event-details {
+      margin-left: 100px;
+    }
+
+    .date {
+      border: 3px solid $dark-blue;
+      border-radius: 5px;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 70px;
+
+      &::before,
+      &::after {
+        background-color: $dark-blue;
+        border-radius: 3px;
+        content: '';
+        display: block;
+        height: 11px;
+        position: absolute;
+        top: -4px;
+        width: 3px;
+      }
+
+      &::before {
+        left: 18px;
+      }
+
+      &::after {
+        left: 52px;
+      }
+
+      .date-value {
+        font-family: $font-family-serif;
+        font-size: 20px;
+        font-weight: 600;
+        margin: 0;
+        padding: 10px 5px;
+        text-align: center;
+      }
+    }
+
+    .event-title,
+    .time,
+    .location,
+    .address {
+      font-size: 14px;
+      line-height: 1.2;
+      margin: 0;
+    }
+
+    .event-title {
+      font-family: $font-family-serif;
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: normal;
+      margin: 0 0 5px;
+      text-transform: none;
+    }
+  }
+}
+
+.calendar-box {
+  &.form-group {
+    &,
+    &:last-of-type {
+      margin-bottom: 20px;
+
+      @include breakpoint(md lg xl) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  table {
+    width: 100%;
+  }
+
+  th,
+  td {
+    padding: 5px;
+    text-align: center;
+    width: calc(100% / 7);
+  }
+
+  thead {
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+  tfoot {
+    text-align: center;
+  }
+
+  .calendar-date {
+    display: block;
+    font-weight: bold;
+    min-width: 30px;
+    padding: 5px;
+
+    &.calendar-gray {
+      color: darken($sand, 40%);
+    }
+
+    &.todays-date,
+    &.selected {
+      border: 1px solid $dark-blue;
+      border-radius: 5px;
+    }
+
+    &.selected {
+      background-color: $dark-blue;
+      color: $white;
+    }
+  }
+
+  .calendar-month {
+    font-size: 20px;
+    letter-spacing: normal;
+    line-height: 1;
+    margin: 10px 0;
+    text-align: center;
+  }
+}

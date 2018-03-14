@@ -1,0 +1,47 @@
+doctype html
+html.no-js(lang='en')
+  head
+    - var meta = {}
+    - meta.title = 'Search Results'
+    - var urlSlug = '/search'
+
+    include ../partials/head.pug
+    script(src='https://www.google.com/recaptcha/api.js')
+
+  body#search-page
+    // Start of Pattern
+    include ../partials/gtm-no-script.pug
+    include ../partials/skip-to-main.pug
+    include ../partials/global-nav.pug
+    include ../partials/hero.pug
+
+    .container#main-content
+      .row        .col-md-7.raised-block(data-mh='group')
+          .header.breadcrumbs
+            h2.is-vishidden Breadcrumbs
+            ul.raised-nav
+              li
+                a(href='/') Home
+              li
+                a(href='/search') Search
+            h1.page-title='Results for ' + query
+            if (searchResults && searchResults.items && searchResults.items.length > 0)
+              - var resultsRangeStart = ((searchResults.page - 1) * searchResults.limit) + 1
+              - var resultsRangeEnd = searchResults.page < searchResults.total_pages ? searchResults.page * searchResults.limit : ((searchResults.page -1) * searchResults.limit) + searchResults.items.length
+              p.result-count=resultsRangeStart + '-' + resultsRangeEnd + ' of ' + searchResults.num_results
+            else
+              p.result-count No results found
+
+          .body
+            if (searchResults && searchResults.items && searchResults.items.length > 0)
+              - var page = searchResults.page
+              - var totalPages = searchResults.total_pages
+              - var params = "&q=" + searchResults.query
+              each item in searchResults.items
+                .listing
+                  h2
+                    a.cta(href=item.url)=item.label
+                  a(href=item.url)='http://cctexas.com' + item.url
+                  //p excerpt found here excerpt found here excerpt found here excerpt found here excerpt found here excerpt found here excerpt found here
+              include ../partials/pagination.pug
+    include ../partials/footer.pug

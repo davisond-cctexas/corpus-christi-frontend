@@ -1,0 +1,137 @@
+server {
+  listen 80;
+
+  server_name webcctx-app.usgovcloudapp.net staging.forward.cctexas.com;
+
+  location / {
+    proxy_pass http://127.0.0.1:8081;
+  }
+}
+
+server {
+  listen 80;
+
+  server_name forward.cctexas.com;
+
+  location / {
+    proxy_pass http://127.0.0.1:8080;
+  }
+}
+
+server {
+    listen 80;
+    listen 443 ssl;
+    server_name 888tips.com www.888tips.com crimeoftheweek.com www.crimeoftheweek.com;
+    return 200 $scheme://forward.cctexas.com/departments/police-department/crime-stoppers;
+}
+
+server {
+    listen 80;
+    listen 443 ssl;
+    server_name ccanimalcare.com www.ccanimalcare.com;
+    return 302 $scheme://forward.cctexas.com/departments/animal-care-services;
+}
+
+server {
+    listen 80;
+    listen 443 ssl;
+    server_name ccasrcd.com www.ccasrcd.com;
+    return 302 $scheme://forward.cctexas.com/departments/water-department/cc-aquifer-storage-recovery;
+}
+
+server {
+    listen 80;
+    listen 443 ssl;
+    server_name ccbondissue.com www.ccbondissue.com engineercc.com www.engineercc.com;
+    return 302 $scheme://forward.cctexas.com/departments/engineering-department;
+}
+
+server {
+    listen 80;
+    listen 443 ssl;
+    server_name cceoc.com www.cceoc.com cceoc.info www.cceoc.info;
+    return 302 $scheme://forward.cctexas.com/departments/fire-department/emergency-operations-center;
+}
+
+server {
+    listen 80;
+    listen 443 ssl;
+    server_name ccfema.com www.ccfema.com;
+    return 302 $scheme://forward.cctexas.com/services/construction-and-property-services/fema-maps-flood-information;
+}
+
+server {
+    listen 80;
+    listen 443 ssl;
+    server_name ccparkandrec.com www.ccparkandrec.com;
+    return 302 $scheme://forward.cctexas.com/departments/parks-recreation-department;
+}
+
+server {
+    listen 80;
+    listen 443 ssl;
+    server_name ccpolice.com www.ccpolice.com;
+    return 302 $scheme://forward.cctexas.com/departments/police-department;
+}
+
+server {
+    listen 80;
+    listen 443 ssl;
+    server_name ccpublichealth.com www.ccpublichealth.com ccpublichealth.biz www.ccpublichealth.biz ccpublichealth.info www.ccpublichealth.info;
+    return 302 $scheme://forward.cctexas.com/departments/health-district;
+}
+server {
+    listen 80;
+    listen 443 ssl;
+    server_name ccrecycles.com www.ccrecycles.com corpuschristirecycles.com www.corpuschristirecycles.com;
+    return 302 $scheme://forward.cctexas.com/departments/solid-waste-services;
+}
+
+server {
+    listen 80;
+    listen 443 ssl;
+    server_name cctexasfire.com www.cctexasfire.com officialccfd.com www.officialccfd.com officialccfd.org www.officialccfd.org;
+    return 302 $scheme://forward.cctexas.com/departments/fire-department;
+}
+
+server {
+    listen 80;
+    listen 443 ssl;
+    server_name cctexasjob.com www.cctexasjob.com;
+    return 302 $scheme://forward.cctexas.com/services/general-government/job-applications;
+}
+
+server {
+    listen 80;
+    listen 443 ssl;
+    server_name corpuschristimarina.com www.corpuschristimarina.com;
+    return 302 $scheme://forward.cctexas.com/departments/marina;
+}
+
+server {
+    listen 80;
+    listen 443 ssl;
+    server_name corpuschristiwater.com www.corpuschristiwater.com;
+    return 302 $scheme://forward.cctexas.com/departments/water-department;
+}
+
+server {
+    listen 80;
+    listen 443 ssl;
+    server_name osopreserve.com www.osopreserve.com;
+    return 302 $scheme://forward.cctexas.com/services/general-government/oso-bay-wetlands-preserve-learning-center;
+}
+
+server {
+    listen 80;
+    listen 443 ssl;
+    server_name learningcc.org www.learningcc.org;
+    return 302 $scheme://forward.cctexas.com/learningcc;
+}
+
+server {
+    listen 80;
+    listen 443 ssl;
+    server_name cclibraries.com www.cclibraries.com;
+    return 302 $scheme://forward.cctexas.com/departments/libraries;
+}

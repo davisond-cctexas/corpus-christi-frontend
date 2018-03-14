@@ -1,0 +1,155 @@
+.raised-block-row {
+  background-color: $white;
+}
+
+#main-content {
+  .raised-block {
+    background-color: $white;
+
+    .header,
+    .body {
+      padding: 0 40px;
+
+      @include breakpoint(xs) {
+        padding: 0 20px;
+      }
+    }
+
+    .header {
+      background-color: $white;
+      display: block;
+      margin-top: -75px;
+      padding-top: 12px;
+      width: 100%;
+
+      @include breakpoint(md) {
+        width: 500px;
+      }
+
+      &.full-width {
+        width: 100%;
+      }
+
+      &.breadcrumbs {
+        padding-top: 12px;
+      }
+
+      &:not(.breadcrumbs) {
+        margin-top: -55px;
+      }
+
+      .page-title {
+        color: $blue;
+        display: table-cell;
+        font-size: 30px;
+        margin: 0 0 17px;
+        padding-top: 18px;
+        position: relative;
+        vertical-align: bottom;
+
+        &::after {
+          background: $yellow;
+          border: 0;
+          bottom: -15px;
+          content: '';
+          display: block;
+          height: 2px;
+          margin: 0;
+          position: absolute;
+          width: 60px;
+        }
+      }
+
+      .selected-filters {
+        margin: 20px 0 0 2px;
+
+        .clear-filters {
+          float: right;
+        }
+      }
+
+      hr {
+        margin-top: 15px;
+      }
+
+      ul {
+        display: block;
+        position: relative;
+        top: 0;
+        width: 100%;
+
+        li {
+          display: inline;
+          margin-right: 10px;
+
+          &::before {
+            @include add-icon($right-caret);
+            display: inline;
+            font-size: 12px;
+            margin-right: 10px;
+            text-decoration: none;
+            vertical-align: middle;
+          }
+
+          &:first-of-type {
+            &::before {
+              display: none;
+            }
+          }
+
+          &:last-of-type {
+            a {
+              cursor: default;
+              pointer-events: none;
+              text-decoration: none;
+            }
+          }
+
+          a {
+            color: $dark-blue;
+            font-size: 14px;
+            text-decoration: underline;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+
+    .body {
+      padding-bottom: 60px;
+      padding-top: 50px;
+
+      @include breakpoint(lg xl) {
+        padding-right: 14.6666%;
+      }
+
+      h2,
+      h3 {
+        //TODO: should we globalize this?
+        margin-bottom: 10px;
+      }
+
+      .listing {
+        border-bottom: 2px solid $gray-light-3;
+        margin-bottom: 30px;
+        padding-bottom: 14px;
+
+        h2,
+        h3 {
+          font-family: $font-family-serif;
+          font-size: 18px;
+          font-weight: 600;
+        }
+
+        > p {
+          display: block;
+          margin-top: 10px;
+        }
+
+        &:last-of-type {
+          border-bottom: 0;
+        }
+      }
+    }
+  }
+}

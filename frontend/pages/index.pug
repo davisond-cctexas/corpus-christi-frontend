@@ -1,0 +1,278 @@
+doctype html
+html.no-js(lang='en')
+  head
+    - var meta = {}
+    - meta.title = (meta.title) ? meta.title : 'Home'
+    include ../partials/head.pug
+
+  body#home
+    // Start of Pattern
+    include ../partials/gtm-no-script.pug
+    include ../partials/skip-to-main.pug
+    include ../partials/global-nav.pug
+    include ../partials/hero.pug
+
+    .container#main-content
+      .row.primary-row
+        -var primaryLinks = homepage.links.ctas.primary
+        -var hasPrimaryLinks = primaryLinks && (primary  Links[0] || primaryLinks[1])
+        .primary-col.pay-report-col(
+          class=hasPrimaryLinks ? 'col-md-5' : 'col-md-12'
+        , data-mh='primary-col'
+        )
+          .pay-report
+            h2.is-vishidden I Want To...
+            .header-buttons
+              ul.tabs(role='tablist')
+                li.tab.active
+                  a#payTab(
+                    data-toggle='tab'
+                  , href='#pay'
+                  , aria-controls='pay'
+                  , tabindex='1000'
+                  , aria-selected='true'
+                  )
+                    span.icon-pay
+                    span.pay Pay
+                li.tab
+                  a(
+                    data-toggle='tab'
+                  , href='#report'
+                  , aria-controls='report'
+                  , tabindex='1025'
+                  , aria-selected='false'
+                  )
+                    span.icon-report
+                    span.report Report
+                li.tab
+                  a(
+                    data-toggle='tab'
+                  , href='#request'
+                  , aria-controls='request'
+                  , tabindex='1050'
+                  , aria-selected='false'
+                  )
+                    span.icon-request
+                    span.request Request
+                li.tab
+                  a(
+                    data-toggle='tab'
+                  , href='#info'
+                  , aria-controls='info'
+                  , tabindex='1075'
+                  , aria-selected='false'
+                  )
+                    span.icon-learn
+                    span.learn Info
+
+            .row
+              .col-xs-12.pay-report-panel
+                .list.tab-content(
+                  aria-live='polite'
+                , data-mh='group'
+                )
+                  .tab-pane.active#pay(
+                    role='tabpanel'
+                  , aria-labelledby='payTab'
+                  , aria-hidden='false'
+                  )
+                    -var tabIndex = 1001
+                    ul
+                      each item in homepage.links.pay
+                        li
+                          a.cta(
+                            href=item.uri
+                          , tabindex=tabIndex
+                          )=item.title
+                            -tabIndex++
+                    if actionLinks.pay
+                      .view-all
+                        a.cta(
+                          href=`/services?serviceCategory=-1&actionType=${actionLinks.pay.id}&department=-1`
+                        , tabindex=tabIndex
+                        ) View All
+                        -tabindex++
+                  .tab-pane#report(
+                    role='tabpanel'
+                  , aria-labelledby='reportTab'
+                  , aria-hidden='true'
+                  )
+                    -tabIndex = 1026
+                    ul
+                      each item in homepage.links.report
+                        li
+                          a.cta(
+                            href=item.uri
+                          , tabindex=tabIndex
+                          )=item.title
+                            -tabIndex++
+                    if actionLinks.report
+                      .view-all
+                        a.cta(
+                          href=`/services?serviceCategory=-1&actionType=${actionLinks.report.id}&department=-1`
+                        , tabindex=tabIndex
+                        ) View All
+                        -tabindex++
+                  .tab-pane#request(
+                    role='tabpanel'
+                  , aria-labelledby='requestTab'
+                  , aria-hidden='true'
+                  )
+                    -tabIndex = 1051
+                    ul
+                      each item in homepage.links.request
+                        li
+                          a.cta(
+                            href=item.uri
+                          , tabindex=tabIndex
+                          )=item.title
+                            -tabIndex++
+                    if actionLinks.request
+                      .view-all
+                        a.cta(
+                          href=`/services?serviceCategory=-1&actionType=${actionLinks.request.id}&department=-1`
+                        , tabindex=tabIndex
+                        ) View All
+                        -tabindex++
+                  .tab-pane#info(
+                    role='tabpanel'
+                  , aria-labelledby='infoTab'
+                  , aria-hidden='true'
+                  )
+                    -tabIndex = 1076
+                    ul
+                      each item in homepage.links.info
+                        li
+                          a.cta(
+                            href=item.uri
+                          , tabindex=tabIndex
+                          )=item.title
+                            -tabIndex++
+                    if actionLinks.info
+                      .view-all
+                        a.cta(
+                          href=`/services?serviceCategory=-1&actionType=${actionLinks.info.id}&department=-1`
+                        , tabindex=tabIndex
+                        ) View All
+                        -tabindex++
+        if primaryLinks
+          .col-md-7
+            if primaryLinks[0]
+              .col-sm-6.primary-col(data-mh='primary-col')
+                .link-block
+                  .cell
+                    h2=primaryLinks[0].headline
+                    if primaryLinks[0].subhead
+                      p=primaryLinks[0].subhead
+                    p
+                      a.btn.arrow(href=primaryLinks[0].uri)=primaryLinks[0].title
+            if primaryLinks[1]
+              .col-sm-6.primary-col(data-mh='primary-col')
+                .link-block.dark
+                  .cell
+                    h2=primaryLinks[1].headline
+                    if primaryLinks[1].subhead
+                      p=primaryLinks[1].subhead
+                    p
+                      a.btn.arrow(href=primaryLinks[1].uri)=primaryLinks[1].title
+
+      .row
+        .col-md-5.calendar-events.header-block.blue(data-mh='events-row')
+          .header-bar
+            .header-bar-content
+              h2 Events Calendar
+              a.cta.view-all(href='/events') View All Events
+          .body.events.block-content
+            - var events = collections.events
+            if events.length
+              ul
+                each event in events
+                  li.row.calendar-event
+                    .date
+                      p.date-value=event.dateFormatted
+                    .event-details
+                      h3.event-title
+                        a.cta(href=event.href)!=event.title
+                      p.time=event.timeFormatted
+            else
+              p No upcoming events.
+        .col-md-7(data-mh='events-row')
+          .reference-block.latest-headlines.header-block
+            .header-bar
+              .header-bar-content
+                h2 Latest Headlines
+                a.cta.view-all(href='http://news.cctexas.com/') View All Headlines
+            .references.block-content
+              if (collections.rssItems.length > 0)
+                ul
+                  each item in collections.rssItems
+                    li.reference
+                      a.cta(href=item.link)!=item.title
+              else
+                .reference
+                  p
+                    a(href='http://news.cctexas.com/') Visit the Newsroom &raquo;
+
+      - var featuredCTA = homepage.links.ctas.featured
+      if featuredCTA
+        .row
+          .col-xs-12.large-headline
+            .row
+              .col-xs-10.col-xs-offset-1
+                .headline
+                  h2=featuredCTA.headline
+                  if featuredCTA.subhead
+                    p=featuredCTA.subhead
+                  if featuredCTA.uri && featuredCTA.title
+                    p
+                      a.btn.arrow(href=featuredCTA.uri)=featuredCTA.title
+
+      -var videos = homepage.links.video
+      -var links = homepage.links.video.links
+      -var defaultVideo = homepage.video
+      -var hasVideos = videos && videos.links.length
+      include ../partials/blocks/video-block.pug
+
+      -var governmentLinks = homepage.links.government
+      -var quote = homepage.quote
+      -var hasGovernmentLinks = governmentLinks && governmentLinks.links.length
+      -var hasQuote = homepage.quote && homepage.quote.value
+      if hasGovernmentLinks || hasQuote
+        .row
+          .button-block(
+            data-mh='group'
+          , class=hasQuote ? 'col-md-7' : 'col-md-12'
+          )
+            .col-xs-10.col-lg-9.col-lg-offset-2.col-xs-offset-1
+              h2=homepage.links.government.headline
+              ul.buttons
+                each link in homepage.links.government.links
+                  li
+                    a.btn.square.arrow(href=link.uri)
+                      span=link.title
+          if hasQuote
+            .col-md-5.quote-block.dark-blue(data-mh='group')
+              .row
+                .col-xs-10.col-xs-offset-1
+                  img.seal(
+                    src='/images/header-logo.svg'
+                  , alt='City of Corpus Christi Official Seal'
+                  )
+                  .quote!=homepage.quote.value
+                  p.author!=`&mdash; ${homepage.quote.citation}`
+
+      - var additionalCTA = homepage.links.ctas.additional
+      if additionalCTA
+        .row
+          .col-xs-12.large-headline.height-380.right
+            .row
+              .col-xs-10.col-xs-offset-1
+                .headline
+                  h2=additionalCTA.headline
+                  if additionalCTA.subhead
+                    p=additionalCTA.subhead
+                  if additionalCTA.uri && additionalCTA.title
+                    p
+                      a.btn.arrow(href=additionalCTA.uri)=additionalCTA.title
+
+    include ../partials/footer.pug

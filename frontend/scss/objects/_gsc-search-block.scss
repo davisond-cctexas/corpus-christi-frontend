@@ -1,0 +1,27 @@
+.navbar-fixed-top {
+  input {
+    &.gsc-search-button {
+      min-height: 25px;
+    }
+  }
+
+  td {
+    &.gsc-search-button {
+      width: 15%;
+    }
+  }
+}
+
+.gsc-table-result {
+  padding-left: 0;
+}
+
+body {
+  .gsc-thumbnail-inside {
+    padding-left: 0;
+  }
+
+  .gsc-url-top {
+    padding-left: 0;
+  }
+}

@@ -1,0 +1,48 @@
+if hasVideos
+  - defaultVideo = defaultVideo + '?rel=0'
+  .row.video-block.header-block
+    .col-md-7.col-md-push-5.video-player(data-mh='video-group')
+      iframe.video(
+        src=defaultVideo
+      , width='100%'
+      , height='100%'
+      , frameborder='0'
+      , allowfullscreen
+      , name='cctv'
+    )
+    .col-md-5.col-md-pull-7(data-mh='video-group')
+      .header-bar
+        .header-bar-content
+          h2=videos.headline
+          if videos.subhead
+            a.cta.view-all(href='https://www.youtube.com/user/CCTVCorpusChristi')
+              =videos.subhead
+      .block-content
+        -var rowCount = 0;
+        -var rows = _.chunk(links, 2)
+        each row in rows
+          -rowCount++
+          ul.row.video-picker(
+            class=(rowCount%2 === 0) ? 'even' : 'odd'
+          )
+            each link in row
+              if link.title && link.uri
+                li.col-xs-12.col-sm-6.video-col
+                  .video-link-caption
+                    p.caption=link.title
+                    p.link
+                      a.btn.arrow(
+                        href=link.uri
+                      , target='cctv'
+                      ) Play
+else
+  if video
+    .video-player.col-md-12(data-mh='video-group')
+      iframe.video(
+        src=defaultVideo
+      , width='100%'
+      , height='100%'
+      , frameborder='0'
+      , allowfullscreen
+      , playerVars: {rel: 0}
+      )

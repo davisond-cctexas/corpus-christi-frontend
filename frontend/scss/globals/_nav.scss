@@ -1,0 +1,462 @@
+//------------------------------------
+// $NAVIGATION
+//------------------------------------
+
+.navbar {
+  background-color: rgba($white, 0.9);
+  position: relative;
+  z-index: 10;
+
+  .navbar-brand {
+    @include breakpoint(xs) {
+      padding: 0;
+    }
+    outline: none; //Overrides tab-focus mixin
+    padding: 0 15px;
+
+    &:focus {
+      .header-logo {
+        @include tab-focus();
+      }
+    }
+  }
+}
+
+#global-nav {
+  background-color: rgba($tan, 0.95);
+  clear: both;
+  height: 24px;
+  line-height: 24px;
+  overflow: hidden;
+  padding: 0 20px;
+  position: relative;
+  width: 100%;
+  z-index: 100;
+
+  a {
+    border-top: 1px solid $gray-light-2;
+    color: $dark-blue;
+    display: block;
+    font-size: 12px;
+    font-weight: normal; //Overrides a {font-weight: bold}
+    padding: 0 10px;
+    text-transform: none;
+
+    &.home-link {
+      &::before {
+        content: '\00ab';
+      }
+    }
+  }
+
+  span {
+    display: inline-block;
+    float: left;
+  }
+
+  ul {
+    float: right;
+
+    a {
+      color: $dark-blue;
+    }
+  }
+
+  &.active {
+    max-height: 40em;
+  }
+
+  @media all and (min-width: 600px) {
+    clear: none;
+    float: right;
+    max-height: none;
+
+    li {
+      float: left;
+    }
+
+    a {
+      border: 0;
+    }
+  }
+}
+
+.navbar-collapse {
+  &.in {
+    display: block;
+  }
+}
+
+.hero {
+  background-image: url('../images/cc-sail-boats.jpg');
+  background-position: center;
+  background-size: 1920px;
+  height: 435px;
+
+  @media only screen and (min-width: 1920px) {
+    background-size: cover;
+  }
+}
+
+
+// Override grid logic. This isn't proper because we don't have a gutter
+#hero-nav {
+  .container {
+    position: relative;
+
+    & > .navbar-collapse,
+    & > .navbar-header,
+    & > .navbar-collapse,
+    & > .navbar-header,
+    .dropdown,
+    .dropup {
+      margin-left: 0;
+      margin-right: 0;
+      position: static;
+    }
+  }
+}
+
+// Header logo.
+.navbar-brand {
+  $size-sm: 40px;
+  $size-lg: 70px;
+
+  height: $size-sm + 20;
+
+  @include breakpoint(md lg xl) {
+    height: $size-lg + 20;
+  }
+
+  & > a {
+    display: block;
+    height: 100%;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+  }
+
+  .header-logo {
+    background-image: url('../images/header-logo.svg');
+    background-repeat: no-repeat;
+    display: block;
+    height: $size-sm;
+    left: 10px;
+    position: absolute;
+    top: 10px;
+    width: $size-sm;
+
+    @include breakpoint(md lg xl) {
+      height: $size-lg;
+      width: $size-lg;
+    }
+  }
+
+  .logotype {
+    display: block;
+    margin-left: $size-sm + 10;
+    @include breakpoint(md lg xl) {
+      margin-left: $size-lg + 10;
+    }
+
+    &.prefix {
+      font-size: 10px;
+      line-height: 1.4;
+      margin-top: 2px;
+      text-transform: uppercase;
+
+      @include breakpoint(md lg xl) {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-top: 12px;
+      }
+    }
+
+    &.suffix {
+      @include breakpoint(md lg xl) {
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+// Navigation.
+#main-nav {
+  max-height: none;
+
+  // Menu link styles.
+  .menu-header {
+    color: $dark-blue;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 0 10px;
+    padding: 0;
+    text-transform: uppercase;
+
+    &:focus {
+      outline: 5px auto -webkit-focus-ring-color;
+    }
+
+    @include breakpoint(sm md lg xl) {
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+  }
+
+  .submenu-header {
+    font-size: 16px;
+    letter-spacing: 0;
+    position: relative;
+
+    &::after {
+      background-color: $light-blue;
+      content: '';
+      display: block;
+      height: 2px;
+      left: 0;
+      margin-top: 3px;
+      position: relative;
+      width: 14.666%;
+    }
+  }
+
+  // Link styles.
+  .dropdown {
+    @include breakpoint(sm) {
+      padding: 21px 15px;
+    }
+    @include breakpoint(md) {
+      padding: 35.5px 15px;
+    }
+    @include breakpoint(lg xl) {
+      padding: 35.5px 20px;
+    }
+  }
+
+  // Repositioning.
+  .navbar-right {
+    margin-right: auto;
+  }
+
+  // Propagate menu position under container for full-width navbars.
+  .container {
+    position: relative;
+  }
+
+  .dropdown-menu {
+    background-color: $sand;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    left: 0;
+    padding: 0;
+    right: 0;
+    top: 42px;
+
+    @include breakpoint(md lg xl) {
+      top: 82px;
+    }
+  }
+
+  // MOBILE DEVICES.
+  .navbar-nav {
+    margin: 0;
+  }
+
+  @include breakpoint(xs) {
+    display: none;
+    padding: 0;
+
+    &.in {
+      display: block;
+    }
+
+    .navbar-nav {
+      background-color: $sand;
+      padding: 0;
+
+      & > li {
+        border-bottom: 1px solid $white;
+      }
+    }
+
+    .dropdown-toggle,
+    .search {
+      display: block;
+      margin: 0;
+      padding: 15px 50px 15px 15px;
+      position: relative;
+    }
+
+    .search {
+      padding-right: 15px;
+
+      .search-field,
+      .search-button {
+        font-size: 16px;
+      }
+    }
+
+    .dropdown-toggle {
+      &::after {
+        content: '\00bb';
+        display: block;
+        font-size: 24px;
+        height: 50px;
+        line-height: 50px;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        top: 0;
+        width: 50px;
+      }
+
+      &[aria-expanded='true'] {
+        background-color: $light-blue;
+
+        &::after {
+          transform: rotate(90deg);
+        }
+      }
+    }
+
+    .dropdown-menu {
+      padding: 15px;
+
+      .submenu-header {
+        font-weight: normal;
+        margin-bottom: 10px;
+        text-transform: none;
+      }
+    }
+  }
+
+  @include breakpoint(sm) {
+    // For now, hide search on tablets.
+    // TODO: Need better way to handle this.
+    .search {
+      display: none;
+    }
+  }
+
+  @include breakpoint(sm md lg xl) {
+    .search {
+      float: right;
+      padding: 30px 0 30px 15px;
+
+      .search-field {
+        padding-right: 30px;
+        width: 170px;
+
+        // IE10-11
+        &:-ms-input-placeholder {
+          color: #ccc;
+        }
+
+        // Edge
+        &::-ms-input-placeholder {
+          color: #ccc !important;
+        }
+      }
+    }
+
+    .dropdown-col {
+      padding: 15px 25px;
+    }
+
+    .submenu-header {
+      text-transform: none;
+    }
+
+    .sub-sub-menu {
+      font-size: 14px;
+      padding: 5px 0;
+    }
+
+    .dropdown {
+      &:hover,
+      &:focus {
+        .dropdown-menu,
+        .mega-connector {
+          display: block;
+          margin-top: 0;
+        }
+      }
+    }
+
+    .open {
+      .mega-connector {
+        display: block;
+      }
+    }
+
+    .mega-connector {
+      background-color: $sand;
+      border-top: 2px solid $red;
+      display: none;
+      height: 0;
+      position: absolute;
+      width: 100%;
+      z-index: 1001;
+
+      &.news-underline {
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+
+#alert {
+  background: $white;
+  border: 1px solid $red;
+  margin: 20px auto 0;
+  padding: 10px;
+  position: relative;
+
+  @include breakpoint(xs) {
+    margin-top: 0;
+  }
+  @include breakpoint(sm) {
+    max-width: 75%;
+  }
+  @include breakpoint(md lg xl) {
+    max-width: 50%;
+  }
+
+  p {
+    font-size: 16px;
+    margin: 0 0 0 40px;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  .alert-notice {
+    background: $red;
+    color: $white;
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 40px;
+  }
+
+  .icon-warning {
+    display: table;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
+
+    &::before {
+      display: table-cell;
+      font-size: 32px;
+      vertical-align: middle;
+    }
+  }
+}

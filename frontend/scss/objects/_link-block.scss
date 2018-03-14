@@ -1,0 +1,46 @@
+.link-block {
+  background-image: linear-gradient(rgba($yellow, 0.9), rgba($yellow, 0.9)), url('../images/bird.jpg');
+  background-position-x: -250px;
+  background-position-y: -310px;
+  background-size: 800px;
+  display: table;
+  height: 100%;
+  padding: 3em 1em;
+  width: 100%;
+
+  .cell {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  &.dark {
+    background: $dark-blue;
+
+    h2 {
+      color: $white;
+
+      & + p {
+        color: $white;
+      }
+    }
+  }
+
+  h2 {
+    display: block;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 23px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  p {
+    margin: 0;
+    text-align: center;
+  }
+
+  .btn {
+    margin-top: 10px;
+  }
+}

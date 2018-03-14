@@ -1,0 +1,7 @@
+nav.nav.hidden-xs.hidden-sm#global-nav
+  ul
+    // Add BrowseAloud link first
+    li#__ba_panel
+    each link in globalElements.menus.utilityNavigation
+      li
+        a(href=link.url, tabindex='3')=link.title

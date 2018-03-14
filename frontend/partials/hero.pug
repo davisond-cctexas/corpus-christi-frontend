@@ -1,0 +1,105 @@
+- var style = { }
+- style = (heroImage) ? {'background-image': 'url(' + heroImage + ')' } : style
+  .hero#hero-nav(style=style)
+    nav.navbar.yamm.navbar-fixed-top
+      .container-fluid
+        - var tabIndex = 10
+        // Brand and toggle get grouped for better mobile display
+        .container
+          .navbar-header
+            button.navbar-toggle.collapsed(
+              type='button'
+            , data-toggle='collapse'
+            , data-target='#main-nav'
+            , aria-expanded='false'
+            , tabindex=tabIndex
+            )
+              -tabIndex++
+              span.sr-only Toggle navigation
+              h3.no-margin Menu
+            h1.navbar-brand
+              a(href='/', tabindex=tabIndex)
+                -tabIndex++
+                span.header-logo
+                span.logotype.prefix City of&nbsp;
+                span.logotype.suffix Corpus Christi
+          // Collect the nav links, forms, and other content for toggling
+          .collapse.navbar-collapse#main-nav
+            h2.is-vishidden Main Navigation
+            ul.nav.navbar-nav.navbar-right
+              li.search
+                form.inline-form.search-form(action='javascript://return false;', onsubmit='submitGlobalSearch(this)')
+                  fieldset
+                    legend.is-vishidden Search
+                    label.is-vishidden(for='search-field') Search
+                    input.search-field#search-field(tabindex=tabIndex, type='search', placeholder='How Can We Help You?')
+                    -tabIndex++
+                    button.search-submit(tabindex=tabIndex)
+                      span.icon-search-01(aria-hidden='true')
+                      span.is-vishidden Search
+              if (globalElements.menus.main.length > 0)
+                each navItem in globalElements.menus.main
+                  li.dropdown.yamm-fw
+                    if (navItem.title === "News")
+                      a.dropdown-toggle.menu-header(
+                        href=navItem.url
+                      , tabindex=tabIndex
+                      )=navItem.title
+                        -tabIndex++
+                        span.mega-connector.news-underline.hidden-xs
+                    else
+                      a.menu-header.dropdown-toggle(
+                        tabindex=tabIndex
+                      , data-toggle='dropdown'
+                      , role='button'
+                      , aria-haspopup='true'
+                      , aria-expanded='false'
+                      )=navItem.title
+                        -tabIndex++
+                        span.mega-connector.hidden-xs
+                      ul.dropdown-menu
+                        .yamm-content
+                          .row
+                            - var subCounter = 1
+                            if (navItem.children.length > 0)
+                              each subCategory in navItem.children
+                                .col-sm-4.col-md-3.dropdown-col(
+                                  data-mh=navItem.title
+                                )
+                                  li
+                                    .submenu-header
+                                      a(
+                                        tabindex=tabIndex
+                                      , href=subCategory.url
+                                      )=subCategory.title
+                                        -tabIndex++
+                                    ul.hidden-xs
+                                      if (subCategory.children.length > 0)
+                                        each link in subCategory.children
+                                          li.sub-sub-menu
+                                            a(
+                                              tabindex=tabIndex
+                                            , href=link.url
+                                            , class='cta'
+                                            )=link.title
+                                              -tabIndex++
+                                  if subCounter === 4
+                                    .clearfix.visible-md-block.visible-lg-block
+                                  - subCounter++
+                          if navItem.url !== '#'
+                            .row
+                              hr.full-width
+                              .pull-right
+                                a(
+                                  tabindex=tabIndex
+                                , href=navItem.url
+                                ) Browse All #{navItem.title} »
+                                  -tabIndex++
+    if globalElements && globalElements.sections.global_alert
+      #alert
+        .alert-notice
+          span.screen-reader-text Emergency Alert
+          i.icon-warning
+        div!=globalElements.sections.global_alert.value
+
+    hr.is-vishidden

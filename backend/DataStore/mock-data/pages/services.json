@@ -1,0 +1,20 @@
+{
+  "title": "Services"
+, "calendar": {
+    "subheader": "Events Calendar"
+  }
+, "filter": {
+    "header": "Filter Services By:"
+  , "noFilter": "All"
+  , "categories": {
+      "header": "Service Category"
+  }
+  , "department": {
+      "header": "Department"
+    }
+  }
+, "listings": {
+    "header": "Services"
+  , "noData": "No services found."
+  }
+}

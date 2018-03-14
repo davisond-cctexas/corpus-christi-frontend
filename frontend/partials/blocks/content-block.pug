@@ -1,0 +1,9 @@
+.col-xs-12.header-block.blue
+  .header-bar
+    .header-bar-content
+      if sidebar.headline
+        h2=sidebar.headline
+      if sidebar.subheadline
+        p.subhead=sidebar.subheadline
+  if sidebar.description
+    .block-content.body!=sidebar.description

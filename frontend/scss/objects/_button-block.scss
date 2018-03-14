@@ -1,0 +1,40 @@
+.button-block {
+  background-color: $white;
+  overflow: auto;
+  padding-bottom: 2em;
+
+  .btn {
+    &.square {
+      display: block;
+    }
+
+    font-size: 14px;
+    line-height: 1.4;
+    width: 200px;
+  }
+
+  h2 {
+    color: $dark-blue;
+    margin-bottom: 20px;
+    margin-top: 0;
+    padding-top: 40px;
+  }
+
+  .buttons {
+    padding-top: 45px;
+
+    & > li {
+      display: inline-block;
+
+      @include breakpoint(xs sm) {
+        width: 100%;
+      }
+
+      a {
+        @include breakpoint(xs sm) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

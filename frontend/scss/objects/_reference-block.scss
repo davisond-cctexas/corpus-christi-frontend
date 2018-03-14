@@ -1,0 +1,25 @@
+.reference-block {
+  .reference {
+    border-bottom: 2px solid $gray-light-3;
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+
+    &:last-of-type {
+      border-bottom: 0;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    h2,
+    h3 {
+      font-family: $font-family-serif;
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: normal;
+      margin: 0 0 0.5em;
+      text-transform: none;
+    }
+  }
+}

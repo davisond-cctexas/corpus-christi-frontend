@@ -1,0 +1,10 @@
+if tweet
+  - var handle = tweet.handle
+  p.tweet
+    strong!=`@${handle}&mdash;${tweet.formattedDate}&nbsp;`
+    span!=tweet.body
+  p.more-from
+    a(
+      href=`https://twitter.com/${handle}`
+    , target='_blank'
+    )=`more from @${handle} ›`

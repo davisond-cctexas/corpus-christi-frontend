@@ -1,0 +1,15 @@
+if sidebar.headline || sidebar.subheadline || sidebar.links.length > 0
+  .header-block.yellow
+    if sidebar.headline || sidebar.subheadline
+      .header-bar
+        .header-bar-content
+          if sidebar.headline
+            h2=sidebar.headline
+          if sidebar.subheadline
+            p=sidebar.subheadline
+    if sidebar.links.length > 0
+      .block-content.body
+        ul
+          each link in sidebar.links
+            li
+              a.cta(href=link.uri)=link.title

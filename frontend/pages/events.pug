@@ -1,0 +1,150 @@
+doctype html
+html.no-js(lang='en')
+  head
+    - var meta = {}
+    - meta.title = (meta.title) ? meta.title : strings.title
+    include ../partials/head.pug
+
+  body.search#events
+    include ../partials/gtm-no-script.pug
+    include ../partials/skip-to-main.pug
+    include ../partials/global-nav.pug
+    include ../partials/hero.pug
+
+    - var params = `${queryParams ? '&' + queryParams : ''}`
+    - var paramsNoDate = `${queryParamsNoDate ? '&' + queryParamsNoDate : ''}`
+
+    .container#main-content
+      .row
+        .col-md-7#main
+          - var listings = strings.listings
+          .raised-block
+            .header.full-width.breadcrumbs
+              h2.is-vishidden Breadcrumbs
+              ul.raised-nav
+                li
+                  a(href='/') Home
+                li
+                  a(href='/events') Events
+              h1.page-title='Upcoming Events'
+              if titleDate.length > 0 || queryParams.length > 0
+                p.selected-filters=titleDate
+                  a.clear-filters(href='/events') Clear Filters
+                    span.circle-x-icon
+
+            .body
+              .row#event-listings-container
+                .col-xs-12.calendar-events#event-listings
+                  if (collections.eventListings.length > 0)
+                    ul
+                      each listing in collections.eventListings
+                        li.row.calendar-event
+                          .date
+                            p.date-value=listing.dateFormatted
+                          .event-details
+                            h2.event-title
+                              a.cta(href=listing.href)!=listing.title
+                            p.time=listing.timeFormatted
+                            p!=listing.text
+                  else
+                    p=listings.noData
+
+              -var urlSlug = '/events'
+              include ../partials/pagination.pug
+
+        - var filter = strings.filter
+        .col-md-5
+          .row
+            .col-xs-12.header-block
+              .header-bar
+                .header-bar-content
+                  h2=filter.header
+              .block-content
+                .row
+                  .col-xs-12
+                    .form-group.calendar-box
+                      .label Date
+                      h3.calendar-month #{calendar.monthFormatted} #{calendar.year}
+                      table
+                        thead
+                          tr
+                            each day in ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat']
+                              th=day
+                        tbody
+                          each row in calendar.display
+                            tr
+                              each col, index in row
+                                td
+                                  - var isToday = col.date.startOf('D').valueOf() === today
+                                  - var todayClass = isToday ? 'todays-date' : ''
+                                  if (queryParams.indexOf(col.params) > -1)
+                                    a.calendar-date.selected(
+                                      class=todayClass
+                                    , href=`/events?${col.params}${paramsNoDate}`
+                                    , tabindex='-1'
+                                    )=col.dateFormatted
+                                  else if (col.previous)
+                                    a.calendar-date.calendar-gray(
+                                      class=todayClass
+                                    , href=`/events?${col.params}${paramsNoDate}`
+                                    , tabindex='-1'
+                                    )=col.dateFormatted
+                                  else
+                                    a.calendar-date(
+                                      class=todayClass
+                                    , href=`/events?${col.params}${paramsNoDate}`
+                                    , tabindex='-1'
+                                    )=col.dateFormatted
+                        tfoot
+                          tr.calendar-nav
+                            td(colspan=7)
+                              ul
+                                li.col-xs-6
+                                  a.cta.prev(
+                                    href=[
+                                      '/events?month='
+                                    , calendar.previousMonthFormatted
+                                    , paramsNoDate
+                                    ].join('')
+                                  )=` ${calendar.previousMonthString}`
+                                li.col-xs-6
+                                  a.cta(href=[
+                                      '/events?month='
+                                    , calendar.nextMonthFormatted
+                                    , paramsNoDate
+                                    ].join('')
+                                  )=calendar.nextMonthString
+
+                .row
+                  .col-xs-12
+                    form.filter(method='get', action='/events')
+                      input(type='hidden', name='date', value=query.date)
+                      input(type='hidden', name='month', value=query.month)
+                      fieldset.form-group
+                        label(for='department')=filter.department.header
+                        .dropdown-container
+                          select#department(name='department')
+                            option(value=-1)=filter.noFilter
+                            each department in collections.departmentListings
+                              - var id = department.id
+                              if (query && id === query.department)
+                                option(value=id, selected)=department.title
+                              else
+                                option(value=id)=department.title
+                      fieldset.form-group
+                        label(for='eventType')=filter.eventType.header
+                        .dropdown-container
+                          select#eventType(name='eventType')
+                            option(value=-1)=filter.noFilter
+                            each eventType in collections.eventTypes
+                              - var name = eventType.name
+                              - var id = eventType.id
+                              if (query && id === query.eventType)
+                                option(value=id, selected)=name
+                              else
+                                option(value=id)=name
+                      fieldset.form-group
+                        p
+                          input.btn(type='submit', value='Submit')
+
+    include ../partials/footer.pug

@@ -1,0 +1,17 @@
+{
+  "title": "Departments"
+, "filter": {
+    "header": "Filter Departments By:"
+  , "noFilter": "All"
+  , "categories": {
+      "header": "Service Category"
+  }
+  , "department": {
+      "header": "Department"
+    }
+  }
+, "listings": {
+    "header": "Departments"
+  , "noData": "No departments found."
+  }
+}

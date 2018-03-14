@@ -1,0 +1,15 @@
+.header-bar.blue
+  h2 Connect With Us
+ul.social-media-list
+  each href, social in socialLinks
+    - var ariaLabel = social.charAt(0).toUpperCase() + social.slice(1)
+    if typeof href === 'string' && href.length > 0
+      a(href=href
+      , target='_blank'
+      , aria-label=ariaLabel
+      )
+        li
+          span(
+            class=`icon-${social === 'youtube' ? 'you-tube' : social}-circle`
+          )
+          span.is-vishidden=ariaLabel

@@ -1,0 +1,78 @@
+.large-headline {
+  // Temporary change to blue background
+  //background-image: linear-gradient(rgba($white, 0.2), rgba($white, 0.2)), url('../images/news_boats.jpg');
+  background-color: $dark-blue;
+  background-size: 1285px;
+
+  //Temporary change to white text
+  //color: $dark-blue;
+  color: $white;
+  height: 215px;
+  text-align: center;
+
+  .headline {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    //TODO: Convert to vertical-align bottom
+
+    @include breakpoint(md) {
+      margin-top: 70px;
+      width: 70%;
+    }
+
+    @include breakpoint(lg xl) {
+      margin-top: 70px;
+      width: 80%;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+
+      &.has-subhead {
+        margin: 0;
+      }
+
+      @include breakpoint(xs sm) {
+        font-size: 20px;
+        padding: 0 5%;
+      }
+    }
+  }
+
+  &.height-380 {
+    background-image: url('../images/cc-careers-area-img.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    color: $dark-blue;
+    height: 380px;
+
+    .headline {
+      margin-top: 140px;
+    }
+  }
+
+  &.right {
+    @include breakpoint(xs sm) {
+      background-position-x: 100%;
+    }
+
+    .headline {
+      //only shift right on medium and large screens
+      @include breakpoint(md lg xl) {
+        margin-left: 52%;
+        width: 40%;
+      }
+    }
+  }
+
+  &.left {
+    @include breakpoint(xs sm) {
+      background-position-x: 0%;
+    }
+
+    .headline {
+      margin-left: 14%;
+    }
+  }
+}

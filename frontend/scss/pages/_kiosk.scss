@@ -1,0 +1,178 @@
+.bulletins {
+  background-color: $tan;
+}
+
+.bulletin-header {
+  background-color: $white;
+  padding: 10px 0 10px 50px;
+
+  @include breakpoint(xs sm) {
+    padding: 10px;
+  }
+
+  .bulletin-logo {
+    display: inline-block;
+  }
+
+  .bulletin-logo-text {
+    color: $blue;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 25px;
+  }
+
+  .header-title {
+    color: $blue;
+    font-size: 38px;
+    font-weight: bold;
+    margin-top: 15px;
+
+    @include breakpoint(xs) {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    @include breakpoint(sm) {
+      font-size: 28px;
+      margin-top: 20px;
+    }
+  }
+}
+
+.bulletin-nav {
+  background-color: $dark-blue;
+  color: $white;
+
+  .filters {
+    padding-bottom: 30px;
+  }
+
+  .nav-items {
+    display: table;
+    margin: 20px 0;
+    width: 100%;
+
+    @include breakpoint(xs sm) {
+      display: block;
+    }
+
+    .nav-item {
+      display: table-cell;
+      font-weight: 300;
+      margin: 0 20px;
+      text-align: center;
+      text-transform: uppercase;
+
+      @include breakpoint(xs sm) {
+        display: inline-block;
+      }
+
+      @include breakpoint(xs) {
+        display: block;
+      }
+
+      .nav-item-link {
+        border-bottom: 1px solid transparent;
+        color: $white;
+        font-size: 14px;
+        padding-bottom: 5px;
+
+        @include breakpoint(xs sm) {
+          font-size: 12px;
+          margin-bottom: 5px;
+          padding-bottom: 0;
+        }
+
+        &:hover,
+        &.active {
+          border-bottom-color: $red;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .filter-controls {
+    text-align: center;
+
+    .page-title {
+      color: $white;
+      display: inline;
+      font-size: 14px;
+      font-weight: 300;
+      margin-right: 10px;
+    }
+
+    .btn {
+      margin-right: 5px;
+    }
+  }
+}
+
+.bulletin-content {
+  padding: 40px 0;
+
+  .bulletin-table {
+    border-bottom: 10px solid $dark-blue;
+    width: 100%;
+
+    .bulletin-header {
+      tr {
+        background-color: $tan;
+      }
+
+      th {
+        text-transform: uppercase;
+      }
+
+      .bulletin-header-name {
+        @include breakpoint(sm md lg) {
+          padding-left: 30px;
+        }
+
+        @include breakpoint(xs) {
+          padding-left: 5px;
+        }
+      }
+    }
+
+    .bulletin-body {
+      .bulletin-body-event {
+        @include breakpoint(sm md lg) {
+          padding-left: 30px;
+        }
+
+        @include breakpoint(xs) {
+          padding-left: 5px;
+        }
+      }
+
+      .bulletin-body-file {
+        padding-right: 5px;
+      }
+
+      .bulletin-body-file-link {
+        color: $blue;
+      }
+
+      td {
+        font-weight: 500;
+        padding: 10px 0;
+
+        @include breakpoint(xs) {
+          font-size: 12px;
+        }
+      }
+
+      tr {
+        &:nth-child(odd) {
+          background-color: $white;
+        }
+      }
+    }
+  }
+
+  .bulletin-footer {
+    margin: 40px 0;
+  }
+}

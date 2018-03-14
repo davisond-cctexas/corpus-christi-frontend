@@ -1,0 +1,55 @@
+$padding-xs: 20px;
+$padding-md: 30px;
+
+.flex-content-area {
+  background-color: $sand;
+  padding: $padding-xs;
+
+  @include breakpoint(md lg xl) {
+    padding: $padding-md;
+  }
+
+  h2,
+  h3 {
+    font-family: $font-family-sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 10px 0;
+    padding-top: 0;
+    text-transform: uppercase;
+  }
+
+  & > h2 {
+    padding-bottom: 30px;
+
+    @include breakpoint(lg xl) {
+      padding-left: 30px;
+    }
+
+    @include breakpoint(md) {
+      padding-bottom: 10px;
+    }
+  }
+
+  .picture-link {
+    @include breakpoint(xs sm md) {
+      padding-bottom: $padding-xs;
+    }
+
+    @include breakpoint(md sm) {
+      padding-left: $padding-md;
+      padding-right: $padding-md;
+    }
+
+    @include breakpoint(lg xl) {
+      padding: 0 30px $padding-md;
+    }
+  }
+
+  ul {
+    li {
+      margin-bottom: 10px;
+    }
+  }
+}

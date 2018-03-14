@@ -1,0 +1,19 @@
+.photo-content-area {
+  background-color: $white;
+
+  .photo-area {
+    display: table;
+    height: 100%;
+    width: 100%;
+
+    .photo-area-img {
+      display: table-cell;
+      vertical-align: top;
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

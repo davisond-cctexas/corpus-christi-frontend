@@ -1,0 +1,16 @@
+.row.photo-content-area
+  .col-md-5(data-mh='group')
+    .photo-area
+      .photo-area-img
+        img.img-responsive(
+          src=photoContentArea.imageUrl
+        , alt=photoContentArea.imageAlt
+        )
+  .col-md-7(data-mh='group')
+    .header-block.white
+      if photoContentArea.headline
+        .header-bar
+          .header-bar-content
+            h2=photoContentArea.headline
+      .references.block-content
+        .reference!=photoContentArea.body

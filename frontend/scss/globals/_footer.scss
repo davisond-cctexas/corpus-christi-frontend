@@ -1,0 +1,186 @@
+#footer {
+  background-color: $dark-blue;
+  background-image: url('../images/oldmap.jpg');
+
+  a {
+    &:focus {
+      outline-color: $yellow;
+    }
+  }
+
+  .footer-social {
+    color: $white;
+    padding: 70px 0;
+
+    @include breakpoint(xs sm) {
+      padding-left: 8.3333%;
+      padding-right: 8.3333%;
+    }
+    @include breakpoint(md) {
+      padding-left: 2.5%;
+      padding-right: 2.5%;
+    }
+
+    [class*='footer-'] {
+      .col-xs-12 {
+        @include breakpoint(xs) {
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    [class*='icon-'] {
+      color: $yellow;
+      font-size: 37px;
+    }
+
+    h2 {
+      color: $white;
+      font-size: 1.25em;
+      font-weight: 600;
+      letter-spacing: 2px;
+      line-height: 1.1em;
+      margin-top: 10px;
+      text-transform: uppercase;
+    }
+
+    p {
+      line-height: 24px;
+      margin-top: 10px;
+    }
+
+    .footer-contact {
+      a {
+        color: $yellow;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .footer-connect {
+      .social-list {
+        padding-left: 0;
+        padding-top: 10px;
+
+        li {
+          display: inline-block;
+
+          a {
+            [class*='icon-'] {
+              color: $white;
+              display: inline-block;
+              float: left;
+              font-size: 30px;
+              margin-right: 40px;
+
+              &:hover {
+                color: $yellow;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer-links {
+    background-color: $light-blue;
+    padding: 55px 0;
+    padding-left: 8.3333%;
+    padding-right: 8.3333%;
+
+    .row {
+      position: relative;
+    }
+
+    .return-to-top {
+      bottom: -47px;
+      color: $dark-blue;
+      display: block;
+      font-size: 12px;
+      letter-spacing: 0.07em;
+      position: absolute;
+      right: 0;
+      text-transform: uppercase;
+
+      &:hover,
+      &:focus {
+        color: $white;
+      }
+
+      span {
+        font-size: 25px;
+        left: 5px;
+        position: absolute;
+        top: -35px;
+        transform: rotate(-90deg);
+      }
+    }
+
+    @include breakpoint(xs sm) {
+      ul {
+        margin-bottom: 30px;
+      }
+    }
+
+    li {
+      margin-bottom: 5px;
+
+      a {
+        color: $dark-blue;
+        font-size: 14px;
+
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .footer-legal {
+    background-color: $blue;
+
+    p {
+      color: $white;
+      font-size: 12px;
+      margin-bottom: 0;
+      padding: 40px 0;
+      text-align: center;
+    }
+  }
+}
+
+.footer-spacer {
+  display: block;
+  height: 80px;
+  width: 100%;
+}
+
+//------------------------------------
+// $FOOTER
+//------------------------------------
+
+.footer {
+  background: $gray-dark-2;
+  clear: both;
+  color: $white;
+  line-height: 1.2;
+  overflow: hidden;
+
+  .lc {
+    padding: $global-padding $global-padding 0;
+  }
+
+  a {
+    color: $gray-light;
+  }
+}
+
+.full-width {
+  .footer {
+    background-color: $yellow;
+    padding: 50px 0;
+  }
+}

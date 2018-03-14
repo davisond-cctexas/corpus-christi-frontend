@@ -1,0 +1,46 @@
+doctype html
+html.no-js(lang='en')
+  head
+    - var meta = info.meta
+    - meta.title = (meta.title) ? meta.title : info.title
+    include ../partials/head.pug
+
+  body#detailed-info
+    include ../partials/gtm-no-script.pug
+    include ../partials/skip-to-main.pug
+    include ../partials/global-nav.pug
+    - var heroImage = info.heroImage
+    include ../partials/hero.pug
+
+    .container#main-content
+      .row
+        .col-md-7
+          .raised-block
+            .header.full-width.breadcrumbs
+              ul.raised-nav
+                h2.is-vishidden Breadcrumbs
+                li
+                  a(href='/') Home
+                li
+                  a(href='')=info.title
+              h1.page-title=info.title
+            .body!=info.description
+
+        - var additionalBody = info.sidebars[0]
+        - var additionalLinks = info.sidebars[1]
+        - var hasAdditionalBody = additionalBody.headline || additionalBody.description
+        - var hasAdditionalLinks = additionalLinks.headline || additionalLinks.links.length > 0
+        if hasAdditionalBody || hasAdditionalLinks
+          .col-md-5
+            .row
+              if hasAdditionalBody
+                -var sidebar = additionalBody
+                .col-xs-12
+                  include ../partials/blocks/content-block.pug
+
+              if hasAdditionalLinks
+                -var sidebar = additionalLinks
+                .col-xs-12
+                  include ../partials/blocks/link-block.pug
+
+    include ../partials/footer.pug

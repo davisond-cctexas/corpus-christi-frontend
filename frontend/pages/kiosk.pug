@@ -1,0 +1,58 @@
+doctype html
+html.no-js(lang='en')
+  head
+    - var meta = {}
+    - meta.title = 'Bulletins'
+    include ../partials/head.pug
+
+  body.bulletins
+    include ../partials/gtm-no-script.pug
+    include ../partials/skip-to-main.pug
+
+    include ../partials/kiosk-header.pug
+
+    if kiosk.length > 0
+      .bulletin-nav
+        .container
+          .row
+            .col-xs-12
+              h2.sr-only Navigation
+              ul.nav-items
+                each item in kiosk
+                  li.nav-item
+                    - var link = '/government/city-secretary/agendas/' + item.type
+                    a.nav-item-link(
+                      href=link
+                    , class=(link === currentUrl) ? 'active' : ''
+                    )=item.caption
+          //.row.filters
+          //  .col-xs-10.col-xs-offset-1.col-sm-8.col-sm-offset-2.col-md-6.col-md-offset-3.col-lg-4.col-lg-offset-4
+          //    .row.filter-controls
+          //      h1.page-title Boards, Commissions &amp; Committees:
+          //      h2.sr-only Filter By:
+          //      .btn.white A-M
+          //      .btn.white N-Z
+
+    if currentItem.items.length > 0
+      .bulletin-content.container#main-content
+        .row
+          .col-sm-10.col-sm-offset-1
+            table.bulletin-table
+              thead.bulletin-header
+                tr
+                  th.bulletin-header-name Name
+                  th.bulletin-header-date Date
+                  th.bulletin-header-documents Documents
+              tbody.bulletin-body
+                each item in currentItem.items
+                  tr
+                    td.bulletin-body-event=item.name
+                    td.bulletin-body-date=(item.date_value.canceled ? 'Canceled' : item.date_value.date)
+                    td.bulletin-body-file
+                      a.bulletin-body-file-link(
+                        href=item.document_value.document_link
+                      )=item.document_value.document_label
+
+    .row.bulletin-footer
+      .col-xs-10.col-xs-offset-1.col-lg-8.col-lg-offset-2
+        p.text-center This page replaces the city's physical posting of city council agendas at the 1201 Leopard St. entrance of City Hall, &amp; the previous web page wherein the city's board and commission agendas were posted.

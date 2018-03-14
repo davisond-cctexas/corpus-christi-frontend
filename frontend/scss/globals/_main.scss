@@ -1,0 +1,386 @@
+$grey: #ccc;
+$dark-grey: #333;
+$dark: #192146;
+
+@mixin breakpoint($media) {
+  @each $mediatype in $media {
+    @include respond-to($mediatype) {
+      @content;
+    }
+  }
+}
+
+@mixin respond-to($media) {
+  @if $media == xs {
+    @media (max-width: $screen-xs-max) {
+      @content;
+    }
+  } @else if $media == sm {
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+      @content;
+    }
+  } @else if $media == sm-only {
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+      @content;
+    }
+  } @else if $media == md {
+    @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+      @content;
+    }
+  } @else if $media == lg {
+    @media (min-width: $screen-lg-min) {
+      @content;
+    }
+  } @else if $media == non-retina {
+    @media screen and (max-device-pixel-ratio: 1) {
+      @content;
+    }
+  } @else if $media == retina {
+    @media screen and (min-device-pixel-ratio: 2) {
+      @content;
+    }
+  } @else {
+    @media only screen and (max-width: #{$media}px) {
+      @content;
+    }
+  }
+}
+
+@mixin add-icon($symbol) {
+  content: '#{$symbol}';
+  display: block;
+  font-family: 'untitled-font-3' !important;
+  font-smoothing: antialiased;
+  font-style: normal !important;
+  font-variant: normal !important;
+  font-weight: normal !important;
+  line-height: 1;
+  speak: none;
+  text-transform: none !important;
+}
+
+body {
+  &#services,
+  &#service,
+  &#events,
+  &#event,
+  &#detailed-info {
+    .raised-block {
+      @include breakpoint(md lg xl) {
+        min-height: 800px;
+      }
+    }
+  }
+}
+
+//------------------------------------
+// Accessibility
+//------------------------------------
+
+p {
+  margin-bottom: 1em;
+}
+
+a {
+  cursor: pointer;
+
+  &.skip-to-main {
+    left: -999px;
+    position: absolute;
+    z-index: 1000;
+
+    &:focus {
+      color: $white;
+      left: 10px;
+      top: 35px;
+    }
+  }
+}
+
+#main-content {
+  a {
+    text-decoration: underline;
+
+    &.btn,
+    &.view-all,
+    &.cta {
+      // Buttons & CTAs are obviously links and don't need extra help.
+      text-decoration: none;
+    }
+
+    &.cta {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  // Links inside the calendar are not underlined.
+  .calendar-box {
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+//------------------------------------
+// Callouts
+//------------------------------------
+
+.callout {
+  padding: 20px;
+
+  &.sand {
+    background-color: $sand;
+  }
+}
+
+//------------------------------------
+// Gutter-add
+//------------------------------------
+
+[class^='col'] {
+  &.gutter {
+    padding-left: $global-padding;
+    padding-right: $global-padding;
+  }
+}
+
+//------------------------------------
+// Video-player
+//------------------------------------
+.video-player {
+  height: 432px;
+}
+//------------------------------------
+// Lists
+//------------------------------------
+
+ul {
+  margin: 0;
+}
+
+//------------------------------------
+// Horizontal Rules
+//------------------------------------
+
+hr {
+  border: 0;
+  float: left;
+  height: 2px;
+  margin: 0;
+  width: 14.666%;
+
+  &.full-width {
+    background-color: $grey;
+    height: 1px;
+    width: 100%;
+  }
+
+  &.yellow {
+    background-color: $yellow;
+  }
+
+  &.blue {
+    background-color: $light-blue;
+  }
+}
+
+
+//------------------------------------
+// Nav
+//------------------------------------
+
+
+@media (min-width: 767px) {
+  .navbar-fixed-top {
+    position: relative;
+    top: auto;
+  }
+
+  .navbar-collapse {
+    max-height: none;
+  }
+
+  body {
+    margin: 0;
+  }
+}
+
+//------------------------------------
+// Outline Helper Classes
+//------------------------------------
+
+.outline-yellow {
+  &:focus {
+    outline-color: $yellow;
+  }
+}
+
+.outline-blue {
+  &:focus {
+    outline-color: $blue;
+  }
+}
+
+.outline-light-blue {
+  &:focus {
+    outline-color: $light-blue;
+  }
+}
+
+//------------------------------------
+// Tags
+//------------------------------------
+.tags {
+  h4 {
+    margin-bottom: 0.5em;
+  }
+
+  hr {
+    margin-bottom: 0.8em;
+  }
+
+  .btn {
+    &.tag {
+      margin-right: 1em;
+    }
+  }
+}
+
+//------------------------------------
+// Zeros
+//------------------------------------
+
+.no-padding {
+  padding: 0;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.view-all {
+  font-family: $font-family-sans-serif;
+  text-transform: none;
+}
+
+
+// Completely remove from the flow and screen readers
+.is-hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+// Completely remove from the flow but leave available to screen readers
+.is-vishidden {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+}
+
+
+
+.inline-form {
+  fieldset,
+  .inline-container {
+    position: relative;
+  }
+
+  [type='submit'],
+  button,
+  .btn {
+    background: $dark-grey;
+    font-size: 0.875em;
+    padding: 0.65rem 1.3rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+    z-index: 1;
+  }
+
+  .search-submit {
+    background: none;
+    border: 0;
+    color: $dark;
+    padding: 7px 10px;
+  }
+}
+
+
+[type='text'],
+[type='search'],
+[type='url'],
+[type='number'],
+textarea {
+  appearance: none;
+}
+
+[type='search'] {
+  appearance: none;
+  border-color: $dark-blue;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 0 0 2px;
+  font-size: 12px;
+  padding: 7px 0 4px 10px;
+  width: 200px;
+
+  &::search-cancel-button,
+  &::search-decoration {
+    appearance: none;
+  }
+}
+
+
+// Search For
+.search-field {
+  padding-right: 3em;
+}
+
+// CSS ico
+.circle-x-icon {
+  &::before {
+    content: '\2715';
+    margin-left: -1px;
+  }
+
+  &:hover {
+    border: 1px solid $blue;
+    color: $blue;
+  }
+
+  border: 1px solid $dark-blue;
+  border-radius: 50%;
+  cursor: pointer;
+  float: left;
+  font-size: 9px;
+  line-height: 1.2;
+  padding: 1px 2.2px 0 2.84px;
+  position: relative;
+  right: 3px;
+  top: 4.5px;
+}
+
+.clear {
+  clear: both;
+  display: block;
+}
+
+.btn {
+  font-weight: 500 !important;
+}
+
+//* For Screen Reader
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute !important;
+  width: 1px;
+}

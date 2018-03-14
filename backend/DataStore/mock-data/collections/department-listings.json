@@ -1,0 +1,94 @@
+[
+  {
+    "title": "Animal Services"
+  , "phone": "123-123-1234"
+  , "email": "animalservices@cctexas.com"
+  , "address": "Animal Services Building"
+  , "links": [
+      {
+          "title": "link 1"
+        , "url": "http://"
+      }
+    , {
+          "title": "link 2"
+        , "url": "http://"
+      }
+    , {
+          "title": "link 3"
+        , "url": "http://"
+      }
+    , {
+          "title": "link 4"
+        , "url": "http://"
+      }
+    ]
+  , "serviceCategory": 2
+  }
+, {
+    "title": "City Council"
+  , "phone": "123-123-1234"
+  , "email": "citycouncil@cctexas.com"
+  , "address": "City Hall"
+  , "links": [
+        {
+            "title": "Link 1"
+          , "url": "http://"
+        }
+      , {
+            "title": "Link 2"
+          , "url": "http://"
+        }
+      ]
+  , "serviceCategory": 2
+  }
+, {
+    "title": "Human Resources"
+    , "phone": "123-123-1234"
+    , "email": "hr@cctexas.com"
+    , "address": "HR Building"
+    , "links": [
+          {
+              "title": "Link 1"
+            , "url": "http://"
+          }
+        , {
+              "title": "Link 2"
+            , "url": "http://"
+          }
+        , {
+              "title": "Link 3"
+            , "url": "http://"
+          }
+        , {
+              "title": "Link 4"
+            , "url": "http://"
+          }
+        ]
+    , "serviceCategory": 3
+  }
+, {
+    "title": "Fire Department"
+    , "phone": "123-123-1234"
+    , "email": "fire@cctexas.com"
+    , "address": "Fire Station 711"
+    , "links": [
+          {
+              "title": "link 1"
+            , "url": "http://"
+          }
+        , {
+              "title": "link 2"
+            , "url": "http://"
+          }
+        , {
+              "title": "link 3"
+            , "url": "http://"
+          }
+        , {
+              "title": "link 4"
+            , "url": "http://"
+          }
+        ]
+    , "serviceCategory": 4
+  }
+]

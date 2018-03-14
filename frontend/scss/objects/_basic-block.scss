@@ -1,0 +1,40 @@
+.basic-block {
+  background-color: $white;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    letter-spacing: normal;
+    margin: 2em 0 1em;
+    text-transform: none;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  h4 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  p {
+    padding-bottom: 1em;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  li {
+    list-style-type: disc;
+    margin-bottom: 0.5em;
+    margin-left: 1em;
+  }
+}

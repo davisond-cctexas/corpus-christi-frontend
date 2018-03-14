@@ -1,0 +1,14 @@
+@media print {
+  * {
+    float: left !important;
+    height: initial !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: relative !important;
+    text-align: left !important;
+    width: 100% !important;
+    &:before, &:after, img, .video-player, #alert, a:not(.cta), .footer-links, .footer-connect, .footer-email {
+      display: none !important;
+    }
+  }
+}

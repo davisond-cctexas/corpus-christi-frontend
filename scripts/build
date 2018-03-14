@@ -1,0 +1,5 @@
+#!/bin/bash
+
+printf "Building with webpack:\n\n"
+
+webpack --progress -colors

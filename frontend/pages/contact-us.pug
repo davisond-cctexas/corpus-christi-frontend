@@ -1,0 +1,206 @@
+doctype html
+html.no-js(lang='en')
+  head
+    - var meta = {}
+    - meta.title = 'Contact Us'
+    include ../partials/head.pug
+    script(src='https://www.google.com/recaptcha/api.js')
+
+  body#contact-us
+    if message
+      .message-notice.is-vishidden(
+        class=message.level
+      )
+        - var alertText = ((message.level === 'priority') ? 'Error' : 'Success') + ': ' + message.value + '&nbsp;'
+        h2 Form Submission
+        p
+          !=alertText
+          a(href='#contact-form') Skip to contact form
+
+    // Start of Pattern
+    include ../partials/gtm-no-script.pug
+    include ../partials/skip-to-main.pug
+    include ../partials/global-nav.pug
+    include ../partials/hero.pug
+
+    .container#main-content
+      .row
+        .col-md-7.raised-block(data-mh='group')
+          .header.breadcrumbs
+            h2.is-vishidden Breadcrumbs
+            ul.raised-nav
+              li
+                a(href='') Home
+              li
+                a(href='') Contact Us
+            h1.is-vishidden.page-title Contact Us
+            h2 Main Corpus Christi Phone Number
+          .body
+            .row
+              .col-xs-12
+                .no-margin.text-center.callout.sand(itemprop='telephone')
+                  a(href='tel:361-826-2489') (361) 826-2489
+              .row
+                .col-xs-12
+                  h2 Call Information
+                  p After selecting language options, the call center hotline
+                    |  will offer the following main menu options:
+              .row
+                .col-sm-5
+                  h3 Press 1: Gas Leaks or Odor
+                  p If you suspect a gas leak, press 1.
+                .col-sm-5.col-sm-offset-2
+                  h3 Press 2: Service Problems
+                  p For problems with gas, water, wastewater, solid waste or
+                    |  streets, press 2.
+              .row
+                .col-sm-5
+                  h3 Press 3: Utility Services
+                  p To pay your bill, transfer or add services, and ask utility
+                    |  questions, press 3.
+                .col-sm-5.col-sm-offset-2
+                  h3 Press 4: Animal Care Services
+                  p For questions about adoption, fees, or to report lost
+                    |  animals, press 4.
+              .row
+                .col-sm-5
+                  h3 Press 5: Code Enforcement
+                  p To report high weeds, illegal dumping, and other property
+                    |  violoations, press 5.
+                .col-sm-5.col-sm-offset-2
+                  h3 Press 6: Fast Information
+                  p To learn about services, fees, operation hours and city
+                    |  programs, press 6.
+              .row
+                .col-sm-5
+                  h3 Press 7: Other Services
+                  p For all other city services, including graffiti, press 7.
+        .col-md-5.comment-form.header-block.yellow#contact-form(
+          data-mh='group'
+        )
+          .header-bar
+            .header-bar-content
+              h2 Website Comments &amp; Questions
+              p Help us improve the website
+
+          .body.block-content
+            form(method='post')
+              if message
+                .message-notice(
+                  class=message.level
+                )
+                  p=message.value
+              .row
+                .col-xs-12
+                  fieldset.form-group
+                    .required-field-note * Denotes required field
+                    label(for='category') Category
+                    .dropdown-container
+                      select#category(
+                        name='category'
+                      , placeholder='- Select a category -'
+                      )
+                        option(disabled, selected) Select
+                        option The website does not appear to be working
+                          |  correctly.
+                        option I clicked on a link and it sent me to the Error 404
+                          |  page.
+                        option I'd like to report a typo or outdated information on
+                          |  the website
+                        option I can't find what I'm looking for on the website.
+                        option I'd like to comment on the new website.
+                        option I have a question about web accessibility.
+                        option Other Topic
+              .row
+                .col-xs-12
+                  fieldset.form-group(
+                    class=validity && validity.hasQuestion === false ? 'has-error' : ''
+                  )
+                    label(for='describe') Describe Your Question *
+                    textarea#describe(
+                      name='describe'
+                    , placeholder='Describe your question...'
+                    )=query.describe
+                    if validity.hasQuestion === false
+                      .error
+                        p Feedback is required.
+              .row
+                .col-sm-5
+                  fieldset.form-group
+                    label(for='name') Name
+                    input#name(
+                      type='text'
+                    , placeholder!='First &amp; Last'
+                    , name='name'
+                    , value=query.name
+                    )
+                .col-sm-6.col-sm-offset-1
+                  fieldset.form-group(
+                    class=validity && validity.hasEmail === true && validity.isEmail === false ? 'has-error' : ''
+                  )
+                    label(for='email') Email
+                    input#email(
+                      type='email'
+                    , placeholder='Email Address'
+                    , name='email'
+                    , value=query.email
+                    )
+                    if validity.hasEmail === true && validity.isEmail === false
+                      .error
+                        p A valid email address is required.
+              .row
+                .col-sm-5
+                  fieldset.form-group
+                    label(for='phone') Phone
+                    input#phone(
+                      type='tel'
+                    , placeholder='361-555-5555'
+                    , name='phone'
+                    , value=query.phone
+                    )
+              .row
+                .col-sm-12
+                  fieldset.form-group
+                    .g-recaptcha(
+                      data-sitekey=recaptchaSiteKey
+                    )
+              .row
+                .col-sm-6
+                  button.btn.outline.dark.arrow.fill-width(
+                    type='submit'
+                  , value='Submit'
+                  ) Submit
+      .row
+        .col-xs-12(data-mh='group')
+          .reference-block.header-block
+            .header-bar
+              .header-bar-content
+                h2 Other Contact Information
+            .references.block-content
+              .row
+                .col-md-4
+                  h3 Call Before You Dig
+                  p(itemprop='telephone')
+                    a(href='tel:811') 811
+                  p Call 811 before digging around your house. It's important
+                    |  that you know where underground utility lines are located
+                    |  whenever digging.
+                    a(href='http://www.texas811.org') www.texas811.org
+                .col-md-4
+                  h3 Power Outages
+                  p(itemprop='telephone')
+                    a(href='tel:1-877-373-4868') +1 (877) 373-4858
+                  p Please contact AEP Texas, Corpus Christi's electricity
+                    |  utility provider, for information on power outages.
+                    a(href='http://www.aeptexas.com') www.aeptexas.com
+                .col-md-4
+                  h3 Taxes and Vehicle Services
+                  p(itemprop='telephone')
+                    a(href='tel:361-888-0111') (361) 888-0111
+                  p Please contact Nueces County for information on property
+                    |  taxes, vehicle license and registration, and other county
+                    |  services.
+                    a(href='http://www.co.nueces.tx.us')
+                      | http://www.co.nueces.tx.us
+      .row
+    include ../partials/footer.pug

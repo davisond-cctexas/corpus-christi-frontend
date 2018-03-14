@@ -1,0 +1,38 @@
+#home {
+  .hero {
+    background-image: url('../images/home-hero.jpg');
+    background-position: center 75%;
+  }
+
+  .button-block {
+    a {
+      &.btn {
+        &.square {
+          @include breakpoint(417) {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .link-block {
+    &.dark {
+      background-image: linear-gradient(rgba($dark-blue, 0.9), rgba($dark-blue, 0.9)), url('../images/construction.jpg');
+      background-position-x: -480px;
+      background-position-y: -440px;
+      background-size: 1200px;
+    }
+  }
+
+  .reference {
+    a {
+      font-family: adelle, serif;
+    }
+  }
+
+  .quote {
+    color: #fff;
+    margin-top: 2em;
+  }
+}

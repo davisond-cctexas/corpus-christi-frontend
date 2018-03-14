@@ -1,0 +1,167 @@
+#main-content {
+  .pay-report {
+    .header-buttons {
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+[data-mh='primary-col'] {
+  transition: 0.2s ease-in height;
+}
+
+.pay-report-col {
+  background: $white;
+}
+
+.pay-report-panel {
+  position: relative;
+
+  @include breakpoint(xs sm) {
+    padding: 50px 20px 20px;
+
+    .view-all {
+      margin-top: 30px;
+      text-align: right;
+    }
+  }
+
+  @include breakpoint(md lg xl) {
+    padding: 50px 30px 70px;
+
+    .view-all {
+      bottom: 10px;
+      position: absolute;
+      right: 30px;
+    }
+  }
+}
+
+.pay-report {
+  position: relative;
+
+  .header-buttons {
+    margin-top: -65px;
+
+    ul {
+      background-color: rgba($dark-blue, 0.85);
+      height: 65px;
+      padding-left: 0;
+      width: 100%;
+
+      li {
+        border-color: gray;
+        border-style: solid;
+        border-width: 0 0 0 1px;
+        float: left;
+        height: 65px;
+        width: 25%;
+
+        [class^='icon-'] {
+          color: $white;
+          display: block;
+          font-size: 45px;
+          padding-top: 10px;
+          text-align: center;
+          width: 100%;
+        }
+
+        span {
+          &:last-of-type {
+            display: block;
+            font-size: 16px;
+            font-weight: bold;
+            letter-spacing: 0.06em;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            text-transform: uppercase;
+
+            @include breakpoint(xs) {
+              font-size: 14px;
+            }
+
+            &.pay {
+              width: 40px;
+            }
+
+            &.report {
+              width: 72px;
+            }
+
+            &.request {
+              width: 85px;
+            }
+
+            &.learn {
+              width: 64px;
+            }
+          }
+        }
+
+        &:hover,
+        &.active {
+          background-color: $white;
+
+          span {
+            &:last-of-type {
+              border-bottom: 4px solid $red;
+            }
+          }
+
+          [class^='icon-'] {
+            color: $dark-blue;
+          }
+        }
+      }
+    }
+  }
+
+  .row {
+    background-color: $white;
+  }
+
+  .list {
+    .tab-pane {
+      display: none;
+
+      &.active {
+        display: block;
+      }
+    }
+
+    ul {
+      clear: both;
+
+      li {
+        display: block;
+        line-height: 1.2;
+        padding: 10px 0;
+
+        @include breakpoint(sm md lg xl) {
+          clear: none;
+          float: left;
+          padding-right: 20px;
+          width: 50%;
+        }
+
+        a {
+          clear: both;
+          color: $dark-blue;
+          font-size: 16px;
+          text-transform: none;
+
+          span {
+            font-size: 20px;
+          }
+
+          &::after {
+            content: '\00a0\00bb';
+          }
+        }
+      }
+    }
+  }
+}

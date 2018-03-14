@@ -1,0 +1,52 @@
+doctype html
+html.no-js(lang='en')
+  head
+    - var meta = service.meta
+    - meta.title = (meta.title) ? meta.title : service.title
+    include ../partials/head.pug
+
+  body#service
+    include ../partials/gtm-no-script.pug
+    include ../partials/skip-to-main.pug
+    include ../partials/global-nav.pug
+    - var heroImage = service.heroImage
+    include ../partials/hero.pug
+
+    .container#main-content
+      .row
+        .col-md-7
+          .raised-block
+            .header.full-width.breadcrumbs
+              h2.is-vishidden Breadcrumbs
+              ul.raised-nav
+                li
+                  a(href='/') Home
+                li
+                  a(href='/services') Services
+                if service.category && service.category.name
+                  li
+                    - var categoryName = service.category.name
+                    a(href='/services?serviceCategory=' + service.category.id)=categoryName
+                li
+                  a(href='')=service.title
+              h1.page-title=service.title
+            .body!=service.description
+
+        - var additionalBody = service.sidebars[0]
+        - var additionalLinks = service.sidebars[1]
+        - var hasAdditionalBody = additionalBody.headline || additionalBody.description
+        - var hasAdditionalLinks = additionalLinks.headline || additionalLinks.links.length > 0
+        if hasAdditionalBody || hasAdditionalLinks
+          .col-md-5
+            .row
+              if hasAdditionalBody
+                -var sidebar = additionalBody
+                .col-xs-12
+                  include ../partials/blocks/content-block.pug
+
+              if hasAdditionalLinks
+                -var sidebar = additionalLinks
+                .col-xs-12
+                  include ../partials/blocks/link-block.pug
+
+    include ../partials/footer.pug

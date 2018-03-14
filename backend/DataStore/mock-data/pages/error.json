@@ -1,0 +1,11 @@
+{
+  "title": "Error"
+, "error": {
+    "title": "Error 404 (file not found)"
+  , "text": "We're sorry this happened."
+  , "actionButton": {
+      "text": "Return to the Homepage"
+    , "url": "/"
+    }
+  }
+}

@@ -1,0 +1,86 @@
+.video-block {
+  background: $black;
+
+  .block-content {
+    padding: 0;
+  }
+
+  .header-bar {
+    background: $white;
+    height: 100px;
+  }
+
+  .video-picker {
+    .video-col {
+      background-color: $dark-blue;
+      background-size: cover;
+      display: table;
+      height: 166px;
+      margin: 0;
+      text-align: center;
+
+      @include breakpoint(xs sm) {
+        height: 100px;
+      }
+
+      .video-link-caption {
+        color: $white;
+        display: table-cell;
+        font-size: 18px;
+        line-height: 1;
+        padding: 0 20px;
+        text-align: center;
+        vertical-align: middle;
+        width: 100%;
+
+        .caption {
+          line-height: 1.2;
+          margin-bottom: 10px;
+        }
+
+        @include breakpoint(xs sm) {
+          .caption,
+          .link {
+            display: table-cell;
+            margin-bottom: 0;
+            vertical-align: middle;
+          }
+
+          .caption {
+            padding-right: 20px;
+            text-align: left;
+            width: 75%;
+          }
+
+          .link {
+            width: 30%;
+          }
+        }
+      }
+    }
+
+    &.odd {
+      .video-col {
+        &:nth-child(1) {
+          background-image: url('../images/video1.png');
+        }
+
+        &:nth-child(2) {
+          background-image: url('../images/video2.png');
+        }
+      }
+    }
+
+    &.even {
+      .video-col {
+        &:nth-child(1) {
+          background-image: url('../images/video3.png');
+        }
+
+        &:nth-child(2) {
+          background-image: url('../images/video4.png');
+        }
+      }
+    }
+  }
+}

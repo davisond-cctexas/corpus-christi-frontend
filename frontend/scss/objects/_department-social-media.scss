@@ -1,0 +1,43 @@
+.department-social-media {
+  background-color: $white;
+  padding: 0 8.3333%;
+
+  @include breakpoint(lg xl) {
+    padding: 0 14.6666%;
+  }
+
+  .header-bar {
+    height: 100px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+
+  .social-media-list {
+    padding-bottom: 110px;
+    padding-top: 30px;
+
+    li {
+      display: inline-block;
+      float: left;
+      margin-right: 10px;
+
+      @include breakpoint(md) {
+        margin-right: 30px;
+      }
+
+      span {
+        color: $blue;
+        font-size: 40px;
+
+        @include breakpoint(sm md) {
+          font-size: 50px;
+        }
+
+        &:hover,
+        &:focus {
+          color: $light-blue;
+        }
+      }
+    }
+  }
+}

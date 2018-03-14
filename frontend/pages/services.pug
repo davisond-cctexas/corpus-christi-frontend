@@ -1,0 +1,93 @@
+doctype html
+html.no-js(lang='en')
+  head
+    - var meta = {}
+    - meta.title = (meta.title) ? meta.title : strings.title
+    include ../partials/head.pug
+
+  body.search#services
+    - var params = queryParams ? `&${queryParams}` : ''
+    include ../partials/gtm-no-script.pug
+    include ../partials/skip-to-main.pug
+    include ../partials/global-nav.pug
+    include ../partials/hero.pug
+
+    .container#main-content
+      .row
+        .col-md-7
+          - var listings = strings.listings
+          .raised-block
+            .header.full-width.breadcrumbs
+              h2.is-vishidden Breadcrumbs
+              ul.raised-nav
+                li
+                  a(href='/') Home
+                li
+                  a(href='/services') Services
+              h1.page-title=listings.header
+              if queryParams.length > 0
+                p.selected-filters
+                  a.clear-filters(href='/services') Clear Filters
+                    span.circle-x-icon
+
+            .body
+              if (collections.serviceListings.length > 0)
+                each service in collections.serviceListings
+                  .listing
+                    h2
+                      a.cta(href=service.href)!=service.title
+                    p!=service.text
+              else
+                p=listings.noData
+
+              -var urlSlug = '/services'
+              include ../partials/pagination.pug
+
+        .col-md-5
+          .row
+            .col-xs-12
+              .header-block
+                .header-bar
+                  .header-bar-content
+                    - var filter = strings.filter
+                    h2=filter.header
+                .body.block-content
+                  form#filter(method='get', action='/services')
+                    fieldset.form-group
+                      label(for='serviceCategory')=filter.categories.header
+                      .dropdown-container
+                        select#serviceCategory(name='serviceCategory')
+                          option(value=-1)=filter.noFilter
+                          each category in collections.serviceCategories
+                            - var id = category.id
+                            if query && id === query.serviceCategory
+                              option(value=id, selected)=category.name
+                            else
+                              option(value=id)=category.name
+                    fieldset.form-group
+                      label(for='actionType') Service Action
+                      .dropdown-container
+                        select#actionType(name='actionType')
+                          option(value=-1)=filter.noFilter
+                          each actionType in collections.serviceActionTypes
+                            - var id = actionType.id
+                            if query && id === query.actionType
+                              option(value=id, selected)=actionType.name
+                            else
+                              option(value=id)=actionType.name
+                    fieldset.form-group
+                      label(for='department')=filter.department.header
+                      .dropdown-container
+                        select#department(name='department')
+                          option(value=-1)=filter.noFilter
+                          each department, index in collections.departmentListings
+                            - var id = department.id
+                            if (query && id === query.department)
+                              option(value=id, selected)=department.title
+                            else
+                              option(value=id)=department.title
+                    fieldset.form-group
+                      p
+                        input.btn.dark(type='submit', value='Submit')
+
+    include ../partials/footer.pug
