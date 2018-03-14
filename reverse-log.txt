@@ -1,0 +1,3282 @@
+commit 0ddc3d2d423d8c6b807266199fe5d92dba00fb59
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Wed Mar 23 12:10:54 2016 -0500
+
+    init: Initialized repo.
+
+commit 3cb557dfd852b4bf8f5d8bdea5f7fe62cb35b7b2
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Wed Mar 23 17:22:10 2016 -0500
+
+    init: porting over from patternlab and converting to bootstrap
+
+commit 1c6cd81e82640ff96ad587476eeecdcebed97a11
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Thu Mar 24 10:48:11 2016 -0500
+
+    search input: fixed default input border
+
+commit f0b07902fae9b4f10f565019df242bc780aa5990
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Thu Mar 24 11:00:39 2016 -0500
+
+    search box: repositioned padding-top
+
+commit 305c68aff60e58a74451db48acbf55b86f69f6df
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Thu Mar 24 11:01:07 2016 -0500
+
+    search box: fixed input padding
+
+commit fea908e4d8598c239878d733486cd0772aa6a1e7
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Thu Mar 24 11:10:15 2016 -0500
+
+    partialize: moved global-nav to its own partial
+
+commit ad165fa09c2a658ef58d8f3569a06a32995e53a6
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Thu Mar 24 11:12:32 2016 -0500
+
+    partialize: moved hero to its own partial
+
+commit 9ff0211d8cab47d3f6a8907baca423147472f6ae
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Thu Mar 24 11:14:50 2016 -0500
+
+    partialize: moved footer to its own partial
+
+commit 14b9f424f0d4aea0321add1077b059353ad87650
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Thu Mar 24 17:48:32 2016 -0500
+
+    department page: created 1st pass of page
+
+commit 6a6572555f5460f8d6f932ea1bb54090f752d6e0
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Mon Mar 28 13:47:02 2016 -0500
+
+    large headline: adjusted .right width
+
+commit 856b7f2de832fdb0789c284c5bc9a7e385ff2596
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Mon Mar 28 13:59:14 2016 -0500
+
+    department page: added images to picture link block
+
+commit 8ddaf7bc4a74ae7f5fc8440ac9598931145ff76a
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Mon Mar 28 14:01:34 2016 -0500
+
+    department page: added hero image
+
+commit 217ccfc14cbbd75db22f9c4cbe6d1020dc553e8d
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Tue Mar 29 11:25:42 2016 -0500
+
+    head: Renamed scripts.pug to head.pug and partialized head content.
+    
+    This commit also moves the loading of the JS before the body of the page
+    so to remove the unpleasant flash of unstyled data.
+
+commit 113e42ca598541052db7f1ddc2d1730d0963be7a
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Tue Mar 29 14:07:35 2016 -0500
+
+    responsify department: added responsive logic to department page
+
+commit d6205157cb6ed313154ddf3aefe190741bf6dd64
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Tue Mar 29 14:42:49 2016 -0500
+
+    partialize department: changed grid logic on department social
+
+commit 6eea2f1ca0b3d0f4f44d5510737bf340b4a9e2e2
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Tue Mar 29 14:52:54 2016 -0500
+
+    department2 page: added route
+    
+    department2 page is the courts and procedures department page
+
+commit a96dd1a62cd74a8d2961d2ef6fca6ba4de3d3652
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Tue Mar 29 15:26:19 2016 -0500
+
+    department2 page: added raised navigation
+
+commit 6059a661090ca0cc959a6b3dc04c9624800f4bde
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Tue Mar 29 16:16:56 2016 -0500
+
+    raised block positioning: updated header styles
+    
+    changed nav icon styles, added underline, changed responsive behaviour.
+
+commit d1a313c22b462bfc4c208f7ecc88fa16ac7b7da4
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Wed Mar 30 11:53:18 2016 -0500
+
+    footer: repositined and enabled 'return to top'
+
+commit 5982c42036239b12476a9d2c99c615f8a218562b
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Wed Mar 30 11:54:10 2016 -0500
+
+    department: polished responsive elements
+
+commit e99b666cb7dc5b4411b507e480b1e9162b5df592
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Wed Mar 30 15:10:20 2016 -0500
+
+    homepage: responsified, cleaned-up and standardized
+
+commit b4d287fd50ba1e57d836b680b1139e65a523a107
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Mon Apr 4 11:21:16 2016 -0500
+
+    department-bio: added bio block
+
+commit bf6d63a2b2054c13ec2dac6d99deb92c5123e060
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Mon Apr 4 14:31:19 2016 -0500
+
+    homepage pay-report: added bootstrap tab component markup
+
+commit 77299084a29f28d731e4f4188b446c60754c7b1c
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Tue Apr 5 13:39:53 2016 -0500
+
+    contact us: created page
+
+commit de025dd5a502e9160aa9901c42e2c26524d23f1a
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Mon Apr 4 14:46:53 2016 -0500
+
+    footer: added legal paragraph
+
+commit 3b3a5bacddf4c1b8c1965142e9f651c3f9121160
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Tue Apr 5 15:38:56 2016 -0500
+
+    contact us call center: reverted icon stylings phone number
+
+commit f813d7c96a48b5f52ab965fec57aafc995b31fa7
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Tue Apr 5 17:05:40 2016 -0500
+
+    service-category page: added page
+
+commit 42903adf8de7e451a14ed743f5496c3bc0cf8207
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Wed Apr 6 10:43:46 2016 -0500
+
+    picture-link-block: changed to two-up for sm breakpoint
+
+commit e22f035bff9a0ddb05fcf5e8d3b84169f2ff488d
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Tue Apr 5 16:58:59 2016 -0500
+
+    events, datastore: Implemented events page and a DataStore.
+    
+    DataStore is mean to abstract against Drupal once we start using it. For
+    right now, it is pulling its data from `mock-data` in the form of JSON
+    files.
+
+commit 396c5f624cf0d6e36c485c0d88ff48eec8cc7c50
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Tue Apr 5 17:03:18 2016 -0500
+
+    build: Added an Uglify step.
+
+commit 85e68faaa0c07832dde3738ef4bfbc940dddbdbc
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Tue Apr 5 17:04:02 2016 -0500
+
+    git: Added config to always use latest dist.
+
+commit e0015a3321a433a78aaa54ebca67c242777f944a
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Wed Apr 6 13:19:59 2016 -0500
+
+    package: Moved jQuery to dev-dependencies.
+
+commit 6e29d97331d0544584adebd099f22e3d69713486
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Mon Apr 4 10:34:12 2016 -0500
+
+    search: updated icon and repositioned
+
+commit fbebcac7749b6d3b9761e6c858d89e485e1fcf32
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Wed Apr 6 15:07:17 2016 -0500
+
+    header-nav: added megamenu
+
+commit 018547295e37e5e95e2cbddbe252af71137b1572
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Thu Apr 7 10:54:28 2016 -0500
+
+    package: version bump
+
+commit 82a5519632047c4e0b5e1477410802346da15c8c
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Mon Apr 4 13:14:55 2016 -0500
+
+    skip-to-main: added partialized link and styling
+
+commit 2451664dc492e5d1efff19aaa79971a7f44aa722
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Tue Apr 12 11:10:01 2016 -0500
+
+    buttons: reorganized styles
+
+commit 90cb8246522200a58775a202e96addb14e5d5dd3
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Thu Apr 14 09:47:20 2016 -0500
+
+    large headline: changed background and text
+
+commit 3ccdf0892686ef8a5a7d303232d849069e4379d6
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Mon Apr 11 17:02:13 2016 -0500
+
+    services-page: added page
+
+commit 0dab8ec37330104ee68a387be9f8af22424e78ae
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Thu Apr 14 16:09:41 2016 -0500
+
+    pay-report: made 5 column
+
+commit f706a6077c32bf8d55197d859f9e1c5915d55019
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Mon Apr 18 10:30:46 2016 -0500
+
+    package: version bump
+
+commit 1600468a03fcd2b250e4c23dde302916cd04ab25
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Mon Apr 25 16:13:38 2016 -0500
+
+    departments: added departments listing page
+
+commit f32819fee25dd6e20fa7f2dc9094ad6d8777607d
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Wed Apr 27 13:31:10 2016 -0500
+
+    article: added single article page
+
+commit 89e98de25d38baa6a4abe199868a6ff448de7969
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Wed Apr 27 14:27:33 2016 -0500
+
+    single-event: added single event page
+
+commit 2969485f9cce8ed31281f2fcd6c2739c0fa7faa3
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Wed Apr 27 16:50:07 2016 -0500
+
+    various: clean-up
+
+commit 83f8582e28ee99b729472ed2eea05662b6e067d5
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Thu Apr 28 12:45:14 2016 -0500
+
+    main-nav: cleaned up and stylized
+
+commit 8e628fa5e298f7bd54ba537ec1309d2479a7a678
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Thu Apr 28 13:40:11 2016 -0500
+
+    package: version bump
+
+commit 2286458b5b35d1126fd4045c7ffa84ce5148b6b1
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Mon May 2 11:14:24 2016 -0500
+
+    promotion-page: added page
+
+commit 56140883ca58acd44d8b32b6baefff68091b7dec
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Mon May 2 13:27:22 2016 -0500
+
+    error page: added page
+
+commit 031b4c2a7a684425abbcc1f0e1c37c4f71cc5154
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Wed May 4 13:19:54 2016 -0500
+
+    footer: now loads from the datastore
+
+commit e61d86953dee5e303d253b0ef78bc185040c3c6a
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Wed May 4 17:18:16 2016 -0500
+
+    body color: changed body color
+
+commit 2fa9b4bb98796499c794f1e8a799f51cd2e63c9c
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Thu May 5 11:21:49 2016 -0500
+
+    all: added jquery-match-height plugin
+
+commit d029ac8041fc353c526d3b1863633c479baf5aed
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Mon May 2 14:58:27 2016 -0500
+
+    accessibility: changed headings
+
+commit 127356738511d247c414ae927bc86dffaebc630a
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Tue May 3 16:27:38 2016 -0500
+
+    main-nav: pulls from datastore, generated with Jade
+
+commit 1c18d4494b14572d9b4b53a8b55f982c0e811080
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Wed May 4 11:34:57 2016 -0500
+
+    accessibility: first pass
+
+commit 0884c7134f7c49acb058911692537429704e5ae1
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Wed May 4 16:07:10 2016 -0500
+
+    pay-report: loads from datastore
+
+commit 9338fb810dc40fc4957b4d5ffecb09cd0f6a05c6
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Fri May 6 12:14:55 2016 -0500
+
+    all: cleanup 5/6
+
+commit 8909bb7502d4fa0779ab21c05670e69a5ad4bd56
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Mon May 16 17:03:23 2016 -0500
+
+    footer: connect URLs load from mock-data
+
+commit 70b005ee643aba41219e437b2fa1513402f3a2c4
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Tue May 17 09:57:51 2016 -0500
+
+    contact-us: fixed height matching
+
+commit 12471396bb8659d1daa5caeabfbc9d2ef56a0887
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Tue May 17 09:58:15 2016 -0500
+
+    all: added alt-text where applicable
+
+commit 4d11b0fe3c8a48089d4d2127ae59f6194c6e9bab
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Tue May 17 13:19:42 2016 -0500
+
+    promotion-page: added white background
+
+commit 1e7e13177234b53f36d9e5bfc89da3c111cbf0af
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Tue May 17 14:52:17 2016 -0500
+
+    forms: implemented accessibility best practices
+
+commit f4b7ff59aa1fc10361af91dc667673088b6b0886
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Tue May 24 10:26:30 2016 -0500
+
+    various: implemented feedback changes
+
+commit 288b2023162ee24734ffce5b1c8e7407dd8318d2
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Wed May 25 17:01:36 2016 -0500
+
+    all: addressed aesthetic accessibility feedback
+
+commit 6c19dd8e6d02cc389c855d46f50154786d25484b
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Wed May 25 13:29:47 2016 -0500
+
+    all: added tab ordering attributes
+
+commit d6acbf8176e42a2f17293bcb483b2bbaf82192df
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Thu May 26 15:19:51 2016 -0500
+
+    various: implemented client feedback from 5/26
+
+commit 210c1b033d30bd7074bd3779eefd84971e79ad9e
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Tue May 31 13:44:14 2016 -0500
+
+    various: updated breadcrumb spacing
+
+commit 2580cba8a51354fa9e956ce574594794c0a65cee
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Wed Jun 1 13:44:25 2016 -0500
+
+    breadcrumbs: created examples for client
+
+commit 0fdcaa71402064f84b37293742703410fa9ee53d
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Tue Jun 7 14:23:54 2016 -0500
+
+    scripts: Updated for Node 6 compatibility.
+
+commit 4cdd77e9394127daa7b36074a0a336bc935183b4
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Tue Jun 7 14:31:19 2016 -0500
+
+    lint, frontend, backend: Simplified linter config. Fixed errors.
+
+commit 5821914d3444fc32442db290094568ad10ba0d94
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Wed Jun 8 12:06:52 2016 -0500
+
+    log, DataStore: Added logging.
+
+commit 35dedc6e473e691a9658577312740766c91c7f61
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Wed Jun 8 15:08:16 2016 -0500
+
+    backend, frontend, env: Added pulling main menu data from CMS.
+
+commit c5458dfed4bc197f21d333c7916d036014c806a1
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Wed Jun 8 15:57:27 2016 -0500
+
+    DataStore, HttpServer, partials: Added pulling Global Elements from CMS.
+    
+    Main Menu is now considered a Global Element instad of a collection.
+    Footer Links 1-4 are also loaded as menus.
+
+commit c2f0497781825247fff05db96bf32edf9aa2992a
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Thu Jun 9 11:34:38 2016 -0500
+
+    DataStore, partials: Added utility navigation sync. Made a generic menu
+    call.
+
+commit ef502762c8cae1ce81de2bbd8d881c16c1940d48
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Thu Jun 9 14:44:28 2016 -0500
+
+    DataStore, server, env: Added a sync interval.
+    
+    The interval is set using environment variables:
+    
+    ```bash
+    $ export CC_API_SYNC_INTERVAL=30 # Interval is in minutes.
+    ```
+
+commit 0d1c9226502ac58794d48cd151979a63a5dd529f
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Thu Jun 9 15:40:41 2016 -0500
+
+    DataStore, events: Added CMS support for events collection.
+
+commit 6085fe842344833e0f899e6e568c7f37fc68386d
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Thu Jun 9 15:45:13 2016 -0500
+
+    HttpServer: Removed deprecated main menu item collections.
+
+commit b5ac2b8a9f49114822a1a3e03ed1f2aece76b6ac
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Thu Jun 9 16:15:28 2016 -0500
+
+    HttpServer: Removed extraneous collection references.
+
+commit 220c9b997a5c23f94e73bd48dd62e75ee0b7f1af
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Thu Jun 9 16:15:58 2016 -0500
+
+    DataStore, HttpServer, event, events: Added support for detailed event
+    pages.
+
+commit 5d9634489845b372194c972dd013fa859514e6d1
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Fri Jun 10 13:08:51 2016 -0500
+
+    DataStore, HttpServer, event: DataStore now hits Drupal directly and
+    caches the result.
+
+commit b332eb22721af0279fba23f6847b506a08352a6b
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Tue Jun 14 11:38:55 2016 -0500
+
+    HttpServer, events: Added pagination for events page.
+
+commit dd2978cdcb2bb729c2715d2acc156ff330f97f9e
+Author: Gregory Wehmeier <wehmenstein@gmail.com>
+Date:   Wed Jun 15 12:12:05 2016 -0500
+
+    Pagination: add arrows and styling
+
+commit d24cb63e8fc4c96a8657b3067e3649a10af5eaab
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Wed Jun 15 15:06:23 2016 -0500
+
+    DataStore, HttpServer, service: Added service detail page.
+
+commit e892c065201a5b31156d2ab083df0d769c43ae95
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Wed Jun 15 16:47:23 2016 -0500
+
+    DataStore, HttpServer, services: Integrated services with CMS.
+
+commit cd4e271833caf65a797ad284c6693402aa0b522a
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Thu Jun 16 10:30:54 2016 -0500
+
+    services: Fixed service category filter not persisting.
+
+commit 1645045b5d0719b4e19d9132017bf445cffc7af0
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Thu Jun 16 10:36:40 2016 -0500
+
+    DataStore, services: Added support for service href.
+
+commit 30bbdbf9c9a473342b325f50bcd1a148f016b3d9
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Thu Jun 16 10:40:00 2016 -0500
+
+    HttpServer: Removed magic numbers for page limit.
+
+commit 4ddea4c42c5b195e19380572dbfd7232f5923fd7
+Author: Gregory Wehmeier <wehmenstein@gmail.com>
+Date:   Thu Jun 16 11:59:40 2016 -0500
+
+    services, events, app: add pagination to services. move pagination styling to global
+
+commit d66c609dad07b1d565de07823eaae0915838319e
+Author: Gregory Wehmeier <wehmenstein@gmail.com>
+Date:   Thu Jun 16 17:54:03 2016 -0500
+
+    events, datastore, httpserver: add prev-month / next-month navigation
+
+commit 409e29665a9ea806bbf79e38848b9afbb7b65afd
+Author: Gregory Wehmeier <wehmenstein@gmail.com>
+Date:   Fri Jun 17 09:38:50 2016 -0500
+
+    datastore: edit generate calendar method to get rid of 0's at end of month
+
+commit bc929d22c098b10d158b1caf84c667be3e73b30d
+Author: Gregory Wehmeier <wehmenstein@gmail.com>
+Date:   Fri Jun 17 14:28:28 2016 -0500
+
+    events, dataStore, httpserver: add highlight to selected date. change events title to include date. make min-height of events container match sidebar height
+
+commit 667ae4a99d1e290aa3866ac92b77a1a3bc87fe6e
+Author: Gregory Wehmeier <wehmenstein@gmail.com>
+Date:   Tue Jun 21 11:20:55 2016 -0500
+
+    events: add todaysDate indicator to calendar.
+
+commit 231b7252e6d9b5b311bb273130b7f15143a777b0
+Author: Gregory Wehmeier <wehmenstein@gmail.com>
+Date:   Tue Jun 21 13:04:43 2016 -0500
+
+    events: make previous/next month selectors show month names. style previous/next month selectors.
+
+commit c5fc0fbc6902f33033b8e14bb4e7ef1a837d2b14
+Author: Gregory Wehmeier <wehmenstein@gmail.com>
+Date:   Tue Jun 21 13:17:51 2016 -0500
+
+    events: change events page index title from 'Events' to 'Upcoming Events'
+
+commit 6a7af776d42e0a6b38da28fc64b79dc630b06fc5
+Author: Gregory Wehmeier <wehmenstein@gmail.com>
+Date:   Tue Jun 21 14:25:27 2016 -0500
+
+    events: change month selector format/styling
+
+commit 15ca88f9fe49d9974d93c802425006b7f60ec1a4
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Fri Jun 17 16:16:30 2016 -0500
+
+    DataStore, HttpServer, events: Refactored meetingTypes to eventTypes.
+
+commit 24d6108027dbc396a1f1d9b09cbdce2f8c195a2b
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Fri Jun 17 16:53:16 2016 -0500
+
+    DataStore, mock-data, events: Event filters now work via taxonomy.
+
+commit 77958191148e39e16537a61cb45d36303738dc46
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Tue Jun 21 12:42:28 2016 -0500
+
+    DataStore, HttpServer, service, services: Integrated service category
+    taxonomy.
+
+commit 9c1cce30009ce0f1ae3f0333bdec6a1cc0666276
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Tue Jun 21 13:06:04 2016 -0500
+
+    DataStore, HttpServer, services: Implemented service action type
+    taxonomy.
+
+commit 3eb9a54e46febe2749cbd6a83db7148ba6be50a6
+Author: Gregory Wehmeier <wehmenstein@gmail.com>
+Date:   Thu Jun 16 17:54:03 2016 -0500
+
+    events, datastore, httpserver: add prev-month / next-month navigation
+
+commit eb08092cf20b8c6ccb5f87d9cd21a27693d29e25
+Author: Gregory Wehmeier <wehmenstein@gmail.com>
+Date:   Fri Jun 17 14:28:28 2016 -0500
+
+    events, dataStore, httpserver: add highlight to selected date. change events title to include date. make min-height of events container match sidebar height
+
+commit 88d5bf63767db39cb40d0db27c0e94e5d0ffee2d
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Tue Jun 21 13:32:25 2016 -0500
+
+    DataStore: Fixed event filter date range logic.
+    
+    No month or date filter = next 6 months of events.
+    Month filter = Entire month of events (including expired)
+    Day filter = Entire day of events (including expired)
+
+commit 38eb9c20fa4786baf897cbf7864ff60100f39a57
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Tue Jun 21 13:53:19 2016 -0500
+
+    DataStore, HttpServer, events: Fixed params disappearing on filter
+    update.
+
+commit f3aff06a700bbeff3029ed1ccab448ddde85e687
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Tue Jun 21 14:09:19 2016 -0500
+
+    HttpServer, events: Added outline to current date.
+
+commit f20feb44efa9da8470521ef1f6079ffe9a7acb46
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Tue Jun 21 14:13:39 2016 -0500
+
+    events: Added a clear filters button.
+
+commit 45fa30e10494982dfd15398f3bf02de8b1b6affd
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Tue Jun 21 17:06:11 2016 -0500
+
+    DataStore, events, services: Implemented filtering by Service Category.
+
+commit d81aa32b801f7b7679eed9fb35a6d27b49f2652a
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Wed Jun 22 10:25:51 2016 -0500
+
+    events: Fixed some merge conflict artifacts.
+
+commit a21061f812a625ca6d2563ad97f4ddd94f0c7625
+Author: Gregory Wehmeier <wehmenstein@gmail.com>
+Date:   Mon Jun 20 13:55:34 2016 -0500
+
+    events, services, scss, index: match raised-block heights to sidebar height. add '1 of 1' for 1 page pagination. fix spacing issue for event listings on mobile. fix focus outline on navbar brand. fix mobile responsive styling for 'know your gov' buttons.
+
+commit 03f26e942516dca5f6cdb22fa4911ebeb8060327
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Wed Jun 22 10:40:24 2016 -0500
+
+    pagination, index, services: Fixed missing newlines at EOF.
+
+commit 9e9f3c5d3b098a454860f17d2fe5e1b8bb63a072
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Wed Jun 22 11:20:45 2016 -0500
+
+    DataStore: Fixed calendar to generate proper before and after dates.
+
+commit 0da6eb8a97d6dc43979fbcfecedadcbf3ac5aa21
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Wed Jun 22 11:56:42 2016 -0500
+
+    DataStore, event, events, services: Fixed issues with new lines not
+    breaking. Fixed a few stray missing links.
+
+commit cb4ef29412a3d87c8be7eff23fd5bdd92a9b03b2
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Wed Jun 22 12:03:42 2016 -0500
+
+    event: Removed unused previous and next buttons.
+
+commit 6b676ed99763440039309dfbd0cb42d4c9e932a1
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Wed Jun 22 13:48:40 2016 -0500
+
+    DataStore, HttpServer, event: Implemented sidebar for events.
+
+commit e1c1b33fb7fbad48b8120d738cc02dc41ff36ea5
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Wed Jun 22 13:52:17 2016 -0500
+
+    services: Added icon support for action types.
+
+commit c11b54bd3d734f5408505e80a1e607d9403ab1b0
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Wed Jun 22 14:09:12 2016 -0500
+
+    hero: Implemented browse all link in main menu.
+
+commit 8d7532682a54d4318b6c73bcdc8c2f41c3c3a4c9
+Author: Gregory Wehmeier <wehmenstein@gmail.com>
+Date:   Wed Jun 22 12:22:38 2016 -0500
+
+    services: prevent creating empty sidebar.
+
+commit adab468052c083bbea1e644a03f72c10cd7c93e8
+Author: Gregory Wehmeier <wehmenstein@gmail.com>
+Date:   Wed Jun 22 15:23:32 2016 -0500
+
+    events, services: make raised-block min-height logic universal across events, event, services, and service
+
+commit 3221bf3a686198e13e4d6984d4f1f4c1baf097ea
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Wed Jun 22 15:54:47 2016 -0500
+
+    DataStore, HttpServer, detailed-info: Added support for detailed info
+    pages.
+
+commit 7856dbcf6691bab406c4d36d2cf24163d6df9772
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Thu Jun 23 10:13:06 2016 -0500
+
+    services: Added a clear filters button.
+
+commit 8ea2ce2b1ea8e4e081a97bf31a53544994f1e071
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Thu Jun 23 10:28:48 2016 -0500
+
+    DataStore, HttpServer, services: Added filtering by action type.
+
+commit 6c42bb695f73033912b45756923a760adb9dd8a7
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Thu Jun 23 10:48:00 2016 -0500
+
+    package: Version bump.
+
+commit e3ba2e4437f6a223006c95d0a359762334e4d13a
+Author: Gregory Wehmeier <wehmenstein@gmail.com>
+Date:   Thu Jun 23 10:53:37 2016 -0500
+
+    main.scss: sassify raised block min-height
+
+commit 4319286d06db6b0c10d6f444b080227b4fe4cbe9
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Thu Jun 23 11:07:06 2016 -0500
+
+    package: Version bump.
+
+commit 89fe75c129698c76c0aeff7eab67683aacac0fb5
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Thu Jun 23 11:39:43 2016 -0500
+
+    DataStore: Return empty strings if data is not there.
+
+commit 8bdd2cdc37e879a91e0313e44113828f26791aa0
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Thu Jun 30 11:17:57 2016 -0500
+
+    DataStore, HttpServer, service-category, service: Added service category
+    support.
+
+commit c9e5a62cde3c8ec47627700653016d941ce7ea56
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Thu Jun 30 13:17:44 2016 -0500
+
+    DataStore, server: Improved DataStore syncing so that it doesn't crash
+    when requests are made during a sync.
+
+commit 74e560cb96b80480960c0dfa2c729ac172d7c9bd
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Thu Jun 30 18:12:33 2016 -0400
+
+    index: add alert-bar underneath main navigation
+
+commit 6eb6a749f15aae275cd6270ab592dd0c7a336b13
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Wed Jun 29 13:38:55 2016 -0500
+
+    HttpServer, Mailer, server, contact-us, env, log: Added mailing for
+    contact us page.
+    
+    This currently puts messages inside the form. This will be changed to
+    the alert bar whenever we build that.
+
+commit eb5e9f8e66d64699afcb12cf316e087da3a1b519
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Thu Jun 30 17:52:35 2016 -0500
+
+    HttpServer, contact-us, hero: Tied form submission status messages to
+    the new alert system.
+
+commit c86b247376fc0aadb6481e84873279d72179bc69
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Wed Jun 29 21:51:37 2016 -0400
+
+    index: add 3 news items from RSS
+
+commit c6236661438689a24424c25bf35c2d1a61708e8f
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Thu Jun 30 16:19:17 2016 -0500
+
+    HttpServer, Rss, server, env, log: Moved RSS Feed to its own module.
+
+commit 0323a743ac93fe4b196d32df293f09482e0bde9e
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Thu Jun 30 22:09:36 2016 -0400
+
+    404: add basic sitemap
+
+commit fff8a3107c822c7e228d8eea4b2dcdeb44e4337c
+Author: Gregory Wehmeier <wehmenstein@gmail.com>
+Date:   Thu Jun 23 11:48:51 2016 -0500
+
+    nav.scss: prevent hover display in collapsed nav
+
+commit 140548fae1420060ad8ed500243ccce6fb2dd79a
+Author: Gregory Wehmeier <wehmenstein@gmail.com>
+Date:   Thu Jun 23 15:50:33 2016 -0500
+
+    hero, global_nav, _nav, _events: outline mobile menu button. add arrows to return to home button. change calendar divider color, increase size of mobile search bar and move to top of main nav
+
+commit 6f360d50d6a97f6037e013fc8e7596b9adbb970f
+Author: Gregory Wehmeier <wehmenstein@gmail.com>
+Date:   Thu Jun 23 16:12:04 2016 -0500
+
+    index, _main: add underline to homepage event titles. change 'meeting type' to 'event type' in events json
+
+commit 75a752817254482cad6727d23ce02ccd75c70b5f
+Author: Gregory Wehmeier <wehmenstein@gmail.com>
+Date:   Thu Jun 23 16:29:57 2016 -0500
+
+    _video-block: fix issue with background image tiling
+
+commit d9743836f94918cd311d4caf8b5e3d74fd5bcc8a
+Author: Gregory Wehmeier <wehmenstein@gmail.com>
+Date:   Fri Jun 24 10:49:28 2016 -0500
+
+    footer: make social links open in new tab
+
+commit c223d24034769f1ce5f272ec41414d732b6279d2
+Author: Gregory Wehmeier <wehmenstein@gmail.com>
+Date:   Mon Jun 27 13:59:13 2016 -0500
+
+    hero, _nav.scss: prevent dropdown menu for News button in main nav
+
+commit 33e6270be80d83750ec69082487b2782be38b213
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Wed Jul 6 11:30:42 2016 -0500
+
+    nav: Float search right.
+
+commit 3b10dcb7a4b3e532fef0e21861741622929c3333
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Fri Jul 1 11:19:15 2016 -0500
+
+    env, log: Abstracted env config. Added twitter logging and env vars.
+
+commit 293d00985773a0a0c7ddface7da3497e00fa9d8c
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Fri Jul 1 11:20:38 2016 -0500
+
+    everything: Added support for departments. Includes twitter
+    functionality.
+
+commit addc06bad4082985b1cb6f331d9027ccb6c51ad5
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Tue Jul 5 14:17:04 2016 -0500
+
+    DataStore, HttpServer, departments: Initial implementation of
+    departments page.
+
+commit 23e66b6ad0398354b1fe1673c384c5cbc206a985
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Tue Jul 5 14:44:25 2016 -0500
+
+    DataStore, events, services: Reimplemented filtering by department.
+
+commit c4081cd1ce761d564a39a68c01d6158ab9a11a34
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Wed Jul 6 10:47:05 2016 -0500
+
+    DataStore, departments: Using new department view.
+
+commit 86df99e491b33b86d7fdb76d0ebba07a765ebe60
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Wed Jul 6 11:11:17 2016 -0500
+
+    DataStore, Tweet, tweet-block: Added autolinking.
+
+commit c88f9f821a32e1655c55e166464fccff67691493
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Wed Jul 6 15:29:25 2016 -0500
+
+    various: ui cleanup
+
+commit c7360210a6b7eb3c9ee6b742614a7347a82b0c2a
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Wed Jul 6 15:24:41 2016 -0500
+
+    HttpServer, base, contact-us, footer, head, forms: Added validation for
+    contact-us form.
+
+commit 20de78a97f05b70331e56433983a1e565c33fda7
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Wed Jul 6 14:33:00 2016 -0500
+
+    DataStore: Give tweet defaults.
+
+commit c2f1bd2b94f1d7ebe0e060d4baec6926aaac3175
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Wed Jul 6 15:41:59 2016 -0500
+
+    DataStore, department: Added support for optional social, tweet, and
+    quote.
+
+commit aa952b9ca95cb2e8840824cb09ece4f8e713f0f4
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Thu Jul 7 10:24:44 2016 -0500
+
+    HttpServer, js, dist, webpack, footer, head: Split styles and JS and
+    changed loading order.
+
+commit 2d18760420e1673a25b438c73c3b919f32f3f3d6
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Thu Jul 7 10:35:10 2016 -0500
+
+    HttpServer, contact-us: Fixed phone number not getting validated
+    properly.
+
+commit 8691cc514825bd9c17e071add9cdfecc7fc151af
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Thu Jul 7 10:41:20 2016 -0500
+
+    contact-us: Changed placeholder phone number area code to 361.
+
+commit 7a94e2ccb2a007f5f4c0aad7758a242194e7af61
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Thu Jul 7 14:01:51 2016 -0500
+
+    DataStore: Resynced data model with CMS changes.
+
+commit db69ff84a8e1c4c6c52c13981bcf2a3e9fe3af81
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Thu Jul 7 14:04:30 2016 -0500
+
+    DataStore: Added autolinker to department wysiwyg field.
+
+commit 65fa92868ce2e261f9c9d2f0df843eeb01602bc3
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Thu Jul 7 14:15:33 2016 -0500
+
+    Rss, index: RSS feed now only shows headlines.
+
+commit f50872dc8ae2f392b17e2c20f2650c5cc4274933
+Author: Gregory Wehmeier <wehmenstein@gmail.com>
+Date:   Mon Jul 11 10:49:48 2016 -0500
+
+    homepage: change header image
+
+commit 3661441a05edf1aa07d3436d1ed5097778b7fee2
+Author: Gregory Wehmeier <wehmenstein@gmail.com>
+Date:   Tue Jul 12 13:38:52 2016 -0500
+
+    scss: utilize add-icon mixin
+
+commit 22b1ed0191d549d8e960be8bbced42ef393d770a
+Author: Gregory Wehmeier <wehmenstein@gmail.com>
+Date:   Tue Jul 12 14:58:39 2016 -0500
+
+    filters: add arrow to filter dropdowns
+
+commit 2a16d1dff7427a66e50e5e6b8bc9c618d6dce1d0
+Author: Gregory Wehmeier <wehmenstein@gmail.com>
+Date:   Tue Jul 12 16:07:49 2016 -0500
+
+    events: add 'return to all upcoming events' link to clear filters
+
+commit 27b6b6e113ed41424233370d210dea82007446ef
+Author: Gregory Wehmeier <wehmenstein@gmail.com>
+Date:   Tue Jul 12 17:41:56 2016 -0500
+
+    events: change display for selected filters, add clear filters button
+
+commit ae8af76cf556595cc2cb67974fdb446c34a0ec01
+Author: Gregory Wehmeier <wehmenstein@gmail.com>
+Date:   Wed Jul 13 10:41:41 2016 -0500
+
+    main scss, events: add circle-x-icon
+
+commit 89e6d9cbee74b70094bcfcc6cb12b7380353be41
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Mon Jul 18 12:12:10 2016 -0500
+
+    dist: Added missing styles bundle.
+
+commit e05e1c5f7f49bf67ef2d28527c0841e7bdb002b2
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Tue Jul 12 14:14:28 2016 -0500
+
+    index: Added a nbsp before the raquo to prevent hanging.
+
+commit 81dfdde564be53e010a347121093568468bde07f
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Mon Jul 18 12:37:18 2016 -0500
+
+    services: Service Action is now a dropdown filter. Resolves CCTX-5.
+
+commit bbe89cb0d447dede177446b95d3b35aee8fc283e
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Mon Jul 18 14:05:12 2016 -0500
+
+    services, service-category: Listing links now unified. Resolves CCTX-8.
+
+commit 5115f82810de1953d70161c8a086bdb55030102f
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Mon Jul 18 14:31:53 2016 -0500
+
+    DataStore: Added error handling for CMS errors and missing types.
+
+commit b12e996eb713a4d6dc946843f04f74c26a7ed5b2
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Mon Jul 18 14:45:47 2016 -0500
+
+    dist, departments, services, scss: Moved clear filters to header.
+
+commit 50131dbbd9c5fd3389ad5374ea7d4e96913f9add
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Mon Jul 18 15:05:20 2016 -0500
+
+    department, colored-block: Fixed padding. Resolves CCTX-10.
+
+commit 4ae08a84baaa5606a62bc87dc52f343b9ede7881
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Mon Jul 18 15:14:53 2016 -0500
+
+    department, detailed-info, service, service-category, colored-block:
+    Fixed padding for colored block headers. Resolves CCTX-9.
+
+commit 28d65bc90bbc56971ead32b2c32aa18139488987
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Wed Jul 20 12:12:10 2016 -0500
+
+    DataStore, HttpServer, department, quote-block: Added support for
+    YouTube videos in department pages. Resolves CCTX-11.
+
+commit 7d5d2b8399895895de96c81dd8400112fb2c2800
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Thu Jul 21 11:26:52 2016 -0500
+
+    index, main: Updated arrow CTAs to sans serif. Resolves CCTX-4.
+
+commit 4bb98e4a9cbafc944bf189e121ce0b9e9888a50b
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Thu Jul 21 11:32:26 2016 -0500
+
+    main: All CTA buttons are now semi bold. Resolves CCTX-18.
+
+commit 2dfb49c15358526b6febde71d5ce32a00e00c80f
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Thu Jul 21 11:34:13 2016 -0500
+
+    footer, head: Fixed jQuery is not defined.
+
+commit cfc53685855aac330c8100954ce989a6f8245521
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Thu Jul 21 13:12:38 2016 -0500
+
+    contact-us: Updated copy. Resolves CCTX-19.
+
+commit af817e9b196988c77d80f70b6a20aabd6aa16686
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Thu Jul 21 13:31:51 2016 -0500
+
+    reference-block: Added null text for departments with no services.
+    Resolves CCTX-7.
+
+commit 8104f2b35fa30a52c72f07c10b47ad67565deb21
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Thu Jul 21 13:56:36 2016 -0500
+
+    department, link-block, index: Dept CTA is now solid Navy and properly
+    vertical aligning. Resolves CCTX-13.
+
+commit 15c33a528230093a966ee6adc968e10a71a1f913
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Thu Jul 21 14:00:59 2016 -0500
+
+    footer: Updated subscribe copy. Resolves CCTX-21.
+
+commit f8aab8a1b3a2a75323266bd1d6bed6b85c7415ad
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Thu Jul 21 14:02:46 2016 -0500
+
+    footer: Updated contact copy. Resolves CCTX-22.
+
+commit d5bac5cff6cb28662f9a136923f29fc84c7c3ed6
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Thu Jul 21 14:12:22 2016 -0500
+
+    events, services, departments: Filter headers are now proxima normal.
+    Resolves CCTX-14.
+
+commit 9c8162e59b655fea758bc838772a2098f9e5a076
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Tue Jul 26 11:41:07 2016 -0500
+
+    link-block: Fixed centering of header text.
+
+commit b5c70c84fd5a2ddff070be9f4fba399908308cc1
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Tue Jul 26 12:00:33 2016 -0500
+
+    department, index, link-block: Fixed link block sizing issues.
+
+commit f722d5c53e201dfcaa7075ba7e975da244fa925b
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Wed Jul 27 16:51:32 2016 -0500
+
+    DataStore, HttpServer, index: Integrated with CMS.
+
+commit b76e1e0842444bca2ea8e1937475f2f9a8210f30
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Mon Aug 1 16:13:40 2016 -0500
+
+    HttpServer, server, contact-us, env: Added Google Recaptcha support.
+
+commit a5713f309be787fe070014cc8c9d0141becaf18b
+Author: Gregory Wehmeier <wehmenstein@gmail.com>
+Date:   Wed Aug 3 14:34:56 2016 -0500
+
+    video-block: change color of video3 remove white line from video2
+
+commit 6442eaf81101037b38e95647ffe523da7b5042c5
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Thu Aug 4 16:54:51 2016 -0500
+
+    index: Refactored improperly named listing.
+
+commit 2a32cf0249ac56913780f9c955766f8a2da1e43e
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Thu Aug 4 16:57:49 2016 -0500
+
+    index: Removed dummy events.
+
+commit f3409b44835dba2fa77f7ab9a701380ab456ed6f
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Tue Aug 9 15:57:09 2016 -0500
+
+    add gitignore
+
+commit b365575fd8792d58ac1a5a1534ee518c9723c6e8
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Tue Aug 9 22:46:54 2016 -0500
+
+    update to homepage to reflect new content model changes
+
+commit c1868aa85963f6ab3f7696f46c34f40ba9332e65
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Tue Aug 9 22:47:01 2016 -0500
+
+    compiled assets
+
+commit b242d354e48ce26a6df23318a22a30d486adb2b4
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Tue Aug 9 23:00:31 2016 -0500
+
+    rename picture link block to flex content area to match admin
+
+commit 1d0e6e59f70b94c6125f1f6b4164645c59cfaf76
+Author: Gregory Wehmeier <wehmenstein@gmail.com>
+Date:   Thu Aug 4 12:10:11 2016 -0500
+
+    tweet-block: add twitter bird logo to featured tweet block
+
+commit 61edcc18f23dfa046cf98a8f9ce3fbe0c35e9917
+Author: Gregory Wehmeier <wehmenstein@gmail.com>
+Date:   Thu Aug 4 11:07:25 2016 -0500
+
+    index: update background image for careers section
+
+commit 22b916373d61264610e4ce2e58c535011a4841d7
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Wed Aug 10 10:38:18 2016 -0500
+
+    add photo content area to data model
+
+commit 6bc3894fe6034f9d0de1b16c06c2020cedc2c2b5
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Wed Aug 10 10:38:33 2016 -0500
+
+    add photo content area as partial & to department page
+
+commit 2fed632b1a70c55f2ba6e2a2d65561ce2e4e16df
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Wed Aug 10 10:38:46 2016 -0500
+
+    compiled assets for photo content area
+
+commit 7026fb729b55e60ae0882c02656848d4de779c13
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Wed Aug 10 16:18:20 2016 -0500
+
+    padding update + CTA update
+
+commit f17f17970d2cab29001511526a60c53b4b8a0fd0
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Wed Aug 10 16:40:58 2016 -0500
+
+    secondary featured link logic + style
+
+commit ccd08985e87aa3014c46ddb98b9451b9862746e0
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Wed Aug 10 17:26:04 2016 -0500
+
+    flex content area
+
+commit 8112adc08e1d5ae8ebbb8bec8b7dfcbdc967b9cd
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Wed Aug 10 17:56:02 2016 -0500
+
+    hero image
+
+commit 0f0cf736bf4ed1ee4b904b04f29b2d862465f4a4
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Fri Aug 12 11:49:28 2016 -0500
+
+    hotfix to address homepage issue
+
+commit 1b4e1489fb8db184672b826e0db8f5d83298de03
+Author: Gregory Wehmeier <wehmenstein@gmail.com>
+Date:   Mon Aug 15 15:02:31 2016 -0500
+
+    tweet-block: fix bootstrap column width issue
+
+commit 90c8a9ad0fb8cc5caa60edea7689e62fc3690fb1
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Mon Aug 22 10:38:38 2016 -0500
+
+    add hero images to detailed info, services
+
+commit c658da6fae76a6a34d62a9d991122d77a1d318e1
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Mon Aug 22 14:54:16 2016 -0500
+
+    cleanup for zero states on homepage
+
+commit d1044fc1e97fb5b5443e0b2a890cbf710069fc2c
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Tue Aug 23 09:47:52 2016 -0500
+
+    data store update for globals
+
+commit 16154441a83f60d72fb5e38c857575584520bba3
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Tue Aug 23 09:48:08 2016 -0500
+
+    front-end updates for global style
+
+commit fa4500d1b547702b1bc869c9b9f1e5ea4f530530
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Tue Aug 23 09:48:15 2016 -0500
+
+    compiled assets
+
+commit dd5a86cc9b222d1567a002c93803b0b6e9587449
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Tue Aug 23 09:54:09 2016 -0500
+
+    cleanup
+
+commit aeecca30cf3f3afdbd7edc33f79eeff7f70175f3
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Sun Sep 11 19:29:01 2016 -0500
+
+    promo page
+
+commit 692d1cdd0a49b8b676161149d9d36d6bca23bd6e
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Sun Sep 11 20:07:33 2016 -0500
+
+    meta tag support
+
+commit 634d84de08a7674b321304c3e74cd5e84eade1a1
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Sun Sep 11 20:31:27 2016 -0500
+
+    meta update
+
+commit ec48a72bb311978ec6177a9e38e1c1bd260755e1
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Sun Sep 11 23:11:25 2016 -0500
+
+    update to API to ensure staging can be parsed properly
+
+commit c2d2b4a3b0bd76296ce0bf0e2a55d52231d1e753
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Mon Sep 12 10:49:54 2016 -0500
+
+    nginx: Added an NginX configuration.
+
+commit c7aff36f226c1e11bd941ec52e32a17164656312
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Mon Sep 12 18:19:48 2016 -0500
+
+    scripts, circle: Added Circle deploy and test scripts.
+
+commit f21441779afc328cc3eb75f6d1b8cf89f4839d6b
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Tue Sep 13 12:25:25 2016 -0500
+
+    scripts: Updated scripts to refresh environment variables.
+
+commit ed3a41320f08353dcfd6b4dc1d6fc0eaf51f1915
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Tue Sep 13 12:46:40 2016 -0500
+
+    circle: Disable deploys for now.
+
+commit f346cf9d3ce06ea13d3fba7a9501e7bcae238249
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Wed Sep 14 11:35:38 2016 -0500
+
+    change hero image default on departments to sailboats
+
+commit 2b1fd902d53f750fef52cf2e8f4d88b6bc2b1784
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Wed Sep 14 11:36:43 2016 -0500
+
+    bump changelog
+
+commit af3006e33dd96dc458898c291f5a88ee274b376c
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Wed Sep 14 18:12:39 2016 -0500
+
+    make sure meta is on every page
+
+commit 5dbd1b0bef3cc020ee4332a843ecd94329053819
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Thu Sep 15 11:16:48 2016 -0500
+
+    lint: Update linting.
+
+commit 6bb960969f3c447741c80afc64aab4eb1cfe5323
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Thu Sep 15 11:20:51 2016 -0500
+
+    package: Updating packages.
+
+commit 53250df72870a9f32e7c796220c28e327139b812
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Tue Sep 20 11:00:45 2016 -0500
+
+    scss: Fixing lint issues.
+
+commit 8390c08eb4f12d5531735e86f643279d3209f1c8
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Wed Sep 21 14:49:15 2016 -0500
+
+    pug: Fixed lint issues.
+
+commit 09918e9770ce1c798210f4132892bc37fdc70e8a
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Wed Sep 21 15:16:09 2016 -0500
+
+    httpServer: Added an API route for investigation purposes.
+
+commit c68942447d90cb7a45dffe872eb56dc195df4567
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Wed Sep 21 15:21:14 2016 -0500
+
+    eslint: Fixed eslint errors.
+
+commit aeca1e3f1a5f2ed50bfede39bb2ff05120a9cb39
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Wed Sep 21 15:25:44 2016 -0500
+
+    DataStore: Fixed event type mapping. Resolves #CCTX-86.
+
+commit 2f89dcbf0b94dba807b71f59953940d206c35cb8
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Wed Sep 21 15:50:45 2016 -0500
+
+    scss: Fixed missing link underlines. Resolves #CCTX-91.
+
+commit 96941f8e1ca50684e9474813eebcab7509bec3b0
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Wed Sep 21 15:56:46 2016 -0500
+
+    Departments: Fixed service links not working. Resolves CCTX-93.
+
+commit a63dd7fd9c52a1ca07ad54af7d026ae276f3e603
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Wed Sep 21 16:05:45 2016 -0500
+
+    contact-us: Added a disabled select option. Resolves #CCTX-97.
+
+commit b39ab676985b7597db3e6e8b1a3a9eec91cf8f20
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Wed Sep 21 16:17:50 2016 -0500
+
+    DataStore: Fixed sorting of menu items. Resolves #CCTX-98.
+
+commit 9aac650c8cb9d2affb10df8c4c75fd3537b2d86f
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Wed Sep 21 16:20:03 2016 -0500
+
+    DataStore: Removed timezone adjuster. Resolves #CCTX-99.
+
+commit bae2cc66ec465414fa94e1bf124f7a555be92141
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Wed Sep 21 16:25:55 2016 -0500
+
+    contact-us: Fixed link spacing. Resolves #CCTX-103.
+
+commit 1c2b77cdd6d69afee84feda5c47bc0f66c451f59
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Wed Sep 21 16:29:21 2016 -0500
+
+    services: Descriptions cutoff at 200 chars. Resolves #CCTX-104.
+
+commit f2997a8f8fd79c2312addf722f3cc0c4c00c1f57
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Wed Sep 21 16:32:08 2016 -0500
+
+    footer: Render HTML. Resolves #CCTX-105.
+
+commit e142a9de107b5d205f2cfdf58b69bd0a38f491f6
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Wed Sep 21 16:50:53 2016 -0500
+
+    HttpServer, frontend: Added placeholder search page.
+
+commit 5e3bdfa5e770323814fe65cc896826abe1f9b439
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Wed Sep 21 16:56:28 2016 -0500
+
+    hero: Search is hidden on mobile.
+
+commit 181091b68e15ff6a0a05b3ab809e3ae29aba006d
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Wed Sep 21 16:59:55 2016 -0500
+
+    basic-block: Fixed list style typing. Resolves #CCTX-108.
+
+commit 1e87cc852eb3d2e693c98035d3c629e173a74a3f
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Mon Sep 26 16:04:16 2016 -0500
+
+    global footer notice now relies on API to pull in paragraph tag (CCTX-105)
+
+commit ba0d481b4507964f1cd2fd8862eae756555505dd
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Mon Sep 26 16:39:26 2016 -0500
+
+    fixed issue where no event types didnt default to array
+
+commit 6b6dc9bccb31d7dfcfef1b47c82bc729c88945e8
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Mon Sep 26 16:43:48 2016 -0500
+
+    have CMS handle 200 max char length, not the front-end
+
+commit 969bc52a7ff30c7d5d10103bbec340f070bb485f
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Mon Sep 26 16:50:37 2016 -0500
+
+    ensure timezones are only done at the CMS level
+
+commit 17dcb4ff1fadc1b8b346de50d9e693df25e43158
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Mon Sep 26 16:56:22 2016 -0500
+
+    ensure anchor links have underlines
+
+commit c4fbf4094731c8ca407266f1b99e4f09c3e3e272
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Mon Sep 26 23:16:10 2016 -0500
+
+    change the search results page headline
+
+commit 0895b9a9291d3555efecd6d0d265ec991e0e4360
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Tue Sep 27 12:55:38 2016 -0500
+
+    homepage hero image
+
+commit 758770d8d94e933b66865613ee46768b539ceb82
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Tue Sep 27 13:07:33 2016 -0500
+
+    reposition bg image
+
+commit 3e1d503869e4a878a37e6a9ff8380d52e9f45a35
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Tue Sep 27 13:07:45 2016 -0500
+
+    now with styles
+
+commit c6b54987998ae43ad3c116bccf17d64de9fe7ea3
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Tue Sep 27 13:49:44 2016 -0500
+
+    bump changelog
+
+commit abe04bfffe8eac99ff6521d56d79c816b4cb205f
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Tue Sep 27 14:00:27 2016 -0500
+
+    nginx: Switch prod and staging.
+
+commit 7c837d7410c077625b67696975b6e3d0d8216561
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Tue Sep 27 14:04:18 2016 -0500
+
+    scss: Fix lint issues.
+
+commit 5425074b4c679da4a5f73dce359a584d31602d2d
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Tue Sep 27 14:40:01 2016 -0500
+
+    DataStore: Fixed calendar rendering NaNs. Resolves #CCTX-101.
+
+commit 5542516d69a165cb974f848b5ab03d8589934856
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Tue Sep 27 15:09:40 2016 -0500
+
+    DataStore: Added twitter log.
+
+commit 4670236408263e2084897d612e4b71108139e44b
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Tue Sep 27 15:14:06 2016 -0500
+
+    DataStore: Remove escaped newline characters. Resolves #CCTX-96.
+
+commit f05236f7a9bee0398fbf12381086c35eaa28e1cb
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Tue Sep 27 15:42:23 2016 -0500
+
+    frontend: Fixed resizing of pay/report/etc. content.
+
+commit 076cb26c1ab50e9f90cb024b11d705cc5eeb7207
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Thu Sep 29 15:27:54 2016 -0500
+
+    bump changelog
+
+commit e4d1826b0d9ea3dd5b18dc49200bf6dcfcb9c594
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Tue Sep 27 15:42:23 2016 -0500
+
+    frontend: Fixed resizing of pay/report/etc. content. Resolves #CCTX-84.
+
+commit bd4bb94f54be2059bab4f6cefb68e3e84c98442a
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Tue Oct 4 13:46:37 2016 -0500
+
+    add in wildcard redirect handling from api
+
+commit a8e8b5681084bb4013bcf024b1659e4bb136bbc7
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Tue Oct 4 15:51:41 2016 -0500
+
+    prep release
+
+commit 89955ccb470b0ea0b2d5a0ee667f1297273e0a06
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Wed Oct 5 17:26:56 2016 -0500
+
+    users can now use youtu.be video links in video players (CCTX-133)
+
+commit e47148e24971865d4e29ac9c9e4791bab902c8a8
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Wed Oct 5 17:39:11 2016 -0500
+
+    GTM codes are included on every page (CCTX-153)
+
+commit 88ddd90ebb93cbfc6f051909e980a037a4f88f73
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Wed Oct 5 17:41:51 2016 -0500
+
+    remove description from events on the homepage (CCTX-149)
+
+commit 5de32ed046596d3d6474dac4b52e0aca442c19bc
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Wed Oct 5 17:53:40 2016 -0500
+
+    bump font size in utility nav to 12px & streamline CSS (CCTX-141)
+
+commit cd3aa4e0dd0b548cfd74fb0314e96992cf0edb2f
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Wed Oct 5 18:02:34 2016 -0500
+
+    Removed the "I Want To" blocks from the contact form & related style adjustments for all breakpoints (CCTX-155)
+
+commit 5065ec2981f8bde20543ce21254e07aabb9291b8
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Wed Oct 5 18:19:37 2016 -0500
+
+    pass linting tests
+
+commit 281dd1d77b190f52fa68afea25d090d40d77f55c
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Wed Oct 5 18:26:41 2016 -0500
+
+    prep release
+
+commit f28d74c1b836d734b7c3a0ef1f44fe00cf71ab16
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Wed Oct 5 18:32:19 2016 -0500
+
+    fix regression
+
+commit 5a9323d949194d03859778ebbc8e2002df399572
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Mon Oct 10 16:36:42 2016 -0500
+
+    rebuild logo area
+
+commit ab6be893ee7a9f0ef2be6700a63cd54e98a05865
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Mon Oct 10 23:03:01 2016 -0500
+
+    mobile nav
+
+commit 7878c1919e8b0127104cccae40b706c377ccbd7e
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Mon Oct 10 23:49:49 2016 -0500
+
+    desktop menus
+
+commit a3433e4962ad152342a970dd275d51d585a1cb85
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Mon Oct 10 23:51:02 2016 -0500
+
+    bump changelog
+
+commit 4f9cbcf37d6e9e8974622cb77b722b4ad2e44498
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Mon Oct 10 23:58:52 2016 -0500
+
+    linting
+
+commit 59427e052bd6440dbb23df5e709c423f78b8f7d6
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Wed Oct 12 15:22:08 2016 -0500
+
+    accessibility improvement: aria labels on social media links (CCTX-143)
+
+commit 6ad02011ae4ef617c8723bd0312d95e5dde9e027
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Wed Oct 12 17:35:12 2016 -0500
+
+    ensure contact form is accessible
+
+commit ff0c45cb918154a78b4786350a1ae2df3e164fbe
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Wed Oct 12 17:47:02 2016 -0500
+
+    linting fixes
+
+commit 8223f59bcc33aecd2963cfbf07d17e7d6771d13d
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Thu Oct 13 10:39:13 2016 -0500
+
+    code cleanup
+
+commit 57e93a777eb49a84dec185829d712b8ca092f48f
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Wed Oct 12 17:35:12 2016 -0500
+
+    ensure contact form is accessible
+
+commit a5d3f00c2f673105dd029be0f1666299fba2a069
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Thu Oct 13 11:36:08 2016 -0500
+
+    homepage semantic restructuring
+
+commit 2ecdf5a4acb8894c0412eba6d823a12f0306bec8
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Thu Oct 13 14:40:07 2016 -0500
+
+    refactor contact form markup
+
+commit ec41d176aaf83ebe09534c983f9e4db09e91808b
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Thu Oct 13 14:48:15 2016 -0500
+
+    refactor department markup
+
+commit 93b714d3fa890ba64c4230f88b0b2017659dc4de
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Thu Oct 13 14:56:33 2016 -0500
+
+    refactor departments page
+
+commit 51b6e5678c00bcca7ad024b75e842d303e47d5a4
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Thu Oct 13 14:59:35 2016 -0500
+
+    refactor detailed info page
+
+commit 437dbb6db33f3d823d087f4eede83bf1ab238ffc
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Thu Oct 13 15:00:15 2016 -0500
+
+    refactor 404 page
+
+commit 133107fa24a0e13cb6556e77fe27190ba3fe6ec3
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Thu Oct 13 17:00:17 2016 -0500
+
+    event refactor
+
+commit 73b75a0b6006c0fa52376b8cde3f70c1927f6afe
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Thu Oct 13 17:13:15 2016 -0500
+
+    refactor events
+
+commit 5a7d1119c462bb0c713cad1f98ccf27b63e2ab45
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Thu Oct 13 17:19:41 2016 -0500
+
+    refactor promotion page
+
+commit 0de5887f144a3cebaf911cc7bad141dfd56c033e
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Thu Oct 13 17:20:46 2016 -0500
+
+    refactor search
+
+commit 952856f37e7ce7cd8af584256aaeb6425eb46c1d
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Thu Oct 13 17:28:33 2016 -0500
+
+    refactor services
+
+commit 6b3437b621f5895070da172acb36052d3af9f2f7
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Thu Oct 13 18:34:39 2016 -0500
+
+    style updates for department index, service index, service category, service, homepage, events, footer, header
+
+commit a75b5b29ff1219fb3f588339ba9e96cc335a0a30
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Fri Oct 14 17:12:45 2016 -0500
+
+    final refactoring
+
+commit a897999b0ed689dc6fec275f471eab1a80d0fd53
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Fri Oct 14 18:11:26 2016 -0500
+
+    fix render
+
+commit 1e1abd808275c75171ab0d475d1f07c7c3ed22ab
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Fri Oct 14 18:24:03 2016 -0500
+
+    prep release
+
+commit c3c7791642e124364127b94e1b840cf709b64cd9
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Mon Oct 17 11:34:54 2016 -0500
+
+    package: Generated yarn.lock.
+
+commit 09221c8ca3c0859775bde03ab261123ea306a66d
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Mon Oct 17 11:40:39 2016 -0500
+
+    readme: Updated to use yarn.
+
+commit ea9178e02459a460f996910f3e440c2884fc4590
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Mon Oct 17 11:42:11 2016 -0500
+
+    circle: Updated to use yarn.
+
+commit 1a039280a263d8a0046ef8b465ef3bff08e4037c
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Mon Oct 17 13:27:17 2016 -0500
+
+    scripts: Staging deploy now uses master branch.
+
+commit d86bf334c32842a2c3219d2eeda5e33f057a5247
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Mon Oct 17 13:41:32 2016 -0500
+
+    scripts: Fix returning to the start directory.
+
+commit 7b252bcec3d5b929158dc46f38639ab33cef4e1a
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Mon Oct 17 13:51:19 2016 -0500
+
+    scripts: Use yarn for deployments.
+
+commit cbb0d013a281a9e3a7ebfe76d15c022094f41452
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Mon Oct 17 13:59:50 2016 -0500
+
+    scripts: Added a deployment for SBX server.
+
+commit 7530bb3267ae85f356f78deefe762584072c21c9
+Author: Alexander Martin <alex@suitupalex.com>
+Date:   Mon Oct 17 14:10:12 2016 -0500
+
+    circle: Added a deploy step for the SBX server.
+
+commit afe70cfffb79bc8fa861017769816682ce261814
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Mon Oct 17 16:55:04 2016 -0500
+
+    favicon assets
+
+commit de97526a2fcffff1cd3b5b7ed6091ff0a831a7e5
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Mon Oct 17 17:41:58 2016 -0500
+
+    favicon logic
+
+commit 30f22afbfbed687d57d85e62894b9bf16ccae26a
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Mon Oct 17 17:43:05 2016 -0500
+
+    changelog
+
+commit 9654708de59d31ec09ea41b200abd4d0f37d0f67
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Mon Oct 17 17:45:58 2016 -0500
+
+    lint fixes
+
+commit 6d33983e506bcaeca7a5474597c43616a9cd246f
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Mon Oct 17 18:04:36 2016 -0500
+
+    remove unneeded package
+
+commit 86f7cb30b97ea0729194bb5e326997eedc99b8e1
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Mon Oct 17 16:55:04 2016 -0500
+
+    favicon assets
+
+commit 9faac7472c45ed5eebdff7f2e7fb3a5a125500cc
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Mon Oct 17 17:41:58 2016 -0500
+
+    favicon logic
+
+commit 2cc5f225c65ed08949e4bfb92f644c5e365339f8
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Mon Oct 17 17:43:05 2016 -0500
+
+    changelog
+
+commit 2daa155ddc0c3d7295eb4dc2f65ba55f097476e3
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Mon Oct 17 17:45:58 2016 -0500
+
+    lint fixes
+
+commit ab7308a381daef2df16a19ca569d9ccd3cedbc90
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Mon Oct 17 18:04:36 2016 -0500
+
+    remove unneeded package
+
+commit acf8f4a179ae707410911bbfcab8549dc13cb20c
+Merge: ab7308a 6d33983
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Tue Oct 18 13:38:37 2016 -0500
+
+    Merge branch 'feature/CCTX-163' into develop
+
+commit 66f65baa75b9080a3249bcf108c056ee7d74dc60
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Tue Oct 18 13:47:44 2016 -0500
+
+    additional links on detailed info pages are back
+
+commit f7b910cfee0954bf546c2d93b91f22e9209aa5fc
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Tue Oct 18 13:47:44 2016 -0500
+
+    additional links on detailed info pages are back
+
+commit 604dbe176af160f4600787d653af3d45558015e7
+Merge: f7b910c 66f65ba
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Tue Oct 18 15:59:30 2016 -0500
+
+    Merge branch 'feature/CCTX-130' into develop
+
+commit 6ed31a2421d175a751a8222593aaa7f3e6a42dee
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Tue Oct 18 16:08:31 2016 -0500
+
+    featured CTA returned to homepage with proper conditionals
+
+commit 0f2c40df140ad26be6001471a559092f42acf15f
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Tue Oct 18 16:13:10 2016 -0500
+
+    restore additional links on services page [CCTX-110]
+
+commit c9b6422c4726a3b49a757c9ab0b0ce1eab22164e
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Tue Oct 18 16:08:31 2016 -0500
+
+    featured CTA returned to homepage with proper conditionals
+
+commit 88c93e0f4606de80a198e0319f119b54cce104b8
+Merge: c9b6422 6ed31a2
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Tue Oct 18 16:19:04 2016 -0500
+
+    Merge branch 'feature/CCTX-166' into develop
+
+commit a596e70e0dd563f4c625d0437c64990937ed9c1c
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Tue Oct 18 16:13:10 2016 -0500
+
+    restore additional links on services page [CCTX-110]
+
+commit 2b2fdebdaed7cb3ec7730fd377fe30b88c82a0be
+Merge: a596e70 0f2c40d
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Tue Oct 18 16:19:56 2016 -0500
+
+    resolve conflicts
+
+commit f5b5b8fa08663fdf21757c0f0bb3e34f7b0ad8e2
+Merge: 88c93e0 2b2fdeb
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Tue Oct 18 16:44:16 2016 -0500
+
+    Merge branch 'feature/CCTX-110' into develop
+
+commit f3a3aa1025df390677720be7b5a17eac3bd940d4
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Tue Oct 18 17:49:21 2016 -0500
+
+    homepage view all links
+
+commit 8a5be69b0fee005ebf205ba69939b1a3e4d42fb9
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Tue Oct 18 17:51:15 2016 -0500
+
+    lint fixes
+
+commit b0e0d209d95f985f45273aeb9f38c3a223fa3823
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Tue Oct 18 18:07:45 2016 -0500
+
+    breadcrumb style update
+
+commit 5a6ac593184db0e857bc13c5b2d6e094b7625a31
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Tue Oct 18 18:11:45 2016 -0500
+
+    linting fix
+
+commit f2857ccebde52fd9ce47cd5015c266b27f4ca01a
+Merge: 5a6ac59 8a5be69
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Wed Oct 19 13:47:45 2016 -0500
+
+    manual merge of CCTX-164
+
+commit 57c5906924cceff58ed6e8a1456120a99246182b
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Wed Oct 19 14:58:21 2016 -0500
+
+    swap out homepage hero image
+
+commit f9a74067fbff635c757551e48102472f79a28292
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Wed Oct 19 15:09:53 2016 -0500
+
+    CCTX-183: adjust contrast on video blocks
+
+commit abffd6c311494f5a10ba7588ab2108f445cdc904
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Wed Oct 19 15:18:30 2016 -0500
+
+    bring global nav dropdown directly underneath header for usability
+
+commit d4f8eb23af714b1544115448ae93b92cc71cd0eb
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Wed Oct 19 15:52:25 2016 -0500
+
+    prep release
+
+commit deec439a513b8b9d39bd8194517bfc9555c5be6f
+Merge: 7530bb3 d4f8eb2
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Wed Oct 19 15:52:30 2016 -0500
+
+    Merge branch 'release/v1.3.0'
+
+commit 826a176177282272a51b68855090d367dfcfe32d
+Merge: abffd6c d4f8eb2
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Wed Oct 19 15:52:40 2016 -0500
+
+    Merge branch 'release/v1.3.0' into develop
+
+commit 49637cd668374a3aee2ce4d2794d830499d9c5da
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Wed Oct 19 16:52:46 2016 -0500
+
+    refactor footer links to use CTA style
+
+commit 089b911d508c21036edbc460b46f994190a7f133
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Wed Oct 19 18:17:02 2016 -0500
+
+    update blocks to use simplified style
+
+commit 0f0430230e10e1608669adfa4c5a869c34f89841
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Thu Oct 20 15:26:37 2016 -0500
+
+    visual enhancement to clean up events
+
+commit 1881601ba28666d306af63330b8a46469a319935
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Thu Oct 20 15:28:23 2016 -0500
+
+    bump changelog
+
+commit 9c48c02f29d7c618077185ff1329095034dee657
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Thu Oct 20 15:45:16 2016 -0500
+
+    photo content area images should nsap to top
+
+commit 08828cafbeabf06b8ac341d730d419760b21e26c
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Thu Oct 20 15:43:18 2016 -0500
+
+    fix FF issue with submit label
+
+commit 827169cdeabc4c0c26f822a4ade7fc244b73e132
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Thu Oct 20 15:45:16 2016 -0500
+
+    photo content area images should nsap to top
+
+commit 10cb1c7c8a6e0304e037e20ec8a57f3284677301
+Merge: 827169c 9c48c02
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Thu Oct 20 15:51:38 2016 -0500
+
+    Merge branch 'feature/CCTX-176' of github.com:springbox/corpus-christi-frontend into feature/CCTX-176
+
+commit 15621093a28bc45c6f3549aeb3609a9aab723442
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Thu Oct 20 15:45:16 2016 -0500
+
+    photo content area images should nsap to top
+
+commit 404a9da26ac41e81908bba39392814b5f5c4526a
+Merge: 1562109 10cb1c7
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Thu Oct 20 16:03:03 2016 -0500
+
+    Merge branch 'feature/CCTX-176' into develop
+
+commit deff7bfeddab8e93a69f2f51d6b07763bea749e4
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Thu Oct 20 16:04:31 2016 -0500
+
+    prep next release
+
+commit 0ab85cd52f517774bd52a28823727808c8458df2
+Merge: deec439 deff7bf
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Thu Oct 20 16:04:37 2016 -0500
+
+    Merge branch 'release/v1.4.0'
+
+commit 1e339dbf5a6b8192be125f05d0b49db75f37d53a
+Merge: 404a9da deff7bf
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Thu Oct 20 16:04:44 2016 -0500
+
+    Merge branch 'release/v1.4.0' into develop
+
+commit be29a3e35da423d919a6b656eae3931183d7550e
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Fri Oct 21 14:02:45 2016 -0500
+
+    make video block even height
+
+commit f8ed1cfa1c82838e36625255b1faf12d5b965ad8
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Fri Oct 21 14:19:35 2016 -0500
+
+    refactor server
+
+commit d228110e7b8428486d1eb9fb2ea065341cc36eb9
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Fri Oct 21 14:22:27 2016 -0500
+
+    linting fix
+
+commit 64ffa610fc4100f882c1d76c531c32cd0701ec50
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Fri Oct 21 14:02:45 2016 -0500
+
+    make video block even height
+
+commit b1b01c6a4bffb0984dc06f7a0348a364614620f1
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Fri Oct 21 14:19:35 2016 -0500
+
+    refactor server
+
+commit 2ebf219f4f43701115a0bf88014852da92687bd1
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Fri Oct 21 14:22:27 2016 -0500
+
+    linting fix
+
+commit 42b785e95448e742e654bbce7dfc02bf962636b8
+Merge: 2ebf219 d228110
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Fri Oct 21 14:30:39 2016 -0500
+
+    Merge branch 'feature/CCTX-159' into develop
+
+commit 116ea8f87a025005e20bdf01518718de2ad2f494
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Mon Oct 24 10:59:16 2016 -0500
+
+    pagination updates for consistency
+
+commit 09885b0f0d6595c80d26e79523f0aaafabaa3082
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Tue Oct 25 10:12:00 2016 -0500
+
+    update github address
+
+commit e8eb12e7759069b089aaed5ff373c9dc9a76aec4
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Mon Oct 24 10:59:16 2016 -0500
+
+    pagination updates for consistency
+
+commit 20fe163a3c45b93cdfbd5b92080cc99653b358b1
+Merge: e8eb12e 116ea8f
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Tue Oct 25 11:12:17 2016 -0500
+
+    Merge branch 'feature/CCTX-152' into develop
+
+commit e0833456fab714b3ff758a953ce20ba42840e97c
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Tue Oct 25 11:38:35 2016 -0500
+
+    reposition mobile video block to be more user friendly
+
+commit 805dc55ecd75082290861e5b1dd2698928f50533
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Tue Oct 25 11:38:35 2016 -0500
+
+    reposition mobile video block to be more user friendly
+
+commit f275a05b3baf39295a89da56e4f857754e1ede5a
+Merge: 805dc55 e083345
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Tue Oct 25 13:09:23 2016 -0500
+
+    Merge branch 'feature/CCTX-115' into develop
+
+commit 0550c91b3e896f4b3e9d3b165a93d7f0524c32e8
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Tue Oct 25 14:05:07 2016 -0500
+
+    flex content area fixes
+
+commit 7874ddf7575521eabf1295f49cc97e10276e73c2
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Tue Oct 25 14:05:07 2016 -0500
+
+    flex content area fixes
+
+commit 22e15f74328eacd945ec20fca92396c9b9a07934
+Merge: 7874ddf 0550c91
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Tue Oct 25 14:27:48 2016 -0500
+
+    Merge branch 'feature/CCTX-158' into develop
+
+commit a0b712fb62576b3d7f388336364f02b5a4f77402
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Tue Oct 25 14:28:50 2016 -0500
+
+    prep for release
+
+commit ada53083f75ef005e42658471cc108a324d52187
+Merge: 0ab85cd a0b712f
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Tue Oct 25 14:28:55 2016 -0500
+
+    Merge branch 'release/v1.4.1'
+
+commit 6a8dbf787989393329418bf04e453c6a0f1f7bd7
+Merge: 22e15f7 a0b712f
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Tue Oct 25 14:29:02 2016 -0500
+
+    Merge branch 'release/v1.4.1' into develop
+
+commit 4c4742ece62838c8968fc4502efdd2b5fcdccb56
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Wed Oct 26 10:16:53 2016 -0500
+
+    bulletins: front-end styling and mock content
+
+commit 864b9f81ab89ca46e9bb450295d0a296415f256c
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Thu Oct 27 15:35:26 2016 -0500
+
+    bulletins: move to oocss
+
+commit 98e934695d71d7253212f5d4dce7b8a688bfcddf
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Thu Nov 10 13:13:14 2016 -0600
+
+    global: add browsealoud scripts
+
+commit fe00768ea1495bbfe6eb15294b081aee9acfacfd
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Wed Nov 2 13:54:25 2016 -0500
+
+    contact-us: change h3 styles
+
+commit 058f69330d0cdcf6437f0c135136da50f6d0bdea
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Thu Nov 10 15:28:59 2016 -0600
+
+    contact-us: add margin to recaptcha
+
+commit cba170e653bb087e325e526daa44b2574db664f3
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Thu Nov 10 11:09:56 2016 -0600
+
+    event-filter: move selected filters down
+
+commit 42616d84122a0aee0c333633b8d8036c695a9e47
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Thu Nov 10 15:08:06 2016 -0600
+
+    search-bar: add MS placeholder styling
+
+commit a20bc9c69f343c41d9e363cca8acfac665a9de76
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Thu Nov 10 16:23:49 2016 -0600
+
+    button-block: make buttons stretch full width
+
+commit c9d351c5b6d9ef393575f1b311c2f76d1715759c
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Mon Oct 31 15:17:24 2016 -0500
+
+    contact-us: change verbiage and add hints
+
+commit aac3bb93f5d95892231c51c31f03cca5ff53e29d
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Mon Oct 31 15:43:51 2016 -0500
+
+    version bump
+
+commit ca3969086cb5669b6d9668f9e826345abd7461ec
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Thu Nov 10 10:51:59 2016 -0600
+
+    large-headline: remove background image temporarily
+
+commit 1d146582e19773fc89172b0b3cf15a802f3b594c
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Wed Nov 16 11:08:28 2016 -0600
+
+    events: filter default events from now on
+
+commit 8a2c15faa4a7a58445065d82f0a9f21538e769c3
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Wed Nov 16 10:41:08 2016 -0600
+
+    datastore: sort collections alphabetically
+
+commit 234b37dd5bfc64f6c28a365ddb948cb7b38fd325
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Wed Nov 16 10:02:07 2016 -0600
+
+    ie11: svg logo
+    
+    IE11 does not render SVG elements properly if they have style attributes
+    inside of a `<style>` tag. Exporting with style attributes properly
+    renders the svg.
+
+commit 59387b4798842a02a9385fc684d3683082648444
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Tue Jan 17 12:43:38 2017 -0600
+
+    kiosk logic
+
+commit b25fbf7254d65c042d59d243e7f0c36c24860131
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Tue Jan 17 12:57:16 2017 -0600
+
+    handle defaults
+
+commit fc550163a9d69f5cba88a9a560be64ee1c7167c1
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Wed Jan 18 10:50:58 2017 -0600
+
+    swap default hero image
+
+commit 02f98d78d0a1fd03fcf3b98baa8efc761c5339f9
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Wed Jan 18 11:00:05 2017 -0600
+
+    swap careers homepage image
+
+commit f73accffa2a0af30682643ad9e6ec063df4d33f1
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Tue Jan 17 12:43:38 2017 -0600
+
+    kiosk logic
+
+commit f76e1f0c20c5c13ee97a384e0121354481ee49e5
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Tue Jan 17 12:57:16 2017 -0600
+
+    handle defaults
+
+commit f69b0bebfa0c7288273df8f8897a0df8898a68a3
+Merge: f76e1f0 fc55016
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Wed Jan 18 17:05:11 2017 -0600
+
+    manual merge conflict resolution
+
+commit b1d447abce2a1363b5eccb8125e904024dd833e5
+Merge: f69b0be 02f98d7
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Wed Jan 18 17:06:39 2017 -0600
+
+    manual merge conflict resolution
+
+commit 5a8997354fa697cb75c0eab3048542fa55bfca02
+Merge: b1d447a b25fbf7
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Wed Jan 18 17:09:16 2017 -0600
+
+    Merge branch 'feature/CCTX-214' into develop
+
+commit b69783923b34bc63421455f1cafa07f1f468a6d6
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Wed Jan 18 17:53:56 2017 -0600
+
+    bump changelog
+
+commit 1d442f97f543855d796ff23ef373c54527c543ca
+Merge: ada5308 b697839
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Wed Jan 18 17:54:01 2017 -0600
+
+    Merge branch 'release/1.5.0'
+
+commit 34a7b24fa17433fa664009524b4d744ebae3435d
+Merge: 5a89973 b697839
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Wed Jan 18 17:54:10 2017 -0600
+
+    Merge branch 'release/1.5.0' into develop
+
+commit 4f049b5c389539e27402f8e50a78ea75f9baff6b
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Tue Jan 31 11:01:31 2017 -0600
+
+    fix typo
+
+commit aa35449e8292111c4ecf4557477ab7ce520c13dd
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Thu Jan 19 11:14:35 2017 -0600
+
+    browsealoud: add explicit visible mode
+
+commit c88b834b0dc4100b80156aeb812b867881307e43
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Wed Feb 1 16:18:43 2017 -0600
+
+    flex-content-area: add clearfix logic
+
+commit c0958272f0c8faf084ed0e4a5d22838acfb8027f
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Tue Jan 31 12:51:30 2017 -0600
+
+    global: blacklist uls without discs
+    
+    Based on the initial styleguide, it was determined that there would be
+    no ULs with disc styles.  However, we do need WYSIWYG ULs, so this is a
+    blacklist approach.  I've checked around the site for any ULs that may
+    have been missed, but another pass would be good.
+
+commit ab24e392899bec3ad6512a55af059dd85c94f3ac
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Thu Feb 2 09:42:05 2017 -0600
+
+    bump changelog
+
+commit 94f1ddeab2be63181fe3c5a75f4988c5fdd5e2df
+Merge: 1d442f9 ab24e39
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Thu Feb 2 09:42:11 2017 -0600
+
+    Merge branch 'release/v1.5.1'
+
+commit df7050a676747bb2211ce51c3b42a097c6795b03
+Merge: c095827 ab24e39
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Thu Feb 2 09:42:17 2017 -0600
+
+    Merge branch 'release/v1.5.1' into develop
+
+commit 71e06cbc6bcc15fc80a0956d170fa8f353ee8cc4
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Thu Feb 2 12:41:23 2017 -0600
+
+    lists: more ul blacklisting
+
+commit d97138c886b0f34da6453931af111e0388a748bf
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Tue Feb 14 14:04:22 2017 -0600
+
+    kiosk: adjust nav spacing
+
+commit 4a7a0a9de0d468f41727b1bae7d74ae9ab415120
+Author: Eric Irish <ecirish@gmail.com>
+Date:   Thu Feb 2 15:17:10 2017 -0600
+
+    Add quotes for debug command.
+
+commit 13728654ca1861d66357a36375703fc60de005e4
+Merge: 4a7a0a9 71e06cb
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Thu Feb 16 10:42:05 2017 -0600
+
+    umanual merge resolution
+
+commit a6f28f6e9b0fc2345e284315c5ddab65ac18ce90
+Author: Colin Hanna <github@colinphanna.com>
+Date:   Tue Feb 14 15:04:23 2017 -0600
+
+    better conditional check
+
+commit d963ecb927690ddc6e58d00a77765ff8cc44f90f
+Author: Colin Hanna <github@colinphanna.com>
+Date:   Tue Feb 14 15:10:47 2017 -0600
+
+    adding try catch with fallback
+
+commit d305ec7ca1448391a361fe283ba1e9f3a6c8ece6
+Author: Colin Hanna <github@colinphanna.com>
+Date:   Thu Feb 16 09:34:05 2017 -0600
+
+    logging + errorhandling
+
+commit 22a4300e2e39c6a909014c9a684557ab537ee267
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Thu Feb 16 10:58:28 2017 -0600
+
+    bump changelog
+
+commit 4d98d19a63e3396031132d7e39aa1e1f9b473a38
+Merge: 94f1dde 22a4300
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Thu Feb 16 10:58:32 2017 -0600
+
+    Merge branch 'release/v1.5.2'
+
+commit 00accb48784dd9b9da9f9e875cba29d883a99bc4
+Merge: d305ec7 22a4300
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Thu Feb 16 10:58:42 2017 -0600
+
+    Merge branch 'release/v1.5.2' into develop
+
+commit ba6ca19ecf4b8e626271f16c374ab44ea5f37f2d
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Mon Feb 20 12:58:23 2017 -0600
+
+    departments: increase number of departments displayed
+
+commit 1b0ae33754f6add7d41af6e89e240955845dfa2c
+Author: Erik Rahm <erik@rahm.com>
+Date:   Thu Mar 2 15:57:54 2017 -0600
+
+    Created functionality for past events to be seen in left side list, when a previous date with an event on it is selected from the calendar on the right side
+
+commit 09fdffc4becb87a01048968018e788b284716bd0
+Author: Erik Rahm <erik@rahm.com>
+Date:   Fri Mar 3 09:59:02 2017 -0600
+
+    increased the result constraints to allow for events from any upcoming month to show once a filter is applied
+
+commit f4c0c8026058ec0c8333629d4f58f6e653715cd1
+Author: Erik Rahm <erik@rahm.com>
+Date:   Fri Mar 3 14:46:19 2017 -0600
+
+    Updating event filters to accomodate past events and month by month filtering
+
+commit 73ff2bf6548ae3bdd12d78d86cf3c59159c47859
+Author: Erik Rahm <erik@rahm.com>
+Date:   Thu Mar 2 14:19:28 2017 -0600
+
+    Disallowing youtube videos from displaying suggested videos and the end of an embeded video.
+
+commit e5db580f939b42ab076aa09b7a602e00919fbf7b
+Author: Erik Rahm <erik@rahm.com>
+Date:   Fri Mar 10 10:49:26 2017 -0600
+
+    Changing the implementation of adding  to youtube videos
+
+commit ac6ac22b1e3ed670f8b24b08e0cc56970ea2a106
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Tue Mar 21 17:00:16 2017 -0500
+
+    bump changelog
+
+commit 57dbc0c28ef1ae14a6f250e46313a96d3282a3f1
+Merge: 4d98d19 ac6ac22
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Tue Mar 21 17:00:21 2017 -0500
+
+    Merge branch 'release/v1.5.3'
+
+commit 36f85e036902e9bbe1f738f90fd963635ff1198c
+Merge: e5db580 ac6ac22
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Tue Mar 21 17:00:32 2017 -0500
+
+    Merge branch 'release/v1.5.3' into develop
+
+commit b58b935e378609d20c3238755fafa7e7fcd427d5
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Tue Mar 21 17:11:00 2017 -0500
+
+    remove debug from deploy
+
+commit 024ed8144db1430eb71c687d264ac8e0c3b8d310
+Merge: 57dbc0c b58b935
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Tue Mar 21 17:11:06 2017 -0500
+
+    Merge branch 'hotfix/debug-remove'
+
+commit 947323b29ed5037b1922aeb135aaf05ef125f064
+Merge: 36f85e0 b58b935
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Tue Mar 21 17:11:14 2017 -0500
+
+    Merge branch 'hotfix/debug-remove' into develop
+
+commit e4e4ecccdec561da64192b80a7cf5d19ee64324f
+Author: Erik Rahm <erik@rahm.com>
+Date:   Tue Mar 21 17:50:08 2017 -0500
+
+    Updating the homepage events loop to have the properly filtered evens instead of raw data
+
+commit c7a0c2b9ea8d9bd5ba8ade0eb0d60f702b437efc
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Tue Mar 21 17:55:04 2017 -0500
+
+    bump changelog
+
+commit b4f7b500a589ffaabbe3ec484cab3e2991bc1dcf
+Merge: 024ed81 c7a0c2b
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Tue Mar 21 17:55:11 2017 -0500
+
+    Merge branch 'release/v1.5.4'
+
+commit 0b9fd16313619baa5f06df6bc4bfed8f31c84007
+Merge: e4e4ecc c7a0c2b
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Tue Mar 21 17:55:16 2017 -0500
+
+    Merge branch 'release/v1.5.4' into develop
+
+commit b8ccc774e3d7c8ae4fc891707601a9e7833c4caf
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Wed Apr 26 14:41:36 2017 -0500
+
+    test of new google search feature
+
+commit fe9d5f33701761c2999976cff4d7303bee961dba
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Thu Apr 27 11:27:09 2017 -0500
+
+    changed to two-page search
+
+commit 791fcff34b0661c4c93654432791dc8389262cc2
+Author: Erik Rahm <erik@rahm.com>
+Date:   Tue Apr 18 11:04:00 2017 -0500
+
+    Resolving elongated blue content block issue for promotion pages
+
+commit 1ac41983e74fc56747ee95c124ff46076be02e62
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Sat Apr 29 12:16:59 2017 -0500
+
+    CCTX-213: remove html entity filter from homepage events titles
+
+commit 665af090a130c52829c5d4398dfe529e41791514
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Sat Apr 29 12:16:59 2017 -0500
+
+    CCTX-213: remove html entity filter from homepage events titles
+
+commit 51a90fa6c152115b17be9437b58b75a88f3dbbff
+Merge: 1ac4198 665af09
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Sat Apr 29 12:27:24 2017 -0500
+
+    Merge branch 'develop' of github.com:springbox/corpus-christi-frontend into develop
+
+commit ebb18ae8d8d1996db436cf6fa3ac164c2a3cb482
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Sat Apr 29 12:28:20 2017 -0500
+
+    CCTX-213, pt 2: update events listing page to also not encode html entities
+
+commit d8ede500c1c9b577cbee60fadcfab3aa35362162
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Sat Apr 29 17:54:18 2017 -0500
+
+    remove authentication against API
+
+commit 91484d5b291bd1471b411ebed2467890d95bde69
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Mon May 1 16:06:32 2017 -0500
+
+    added css fix for search bar
+
+commit 66eeb8bab3e75a6db52216b9313beac6d40cf5a3
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Mon May 1 16:07:33 2017 -0500
+
+    added missing file
+
+commit d7aa367ced2acbbab116eeedb614175e9b41bbe8
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Mon May 1 16:10:36 2017 -0500
+
+    more css fixes
+
+commit 75243823814cf0421debfab38c283bda9aeebb0b
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Mon May 1 17:37:40 2017 -0500
+
+    styled search results
+
+commit ccbd92790134f38609c38c9c8b9e1c1c82526d80
+Author: Erik Rahm <erik@rahm.com>
+Date:   Mon May 1 12:14:03 2017 -0500
+
+    Changing the way pagination works to resolve issues on the departments and services pages
+
+commit 9274941058a5b5c4a3eb6bb21f4329eeab2022f9
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Tue May 2 09:00:22 2017 -0500
+
+    updated docs
+
+commit 265fcbc56d0c231382dfbfffa57fa4b48da10e1b
+Merge: 9274941 ccbd927
+Author: myrcutio <myrcutio@gmail.com>
+Date:   Tue May 2 09:14:33 2017 -0500
+
+    Merge branch 'develop' into feature/CCTX-244_google_search
+
+commit d413d3f8cd584f71ff3e4b350ab27a82a1e317d9
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Wed Apr 26 14:41:36 2017 -0500
+
+    test of new google search feature
+
+commit 8ec023cc9e273d99a4e3fadc2c81e49316b3f28e
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Thu Apr 27 11:27:09 2017 -0500
+
+    changed to two-page search
+
+commit fc25e136ae73232c9c89c9c09dd53227c11025d2
+Author: Erik Rahm <erik@rahm.com>
+Date:   Tue Apr 18 11:04:00 2017 -0500
+
+    Resolving elongated blue content block issue for promotion pages
+
+commit 836aecae6974d6a1e36d915fcfe273135bcdfc7f
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Sat Apr 29 12:16:59 2017 -0500
+
+    CCTX-213: remove html entity filter from homepage events titles
+
+commit 5f531dd9932a8cebaf6ef908fd26eafad024b979
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Sat Apr 29 12:28:20 2017 -0500
+
+    CCTX-213, pt 2: update events listing page to also not encode html entities
+
+commit 5855421f37308274065af573afb078be0d1e3f0d
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Mon May 1 16:06:32 2017 -0500
+
+    added css fix for search bar
+
+commit ec3d6a43fbc09f0c5d5fe7af59ac7558268d36c9
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Mon May 1 16:07:33 2017 -0500
+
+    added missing file
+
+commit 43f08f98baa15b491251028c236276174ee0ecab
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Mon May 1 16:10:36 2017 -0500
+
+    more css fixes
+
+commit 383f353758a4a82252fc40dfdb9b961d9e0292af
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Mon May 1 17:37:40 2017 -0500
+
+    styled search results
+
+commit 95cd7cf5556c5f4cbe7b9038bf852f8d116e6293
+Author: Erik Rahm <erik@rahm.com>
+Date:   Mon May 1 12:14:03 2017 -0500
+
+    Changing the way pagination works to resolve issues on the departments and services pages
+
+commit 269de206304615b63d4d09ae0d9ae5850dc24c4e
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Tue May 2 09:00:22 2017 -0500
+
+    updated docs
+
+commit eb83a91c1dfdc86355a52b70dea11c35dbe0a211
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Tue May 2 10:27:51 2017 -0500
+
+    linting fixes
+
+commit 7ec77244f5d81a803115ce0cec4554b02bb203f4
+Merge: eb83a91 265fcbc
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Tue May 2 10:29:00 2017 -0500
+
+    linting fix
+
+commit 8716d45013989b6f0682ea8548b9e3994b51e7e7
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Tue May 2 10:35:30 2017 -0500
+
+    more linting fixes
+
+commit 8cb4147a72d4b1852f2da09a07c2d02c29ee206f
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Tue May 2 10:46:22 2017 -0500
+
+    this linting sucks
+
+commit a39f5ef80aa49a217ac075a9ffc39115eea5b11a
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Tue May 2 10:49:46 2017 -0500
+
+    linting
+
+commit b2c10f7a20dcd08d38425be5da80e6af92d3ef36
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Tue May 2 11:22:45 2017 -0500
+
+    i am the 99%
+
+commit a178e57f3c58a54fb12414811960210ca7cfffbf
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Tue May 2 11:25:27 2017 -0500
+
+    disabled pug linting in script/lint
+
+commit d5f57aa6098cd3ec50cbdc3a342442ba173c4363
+Merge: d8ede50 ccbd927
+Author: myrcutio <myrcutio@gmail.com>
+Date:   Tue May 2 11:38:06 2017 -0500
+
+    Merge branch 'develop' into feature/CCTX-249
+
+commit 35c5475a1219fc5d2be35bebfe34ba30a46aa036
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Sat Apr 29 17:54:18 2017 -0500
+
+    remove authentication against API
+
+commit e8aa24246bc18b9ed7d8e61aa4b9ae0bb2610389
+Merge: a178e57 35c5475
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Tue May 2 13:51:41 2017 -0500
+
+    rebased develop
+
+commit b2b08b2d87fd969a0b24a340851995c0816c3a44
+Author: Erik Rahm <erik@rahm.com>
+Date:   Mon May 8 16:08:12 2017 -0500
+
+    Adding simplistic print style removal for CCTX-245
+
+commit d52d7ffedf7e77ddaf7ab268c680f0d7a764cba9
+Author: Erik Rahm <erik@rahm.com>
+Date:   Mon May 8 16:10:48 2017 -0500
+
+    .DS_Store removed.
+
+commit d22e40713a8ebc5eba1a95198cac790dcb288dad
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Mon May 8 12:24:36 2017 -0500
+
+    hotfixes for poor error handling
+
+commit cc7e6400408712379b52b286df6f3cde8975202c
+Merge: e8aa242 d22e407
+Author: myrcutio <myrcutio@gmail.com>
+Date:   Mon May 8 17:33:12 2017 -0500
+
+    Merge branch 'develop' into feature/CCTX-244_google_search
+
+commit dae4a62c66e1fb7f8554af6919272129fbef0d4a
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Wed Apr 26 14:41:36 2017 -0500
+
+    test of new google search feature
+
+commit 060a5e93fb94df002de3501975b332e29d4706a3
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Thu Apr 27 11:27:09 2017 -0500
+
+    changed to two-page search
+
+commit 6d32cdada90d4223d1da7d7ce9c6e1dd49e1ae47
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Mon May 1 16:06:32 2017 -0500
+
+    added css fix for search bar
+
+commit a877a20c837bd57ce2365409247fd76fe56798f5
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Mon May 1 16:07:33 2017 -0500
+
+    added missing file
+
+commit e34422d749452e4774fec60391837938f9a93db4
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Mon May 1 16:10:36 2017 -0500
+
+    more css fixes
+
+commit b533292887978afd31facf0143f4ba72b288360e
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Mon May 1 17:37:40 2017 -0500
+
+    styled search results
+
+commit f6b4e24134fc2c3d976fd0aa4c02fcbe33d2d69c
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Tue May 2 09:00:22 2017 -0500
+
+    updated docs
+
+commit 25d273d4198f79540f2967f1dbb7a30abfdcb51c
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Wed Apr 26 14:41:36 2017 -0500
+
+    test of new google search feature
+
+commit 5d89370e42cb193e68671e9c0dbe529386e85353
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Mon May 1 16:06:32 2017 -0500
+
+    added css fix for search bar
+
+commit 0c318a823b0b9ffae6f24f66a59735e062758caa
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Mon May 1 16:07:33 2017 -0500
+
+    added missing file
+
+commit f76fa424367028c03529ea8861e67d11ac3dc10f
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Mon May 1 16:10:36 2017 -0500
+
+    more css fixes
+
+commit a5c63fa55a60e226a9d1790a537e0e913a437db8
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Mon May 1 17:37:40 2017 -0500
+
+    styled search results
+
+commit 65f77fdaac2cd0786ac6a62be0245b05ff9cd290
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Tue May 2 09:00:22 2017 -0500
+
+    updated docs
+
+commit e9794fec1de603c501a4574a17b312d0d7af921e
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Tue May 2 10:27:51 2017 -0500
+
+    linting fixes
+
+commit 8c4fe4f65888604f9d6179cd9b4a731d099c05bc
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Tue May 2 10:35:30 2017 -0500
+
+    more linting fixes
+
+commit fb0586e937c61a1258980b30ffd0b9d13635fd79
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Tue May 2 10:46:22 2017 -0500
+
+    this linting sucks
+
+commit f24fbab612dd83e984be170bbcc663c8dedd4bc3
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Tue May 2 10:49:46 2017 -0500
+
+    linting
+
+commit 537cb976f7689e31c86b5d128b66e17c599c942e
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Tue May 2 11:22:45 2017 -0500
+
+    i am the 99%
+
+commit 3d387a8488bb08e3064363b9b2aec6111a9790ac
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Tue May 2 11:25:27 2017 -0500
+
+    disabled pug linting in script/lint
+
+commit 5f6a2561340ce5804e246a2b1ef262e387ac667b
+Merge: 3d387a8 cc7e640
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Mon May 8 18:06:53 2017 -0500
+
+    merged and rebased
+
+commit 3847245a4e254a3b0242b2ba8ce6dfa75a47556b
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Tue May 9 10:00:42 2017 -0500
+
+    dummy commit
+
+commit 47d9ebe80f05622de463fd1e10423b550214e877
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Tue May 9 10:03:39 2017 -0500
+
+    changes to frontend to reflect bump to 8.3.1
+
+commit ce2969653626bf16004ae1a6cae750b265ffdd85
+Merge: 47d9ebe d5f57aa
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Tue May 9 10:03:55 2017 -0500
+
+    Merge branch 'feature/CCTX-249' of github.com:springbox/corpus-christi-frontend into feature/CCTX-249
+
+commit 469b66c854c5bab7c9e42406ee81ecdb39a9ed1e
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Tue May 9 10:05:05 2017 -0500
+
+    compile assets
+
+commit a9f4ee84e1c56f5b799b713d77cca0e3a2931144
+Merge: d22e407 469b66c
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Tue May 9 10:05:14 2017 -0500
+
+    Merge branch 'feature/CCTX-244_google_search' into develop
+
+commit e8bf1ae9ac1227d206b02e17a8a061bf0aeab3a4
+Merge: ce29696 a9f4ee8
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Tue May 9 10:07:53 2017 -0500
+
+    merge with develop
+
+commit 89ce9d67caf96965b303aa3643c21c500f9a4758
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Tue May 9 10:11:37 2017 -0500
+
+    strip puglint
+
+commit 30e14d45b3dbef177aac1bd34b9c5de7dbbeeb32
+Merge: a9f4ee8 89ce9d6
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Tue May 9 10:16:19 2017 -0500
+
+    Merge branch 'feature/CCTX-249' into develop
+
+commit 60388776d977859b1c3194e0f39268aeb1ca360c
+Author: Erik Rahm <erik@rahm.com>
+Date:   Tue May 9 14:39:45 2017 -0500
+
+    Removing .DS_Store
+
+commit 19039b2406b93f4277cce4b1aafb277cc0f867b4
+Author: Erik Rahm <erik@rahm.com>
+Date:   Tue May 9 14:41:58 2017 -0500
+
+    Rearranging css properties to pass CircleCI tests
+
+commit 2109269eb0e1c938caad0d8d48797540ac8c96f3
+Merge: 19039b2 30e14d4
+Author: Erik Rahm <erik@rahm.com>
+Date:   Tue May 9 14:43:09 2017 -0500
+
+    Merge branch 'develop' into feature/CCTX-245
+
+commit 53a19b5422cb209c6cd6cf700e3113192e298858
+Merge: 19039b2 30e14d4
+Author: Erik Rahm <erik@rahm.com>
+Date:   Thu May 11 15:58:49 2017 -0500
+
+    Merging develop into feature/CCTX-245
+
+commit 656e6520103060c37d37892e9d9382c4cf404215
+Merge: 53a19b5 2109269
+Author: Erik Rahm <erik@rahm.com>
+Date:   Thu May 11 16:00:18 2017 -0500
+
+    Develop merge #2
+
+commit 5ad261eb9372f0732b1f71535c46b2a541f0f635
+Merge: 30e14d4 656e652
+Author: Erik Rahm <erik@rahm.com>
+Date:   Thu May 11 16:05:01 2017 -0500
+
+    Merge branch 'feature/CCTX-245' into develop
+
+commit 29b0ff6f6de7e77434d062882fe0f991aac229a2
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Tue May 9 10:56:42 2017 -0500
+
+    added return statements to callbacks inside functions
+
+commit c371f333f38975795d56a63a5eaa18e8c8c1c297
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Tue May 9 13:44:51 2017 -0500
+
+    added env vars to deploy easier
+
+commit af8e23ad399eb5a4ead546ced4989687d6346fb8
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Tue May 9 13:53:25 2017 -0500
+
+    fixed namespacing
+
+commit cfdf821c105e91b6d97dc2d879542079a417161f
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Tue May 9 17:06:50 2017 -0500
+
+    more bug fixing
+
+commit c9ccffd11dd5da4f98bcef901d6d076280a96863
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Wed May 10 10:17:03 2017 -0500
+
+    removed broken env file
+
+commit 6f8b59a3551452b9bd448cdd003b1a2dd3dfe1f4
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Thu May 11 10:55:47 2017 -0500
+
+    removed extraneous comment
+
+commit 7129124d4b9834f5efe83fc931887cebca80724d
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Thu May 11 10:58:46 2017 -0500
+
+    added some defensive operands
+
+commit ce3b27d52399462a472143e35f9ef944d74a6606
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Thu May 11 16:39:13 2017 -0500
+
+    pr feedback
+
+commit d3ad4c013de6a0caaf2d1dfe5dbaafbf2ac38cf8
+Author: Erik Rahm <erik@rahm.com>
+Date:   Mon May 15 15:22:25 2017 -0500
+
+    Testing BrowseAloud var options
+
+commit 899fecc694cdd0dd61d1f642287ab249fe9c682e
+Author: myrcutio <myrcutio@gmail.com>
+Date:   Mon May 15 16:59:42 2017 -0500
+
+    test deployhq hook
+
+commit 70832e093cd87d626b19b8c0358e3ba43dde9150
+Author: Erik Rahm <erik@rahm.com>
+Date:   Fri May 19 13:30:48 2017 -0500
+
+    pagination fix for the next page button
+
+commit 9806fa51d3e3914b17b73534c7072439f8d624c7
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Thu Jun 1 14:42:18 2017 -0500
+
+    disabled search
+
+commit f91a1c10606e768dfa11ebe4cf31af11221e02de
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Thu Jun 1 16:50:34 2017 -0500
+
+    bump changelog
+
+commit 6f7e16e8cb7bb66d95ec839611fd51cf4cc195b1
+Merge: b4f7b50 f91a1c1
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Thu Jun 1 16:50:39 2017 -0500
+
+    Merge branch 'release/2.0.0'
+
+commit 8673b98180b2d0c10042ef24331d6b7e7621b06c
+Merge: 9806fa5 f91a1c1
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Thu Jun 1 16:50:58 2017 -0500
+
+    Merge branch 'release/2.0.0' into develop
+
+commit c0188588e5d2df56c56110349299e738455f742c
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Thu Jun 1 18:31:42 2017 -0500
+
+    hotfixes
+
+commit d686c5c6cd43483d6cc735059650ad1fb2b896a2
+Merge: c018858 8673b98
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Thu Jun 1 18:31:49 2017 -0500
+
+    Merge branch 'develop' of https://github.com/springbox/corpus-christi-frontend into develop
+
+commit d58aefe6f113bb097896966586bc46aa1ebd8c2e
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Thu Jun 1 18:34:22 2017 -0500
+
+    bump changelog
+
+commit bdb4eedd3923b2aab456adda01ea0ea14da408cf
+Merge: 6f7e16e d58aefe
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Thu Jun 1 18:34:27 2017 -0500
+
+    Merge branch 'release/2.0.1'
+
+commit 70ff9b95f2fc65e49978edf48fc1cf73b8d7e55a
+Merge: d686c5c d58aefe
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Thu Jun 1 18:34:35 2017 -0500
+
+    Merge branch 'release/2.0.1' into develop
+
+commit 32fae5ca38e7f632ea191166d60a2a8259b0922f
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Fri Jun 2 16:31:36 2017 -0500
+
+    hotfix for num to string type mismatch
+
+commit 9af79e1bb2ef2577fd282b4c941152fb295a5c98
+Merge: 32fae5c 70ff9b9
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Fri Jun 2 16:31:43 2017 -0500
+
+    Merge branch 'develop' of https://github.com/springbox/corpus-christi-frontend into develop
+
+commit c1955adc8b64c52b77663e6f36a58a568b7da867
+Merge: bdb4eed 9af79e1
+Author: Michael Redding <michael.redding@springbox.com>
+Date:   Fri Jun 2 16:33:14 2017 -0500
+
+    Merge branch 'release/2.0.2'
+
+commit c675fb96708bd4d16528bd31c432670920b04b05
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Mon Jun 5 23:14:03 2017 -0500
+
+    added _.get fallback
+
+commit 48f01c27813853cbefbaedef7f7d7ed255b92fd9
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Tue Jun 6 09:53:26 2017 -0500
+
+    semvar in package json
+
+commit c58ac524894fe1f17100a6635b15c87d69c2a224
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Thu Jun 29 17:16:01 2017 -0500
+
+    skipping git flow cause i broke it
+
+commit 2f8b3f13f28decfa3627888f53a57dd15087401e
+Author: James Taylor <jim@jrtaylor.com>
+Date:   Wed Jul 5 11:35:19 2017 -0500
+
+    Removed Take me back to cctexas.com link from header
+
+commit 23fd7e521ca32b8880b9c41d9a4bbcb555ec1e51
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Wed Jul 5 13:49:55 2017 -0500
+
+    removed deployment step from circleci
+
+commit 5181ed2f55d607722983c8cd364d4de5b21f611d
+Author: Eric Irish <eric.irish@springbox.com>
+Date:   Thu Jul 6 16:06:32 2017 -0400
+
+    add search view pug markup
+
+commit 56cc7c05c713541e246535f8994a5bd473ba84dd
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Thu Jul 13 18:13:42 2017 -0500
+
+    wired search page to controller
+
+commit 682b9bea03ddad6d44b25a17356e0d843cd8be2e
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Thu Jul 20 16:45:11 2017 -0500
+
+    mapped url path to api server and touched up pagination
+
+commit c741aa5204dcbc96861e3a08b4597538cd88e755
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Wed Jul 26 17:51:37 2017 -0500
+
+    fixed pagination on search
+
+commit 7be19968293b77e0ede607beb7e92fb062addb14
+Author: Ben Balentine <ben.balentine@springbox.com>
+Date:   Fri Aug 25 14:55:43 2017 -0500
+
+    added cache control and gzip compression
